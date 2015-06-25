@@ -1,7 +1,7 @@
 demodata=([
   {
     "acctcode": "rand002",
-    "fullname": "Brando Buckridge",
+    "fullname": "<b>Brando Buckridge</b>",
     "image": "http://i.imgur.com/rHVWokn.jpg",
     "weblink": "http://stackoverflow.com/?username=dreftymac",
     "email": "Hayden.Trantow@robyn.me",
