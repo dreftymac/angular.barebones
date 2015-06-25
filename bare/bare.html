@@ -52,8 +52,8 @@
         <table class="table table-hover table-striped table-bordered">
           <tr ng-repeat="row in demodata">
             <td><a href="{{ row.weblink }}"><img height="16" width="16" src="{{ row.image }}" /></a></td>
-            <td nowrap="true"><b>{{ row.action }}</b></td>
             <td>{{ row.createdate }}</td>
+            <td nowrap="true"><b>{{ row.action }}</b></td>
             <td  ng-bind-html-unsafe="true">{{ row.detail }}</td>
           </tr>
         </table>
