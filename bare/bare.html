@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!-- {
+### <reg-file_info>
+### main:
+###   - date: created="Wed Jun 24 22:51:49 2015"
+###     last: lastmod="Wed Jun 24 22:51:49 2015"
+###     tags:   tags 
+###     author: created="__author__"
+###     dreftymacid:    "unfairly_tosh_mayday"
+###     seealso: |
+###         * href="../../../../../../mytrybits/a/tryangularjs/devlog.txt"
+###     desc: |
+###         bare.html
+###         barebones angularjs tests
+### <reg-file_info>
+
+} --->
+
+<head>
+  <title>barebones angular</title>
+  <script src="./demodata.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+    // init app
+    var myAppName = angular.module('myAppName', []);
+    myAppName.controller('mainController'
+    ,['$scope'
+    ,function($scope)
+    {
+      // init
+      $scope.vout = 'helloworld';
+      // init
+      $scope.foo_doo_boo_001 = foo_doo_boo_001;
+    }]);
+  </script>  
+</head>
+<body>
+  <h2>barebones angular</h2>
+  
+  
+  
+</body>
+</html>
