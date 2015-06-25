@@ -23,7 +23,7 @@
   <script src="./demodata.js"></script>  
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css"  />  
   <script>
     // init app
     var myAppName = angular.module('myAppName', []);
@@ -49,7 +49,7 @@
       
     <div>
           
-        <table border="1" class="table table-hover table-striped table-bordered">
+        <table border="0" class="table table-hover table-striped table-bordered">
           <tr ng-repeat="row in demodata">
             <td><a href="{{ row.weblink }}"><img height="16" width="16" src="{{ row.image }}" /></a></td>
             <td><a href="{{ row.weblink }}">{{ row.createdate }}</a></td>
@@ -59,6 +59,7 @@
         </table>
         
     </div>  
+
     
     </div>
     <!--- { mainController_Region } --->
