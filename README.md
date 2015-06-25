@@ -1,0 +1,2 @@
+# angular.barebones
+angular.barebones
