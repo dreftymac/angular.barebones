@@ -33,7 +33,7 @@
       // init
       $scope.vout = 'helloworld';
       // init
-      $scope.foo_doo_boo_001 = foo_doo_boo_001;
+      $scope.demodata = demodata;
     }]);
   </script>  
 </head>
@@ -49,11 +49,11 @@
     <div>
           
         <table class="table table-hover table-striped table-bordered">
-          <tr ng-repeat="row in foo_doo_boo_001">
-            <td><a href="{{ row.hyper }}"><img src="{{ row.image }}" /></a></td>
-            <td nowrap="true"><b>{{ row.action  }}</b></td>
-            <td>{{ row.descrip }}</td>
-            <td  ng-bind-html-unsafe="true">{{ row.detail  }}</td>
+          <tr ng-repeat="row in demodata">
+            <td><a href="{{ row.weblink }}"><img src="{{ row.image }}" /></a></td>
+            <td nowrap="true"><b>{{ row.action }}</b></td>
+            <td>{{ row.createdate }}</td>
+            <td  ng-bind-html-unsafe="true">{{ row.detail }}</td>
           </tr>
         </table>
         
