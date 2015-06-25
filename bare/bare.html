@@ -10,6 +10,7 @@
 ###     dreftymacid:    "unfairly_tosh_mayday"
 ###     seealso: |
 ###         * href="../../../../../../mytrybits/a/tryangularjs/devlog.txt"
+###         * http://bravo.dreftymac.koding.io/angular.barebones/bare/bare.html
 ###     desc: |
 ###         bare.html
 ###         barebones angularjs tests ;; simple demodata table
@@ -39,6 +40,28 @@
 <body>
   <h2>barebones angular</h2>
   
+  <div data-ng-app="myAppName">
+  
+    <h3>Add page fragment</h3>
+    <!--- { mainController_Region } --->
+    <div ng-controller="mainController" >
+      
+    <div>
+          
+        <table class="table table-hover table-striped table-bordered">
+          <tr ng-repeat="row in foo_doo_boo_001">
+            <td><a href="{{ row.hyper }}"><img src="{{ row.image }}" /></a></td>
+            <td nowrap="true"><b>{{ row.action  }}</b></td>
+            <td>{{ row.descrip }}</td>
+            <td  ng-bind-html-unsafe="true">{{ row.detail  }}</td>
+          </tr>
+        </table>
+        
+    </div>  
+    
+    </div>
+    <!--- { mainController_Region } --->
+  </div>  
   
   
 </body>
