@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <title>demo.spreadsheet01</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+  <script src="https://rawgithub.com/eligrey/FileSaver.js/master/FileSaver.js" type="text/javascript"></script>
+  <script>
+    function myCtrl($scope)
+    {
+        $scope.exportData = function () {
+            var blob = new Blob([document.getElementById('exportable').innerHTML], {
+                type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=utf-8"
+            });
+            saveAs(blob, "Report.xls");
+        };
+        $scope.items = [{
+            name: "John Smith",
+            email: "j.smith@example.com",
+            dob: "1985-10-10"
+        }, {
+            name: "Jane Smith",
+            email: "jane.smith@example.com",
+            dob: "1988-12-22"
+        }, {
+            name: "Jan Smith",
+            email: "jan.smith@example.com",
+            dob: "2010-01-02"
+        }, {
+            name: "Jake Smith",
+            email: "jake.smith@exmaple.com",
+            dob: "2009-03-21"
+        }, {
+            name: "Josh Smith",
+            email: "josh@example.com",
+            dob: "2011-12-12"
+        }, {
+            name: "Jessie Smith",
+            email: "jess@example.com",
+            dob: "2004-10-12"
+        }]
+    }
+  </script>
+</head>
+<body  data-ng-app="">
+  <h2>demo.spreadsheet01</h2>
+  
+  <div ng-controller="myCtrl">
+      {{ 1 + 1 }}
+      <button ng-click="exportData()">Export</button>
+      <div id="exportable">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>DoB</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in items">
+                    <td>{{item.name}}</td>
+                    <td>{{item.email}}</td>
+                    <td>{{item.dob | date:'MM/dd/yy'}}</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+  </div>
+  
+</body>
+</html>
+
+
+

@@ -1,0 +1,13 @@
+### <beg-file_info>
+### main:
+###   - date: created="Wed Sep 23 12:11:03 2015"
+###     last: lastmod="Wed Sep 23 12:11:03 2015"
+###     tags:   tags 
+###     author: created="__author__"
+###     dreftymacid:    "__dreftymacid__"
+###     seealso: |
+###         * cd c:/sm/docs/mymedia/2014/git/github/angular.barebones
+###     desc: |
+###         devlog.txt
+###         
+### <end-file_info>
