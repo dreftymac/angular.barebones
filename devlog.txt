@@ -2,9 +2,9 @@
 ### main:
 ###   - date: created="Wed Sep 23 12:11:03 2015"
 ###     last: lastmod="Wed Sep 23 12:11:03 2015"
-###     tags:   tags 
+###     tags: github, angularjs, demo
 ###     author: created="__author__"
-###     dreftymacid:    "dawn_julia_lyric"
+###     dreftymacid: "dawn_julia_lyric"
 ###     seealso: |
 ###         * cd c:/sm/docs/mymedia/2014/git/github/angular.barebones
 ###     desc: |
