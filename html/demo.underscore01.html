@@ -65,6 +65,8 @@
                     ,"fasmhead":item["fasmhead"]
                     ,"title":item["title"]
                     ,"nid":item["nid"]
+                    ,"linkedit":item["linkedit"]
+                    ,"linkview":item["linkview"]
                     };
                   if(vout["fasmhead"]=='INTRODUCTION'){vout["weight"]='-5';}
                   return vout;
@@ -105,7 +107,8 @@
               <dd>
                 <ul>
                   <li ng-repeat="row in tmpgrp">
-                    <a ng-href="{{row.nid}}"><i class="icon-book icon-white"></i>{{ row.title }} </a>
+                    <a ng-href="{{row.linkview}}"><i class="icon-book icon-white"></i>{{ row.title }}</a>
+                    [<a ng-href="{{row.linkedit}}"><i class="icon-book icon-white"></i>{{ 'edit' }}</a>]
                   </li>
                 </ul>
               </dd>
