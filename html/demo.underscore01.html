@@ -95,10 +95,10 @@
       <div ng-controller="MyControllerA" class="row" style="margin-left:1em;padding-top:0.50em;padding-bottom:1em;">
          <div class="col-md-12">
 
-          <ul ng-repeat="(tmpgrp, tmpval) in datatable01 | groupBy: 'team'">
-            Group name: {{ key }}
-            <li ng-repeat="player in value">
-              player: {{ player.name }} 
+          <ul ng-repeat="(tmpgrp, tmpval) in datatable02 | groupBy: 'fasmhead'">
+            Group name: {{ tmpgrp }}
+            <li ng-repeat="row in tmpval">
+              item: {{ row.title }} 
             </li>
           </ul>   
 
