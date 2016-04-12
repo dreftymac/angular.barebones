@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- {     
+    ### <beg-file_info>
+    ### main:
+    ###   - date: created="Wed Sep 23 12:07:28 2015"
+    ###     last: lastmod="Wed Sep 23 12:07:28 2015"
+    ###     tags: tags 
+    ###     dreftymacid: "sound_fistful_forty"
+    ###     seealso: |
+    ###         *
+    ###     desc: |
+    ###         * bare minimum to see if ng is working
+    ###         * test underscorejs    
+    ### <end-file_info>
+    } --> 
+    <title>demo.underscore01</title>
+    <!-- { init00 } -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"            ></script>
+    <script src="https://s69682.gridserver.com/_weblib/js/angularjs/angular.ng-modules.js"        ></script>
+    <script src="https://s69682.gridserver.com/_weblib/js/angularjs/underscore.min.js"            ></script>
+    
+    <!-- { init01 } -->
+    <script src="https://fpm.uoregon.edu/view01policy01/jsonp02"       ></script>
+
+    <!-- { init02 } -->
+    <script>
+      var moduleA = angular.module("MyModuleA", [])
+            .filter('to_trusted', ['$sce', function($sce){
+              return function(text) {
+                return $sce.trustAsHtml(text);
+              };
+            }])
+            .filter('capitalize', function() {
+              return function(input, scope) {
+                if (input!=null) {
+                    var stringArr = input.split(" ");
+                    var result = "";
+                    var cap = stringArr.length;
+                    for(var x = 0; x < cap; x++) {
+                      stringArr[x].toLowerCase();
+                      if(x === cap - 1) {
+                        result += stringArr[x].substring(0,1).toUpperCase() + stringArr[x].substring(1);
+                      } else {
+                        result += stringArr[x].substring(0,1).toUpperCase() + stringArr[x].substring(1) + " ";
+                      }
+                    }
+                  return result;
+                }
+              }
+            })
+            ;
+      moduleA.controller("MyControllerA", function($scope) {
+          // ------------------------------------------------------------------------
+          $scope.grpfield01             =   'fasmhead';
+          $scope.datatable01            =   _.clone( jsonp02["Items"] );
+          $scope.datatable01            =   _.map($scope.datatable01 ,
+                                                  function(row){
+                                                    row[$scope.grpfield01] = row['title'].toUpperCase();
+                                                    return row;
+                                                  });
+          $scope.datatable01            =   _.sortBy($scope.datatable01,  $scope.grpfield01);
+          $scope.datatable01            =   _.groupBy($scope.datatable01, $scope.grpfield01);
+          $scope.datatable02            =   _.keys(_.clone($scope.datatable01));
+          $scope.datatable02.unshift('^');
+          console.log( $scope.datatable01 );
+          console.log( $scope.datatable02 );
+      });
+    </script>
+
+    <style> 
+    .breadcrumb {display:none;}
+    </style>        
+  </head>
+  <body>
+    
+    <!-- { init04 } -->     
+    <div ng-module="MyModuleA" class="main-container container">
+      <div ng-controller="MyControllerA" class="row" style="margin-left:1em;padding-top:0.50em;padding-bottom:1em;">
+         <div class="col-md-12">
+           <div class="btn-toolbar" role="toolbar">
+            <ul>
+            <li class="ng-cloak" ng-repeat="item in datatable01">{{item[0].fasmhead}}</li>
+            </ul>
+           </div>
+         </div>
+      </div>
+    </div>
+   
+    
+  </body>
+</html>
+
+
+
