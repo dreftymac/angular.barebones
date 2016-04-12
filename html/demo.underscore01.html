@@ -61,7 +61,7 @@
           //
           $scope.datatable02            =   _.map( $scope.datatable02 , function(item){
                   vout = { "noop":0
-                    ,"weight":0
+                    ,"weight":item["fasmhead"].charCodeAt(0)
                     ,"fasmhead":item["fasmhead"]
                     ,"title":item["title"]
                     ,"nid":item["nid"]
