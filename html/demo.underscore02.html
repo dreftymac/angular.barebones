@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- {     
+    ### <beg-file_info>
+    ### main:
+    ###   - date: created="Wed Sep 23 12:07:28 2015"
+    ###     last: lastmod="Wed Sep 23 12:07:28 2015"
+    ###     tags: tags 
+    ###     dreftymacid: "sound_fistful_forty"
+    ###     seealso: |
+    ###         *
+    ###     desc: |
+    ###         * bare minimum to see if ng is working
+    ###         * test underscorejs    
+    ### <end-file_info>
+    } --> 
+    <title>demo.underscore01</title>
+     
+    <!-- { init00 } -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js" ></script>
+    <script src="https://s69682.gridserver.com/_weblib/js/angularjs/angular.ng-modules.js" ></script>
+    <script src="https://s69682.gridserver.com/_weblib/js/angularjs/underscore.min.js" ></script>
+    
+    <!-- { init01 } -->
+    <script src="https://fpm.uoregon.edu/view01policy01/jsonp01" ></script>
+    <script src="https://fpm.uoregon.edu/view01policy01/jsonp02" ></script>
+
+    <!-- { init02 } -->
+    <script>
+      var moduleA = angular.module("MyModuleA", [])
+            .filter('to_trusted', ['$sce', function($sce){
+              return function(text) {
+                return $sce.trustAsHtml(text);
+              };
+            }])
+            .filter('capitalize', function() {
+              return function(input, scope) {
+                if (input!=null) {
+                    var stringArr = input.split(" ");
+                    var result = "";
+                    var cap = stringArr.length;
+                    for(var x = 0; x < cap; x++) {
+                      stringArr[x].toLowerCase();
+                      if(x === cap - 1) {
+                        result += stringArr[x].substring(0,1).toUpperCase() + stringArr[x].substring(1);
+                      } else {
+                        result += stringArr[x].substring(0,1).toUpperCase() + stringArr[x].substring(1) + " ";
+                      }
+                    }
+                  return result;
+                }
+              }
+            })
+            ;
+      moduleA.controller("MyControllerA", function($scope) {
+          // ------------------------------------------------------------------------
+          $scope.grpfield01             =   'fasmhead';
+          $scope.datatable01            =   _.clone( jsonp01["Items"] );
+          $scope.datatable02            =   _.clone( jsonp02["Items"] );
+          //
+          $scope.datatable02            =   _.map( $scope.datatable02 , function(item){
+                  vout = { "noop":0
+                    ,"weight":item["fasmhead"].charCodeAt(0)
+                    ,"fasmhead":item["fasmhead"]
+                    ,"title":item["title"]
+                    ,"nid":item["nid"]
+                    ,"linkedit":item["linkedit"]
+                    ,"linkview":item["linkview"]
+                    ,"fasmstat":item["fasmstat"]
+                    ,"fasmsect":item["fasmsect"]
+                    ,"fasmdate":item["fasmdate"]
+                    ,"fasmcapt":item["fasmcapt"]
+                    ,"fasmauth":item["fasmauth"]
+                    };
+                  if(vout["fasmhead"]=='INTRODUCTION'){vout["weight"]='-5';}
+                  return vout;
+                  });
+          $scope.datatable02            =   _.sortBy($scope.datatable02, "weight");          
+          $scope.datatable02            =   _.groupBy($scope.datatable02, $scope.grpfield01);
+          //;;
+          //console.log( $scope.datatable02 );
+          //console.log( $scope.datatable02 );
+      });
+    </script>
+
+    <style> 
+    .breadcrumb {display:none;}
+    </style>        
+  </head>
+  <body>
+    
+    <!-- { init05 } -->     
+    <div ng-module="MyModuleA" class="main-container container">
+      <div ng-controller="MyControllerA" class="row" style="margin-left:1em;padding-top:0.50em;padding-bottom:1em;">
+         <div class="col-md-12">
+
+            <dl ng-repeat="tmpgrp in datatable02">
+              <dt>{{ tmpgrp[0].fasmhead }}</dt>
+              <dd>
+                <ul>
+                  <li ng-repeat="row in tmpgrp">
+                    <a ng-href="{{row.linkview}}"><i class="icon-book icon-white"></i>{{ row.title }}</a>
+                    [<a ng-href="{{row.linkedit}}"><i class="icon-book icon-white"></i>{{ 'edit' }}</a>]
+                    <span ng-show="row.fasmstat">
+                    [<a ng-href="{{row.linkedit}}"><i class="icon-book icon-white"></i>{{ row.fasmstat }}</a>]
+                    [<a ng-href="{{row.linkedit}}"><i class="icon-book icon-white"></i>{{ row.fasmdate }}</a>]
+                    [<a ng-href="{{row.linkedit}}"><i class="icon-book icon-white"></i>{{ row.fasmauth }}</a>]
+                    </span>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+
+         </div>
+      </div>
+    </div>
+
+   
+   
+    
+  </body>
+</html>
+
+
+
