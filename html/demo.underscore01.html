@@ -56,8 +56,8 @@
       moduleA.controller("MyControllerA", function($scope) {
           // ------------------------------------------------------------------------
           $scope.grpfield01             =   'fasmhead';
-          $scope.datatable01            =   _.clone( jsonp02["Items"] );
-          $scope.datatable02            =   _.clone( jsonp01["Items"] );
+          $scope.datatable01            =   _.clone( jsonp01["Items"] );
+          $scope.datatable02            =   _.clone( jsonp02["Items"] );
           //$scope.datatable01            =   _.map($scope.datatable01 ,
           //                                        function(row){
           //                                          row[$scope.grpfield01] = row[$scope.grpfield01].toUpperCase();
@@ -83,7 +83,7 @@
       <div ng-controller="MyControllerA" class="row" style="margin-left:1em;padding-top:0.50em;padding-bottom:1em;">
          <div class="col-md-12">
           <ul>
-            <li class="ng-cloak" ng-repeat="item in datatable01">{{item[0].fasmhead}}</li>
+            <li class="ng-cloak" ng-repeat="item in datatable01">{{item.fasmhead}}</li>
           </ul>
          </div>
       </div>
