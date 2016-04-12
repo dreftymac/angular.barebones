@@ -100,10 +100,10 @@
       <div ng-controller="MyControllerA" class="row" style="margin-left:1em;padding-top:0.50em;padding-bottom:1em;">
          <div class="col-md-12">
 
-          <ul ng-repeat="item in datatable02">
+          <ul ng-repeat="tmpgrp in datatable02">
             Group name: {{ item[0].fasmhead }}
-            <li ng-repeat="row in datatable02.item">
-              item: {{ row.title }} 
+            <li ng-repeat="row in tmpgrp">
+              item: {{ tmpgrp.title }} 
             </li>
           </ul>   
 
