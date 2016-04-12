@@ -56,15 +56,16 @@
           // ------------------------------------------------------------------------
           $scope.grpfield01             =   'fasmhead';
           $scope.datatable01            =   _.clone( jsonp02["Items"] );
+          $scope.datatable02            =   _.clone( jsonp01["Items"] );
           $scope.datatable01            =   _.map($scope.datatable01 ,
                                                   function(row){
                                                     row[$scope.grpfield01] = row[$scope.grpfield01].toUpperCase();
                                                     return row;
                                                   });
           $scope.datatable01            =   _.sortBy($scope.datatable01,  $scope.grpfield01);
-          $scope.datatable01            =   _.groupBy($scope.datatable01, $scope.grpfield01);
-          $scope.datatable02            =   _.keys(_.clone($scope.datatable01));
-          $scope.datatable02.unshift('^');
+          //$scope.datatable01            =   _.groupBy($scope.datatable01, $scope.grpfield01);
+          //$scope.datatable02            =   _.keys(_.clone($scope.datatable01));
+          //$scope.datatable02.unshift('^');
           console.log( $scope.datatable01 );
           console.log( $scope.datatable02 );
       });
@@ -83,10 +84,28 @@
           <ul>
             <li class="ng-cloak" ng-repeat="item in datatable01">{{item[0].fasmhead}}</li>
           </ul>
-                    
          </div>
       </div>
     </div>
+
+    
+    <!-- { init05 } -->     
+    <div ng-module="MyModuleA" class="main-container container">
+      <div ng-controller="MyControllerA" class="row" style="margin-left:1em;padding-top:0.50em;padding-bottom:1em;">
+         <div class="col-md-12">
+
+          <ul ng-repeat="(tmpgrp, tmpval) in datatable01 | groupBy: 'team'">
+            Group name: {{ key }}
+            <li ng-repeat="player in value">
+              player: {{ player.name }} 
+            </li>
+          </ul>   
+
+         </div>
+      </div>
+    </div>
+
+   
    
     
   </body>
