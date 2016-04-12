@@ -102,9 +102,11 @@
                   <li ng-repeat="row in tmpgrp">
                     <a ng-href="{{row.linkview}}"><i class="icon-book icon-white"></i>{{ row.title }}</a>
                     [<a ng-href="{{row.linkedit}}"><i class="icon-book icon-white"></i>{{ 'edit' }}</a>]
+                    <div ng-show="row.fasmstat">
                     [<a ng-href="{{row.linkedit}}"><i class="icon-book icon-white"></i>{{ row.fasmstat }}</a>]
                     [<a ng-href="{{row.linkedit}}"><i class="icon-book icon-white"></i>{{ row.fasmdate }}</a>]
                     [<a ng-href="{{row.linkedit}}"><i class="icon-book icon-white"></i>{{ row.fasmauth }}</a>]
+                    </div>
                   </li>
                 </ul>
               </dd>
