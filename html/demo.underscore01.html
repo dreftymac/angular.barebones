@@ -71,6 +71,7 @@
                     ,"fasmsect":item["fasmsect"]
                     ,"fasmdate":item["fasmdate"]
                     ,"fasmcapt":item["fasmcapt"]
+                    ,"fasmauth":item["fasmauth"]
                     };
                   if(vout["fasmhead"]=='INTRODUCTION'){vout["weight"]='-5';}
                   return vout;
@@ -102,6 +103,8 @@
                     <a ng-href="{{row.linkview}}"><i class="icon-book icon-white"></i>{{ row.title }}</a>
                     [<a ng-href="{{row.linkedit}}"><i class="icon-book icon-white"></i>{{ 'edit' }}</a>]
                     [<a ng-href="{{row.linkedit}}"><i class="icon-book icon-white"></i>{{ row.fasmstat }}</a>]
+                    [<a ng-href="{{row.linkedit}}"><i class="icon-book icon-white"></i>{{ row.fasmdate }}</a>]
+                    [<a ng-href="{{row.linkedit}}"><i class="icon-book icon-white"></i>{{ row.fasmauth }}</a>]
                   </li>
                 </ul>
               </dd>
