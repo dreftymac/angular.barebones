@@ -58,7 +58,7 @@
           $scope.grpfield01             =   'fasmhead';
           $scope.datatable01            =   _.clone( jsonp01["Items"] );
           $scope.datatable02            =   _.clone( jsonp02["Items"] );
-          $scope.datatable02            =   _.map( $scope.datatable01 , function(item){ return item[0]; });
+          $scope.datatable02            =   _.map( $scope.datatable01 , function(item){ console.log(item); return item; });
           //$scope.datatable01            =   _.map($scope.datatable01 ,
           //                                        function(row){
           //                                          row[$scope.grpfield01] = row[$scope.grpfield01].toUpperCase();
@@ -69,7 +69,7 @@
           //$scope.datatable02            =   _.keys(_.clone($scope.datatable01));
           //$scope.datatable02.unshift('^');
           //console.log( $scope.datatable01 );
-          console.log( $scope.datatable02 );
+          //console.log( $scope.datatable02 );
       });
     </script>
 
