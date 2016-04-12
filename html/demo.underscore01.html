@@ -63,7 +63,7 @@
                   if(vout["fasmhead"]=='INTRODUCTION'){vout["weight"]='-5';}
                   return vout;
                                             });
-          $scope.datatable02            =   _.sortBy($scope.datatable02, $scope.grpfield01);
+          $scope.datatable02            =   _.sortBy($scope.datatable02, "weight");
           //$scope.datatable01            =   _.map($scope.datatable01 ,
           //                                        function(row){
           //                                          row[$scope.grpfield01] = row[$scope.grpfield01].toUpperCase();
