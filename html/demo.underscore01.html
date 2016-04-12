@@ -97,7 +97,10 @@
           <ul>
             <li class="ng-cloak" ng-repeat="item in datatable02">{{item.fasmhead}}</li>
             <ul>
-              <li class="ng-cloak" ng-if="item." ng-repeat="row in datatable01">{{item.fasmhead}}</li>
+              <li class="ng-cloak" ng-if="row.fasmhead == item.fasmhead" ng-repeat="row in datatable01">
+                {{row.title}}
+                {{row.nid}}
+              </li>
             </ul>
           </ul>
          </div>
