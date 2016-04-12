@@ -59,9 +59,19 @@
           $scope.datatable01            =   _.clone( jsonp01["Items"] );
           $scope.datatable02            =   _.clone( jsonp02["Items"] );
           //
+          $scope.datatable01            =   _.map( $scope.datatable01 , function(item){
+                  vout = { "noop":0
+                    ,"weight":0
+                    ,"fasmhead":item["fasmhead"]
+                    };
+                  if(vout["fasmhead"]=='INTRODUCTION'){vout["weight"]='-5';}
+                  return vout;
+                  });
+          $scope.datatable01            =   _.sortBy($scope.datatable01, "weight");
+          //
           $scope.datatable02            =   _.map( $scope.datatable02 , function(item){
                   vout = { "noop":0
-                    , "weight":0
+                    ,"weight":0
                     ,"fasmhead":item["fasmhead"]
                     ,"title":item["title"]
                     ,"nid":item["nid"]
@@ -79,6 +89,7 @@
           //$scope.datatable01            =   _.groupBy($scope.datatable01, $scope.grpfield01);
           //$scope.datatable02            =   _.keys(_.clone($scope.datatable01));
           //$scope.datatable02.unshift('^');
+          console.log( $scope.datatable01 );
           console.log( $scope.datatable02 );
           //console.log( $scope.datatable02 );
       });
