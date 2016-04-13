@@ -87,37 +87,38 @@
 
     function createRowData() {
         var rows = [];
-        ['[5.00] Roles and responsibilities'
-         ,'[5.00] Roles and responsibilities'
-         ,'[5.00] Roles and responsibilities'
-         ,'[5.00] Roles and responsibilities'
-         ,'[5.00] Roles and responsibilities'
-         ,'[5.00] Roles and responsibilities'
-         ,'[5.00] Roles and responsibilities'
-         ,'[5.00] Roles and responsibilities'
+        ['[5.00] '
+         ,'[5.00] '
+         ,'[5.00] '
+         ,'[5.00] '
+         ,'[5.00] '
+         ,'[5.00] '
+         ,'[5.00] '
+         ,'[5.00] '
          ].forEach( function (item) {
             rows.push({category: 'INTRODUCTION', item: item});
         });
 
-        ['[5.00] Roles and responsibilities'
-         ,'[5.00] Roles and responsibilities'
-         ,'[5.00] Roles and responsibilities'
-         ,'[5.00] Roles and responsibilities'        
+        ['[5.00] '
+         ,'[5.00] '
+         ,'[5.00] '
+         ,'[5.00] '        
          ].forEach( function (item) {
             rows.push({category: 'ACCOUNTING AND FINANCIAL REPORTING', item: item});
         });
 
         rows.forEach( function(row) {
 
-            row.amount1 = Math.round(Math.random() * 100);
+            //row.amount1 = Math.round(Math.random() * 100);
+            row.amount1 = 'Roles and responsibilities';
             row.amount2 = Math.round(Math.random() * 100);
             row.amount3 = Math.round(Math.random() * 100);
-            row.amountTotal = row.amount1 + row.amount2 + row.amount3;
+            //row.amountTotal = row.amount1 + row.amount2 + row.amount3;
 
             row.gbp1 = row.amount1 * 22;
             row.gbp2 = row.amount2 * 22;
             row.gbp3 = row.amount3 * 22;
-            row.gbpTotal = row.amountTotal * 22;
+            //row.gbpTotal = row.amountTotal * 22;
         });
 
         return rows;
