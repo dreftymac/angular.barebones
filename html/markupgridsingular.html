@@ -48,7 +48,8 @@
                 headerName: ''
                 ,"field": "fasmstat"
                 ,"width": 125
-                ,"cellRenderer": function(params){ console.log(params); return '<span title="the tooltip">2+3</span>';}
+                // YES_WORKY ;; turned off angularCompileRows
+                ,"cellRenderer": function(params){ console.log(params['node']['data']); return '<span title="the tooltip">2+3</span>';}
             },
             {
                 headerName: ''
