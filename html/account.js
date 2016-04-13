@@ -86,11 +86,19 @@
 
     function createRowData() {
         var rows = [];
-        ['Ales','Larger','Cider','Wine','Spirits'].forEach( function (item) {
+        ['[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
+         ].forEach( function (item) {
             rows.push({category: 'INTRODUCTION', item: item});
         });
 
-        ['Water','Juice','Soda','Milk'].forEach( function (item) {
+        ['[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'        
+         ].forEach( function (item) {
             rows.push({category: 'ACCOUNTING AND FINANCIAL REPORTING', item: item});
         });
 
