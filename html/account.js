@@ -87,22 +87,22 @@
 
     function createRowData() {
         var rows = [];
-        ['[5.00] '
-         ,'[5.00] '
-         ,'[5.00] '
-         ,'[5.00] '
-         ,'[5.00] '
-         ,'[5.00] '
-         ,'[5.00] '
-         ,'[5.00] '
+        ['[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
          ].forEach( function (item) {
             rows.push({category: 'INTRODUCTION', item: item});
         });
 
-        ['[5.00] '
-         ,'[5.00] '
-         ,'[5.00] '
-         ,'[5.00] '        
+        ['[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'        
          ].forEach( function (item) {
             rows.push({category: 'ACCOUNTING AND FINANCIAL REPORTING', item: item});
         });
@@ -110,9 +110,9 @@
         rows.forEach( function(row) {
 
             //row.amount1 = Math.round(Math.random() * 100);
-            row.amount1 = 'Roles and responsibilities';
-            row.amount2 = Math.round(Math.random() * 100);
-            row.amount3 = Math.round(Math.random() * 100);
+            row.amount1 = 'repealed';
+            row.amount2 = 'by UO Board of Trustees';
+            row.amount3 = 'Wednesday December 12 2014';
             //row.amountTotal = row.amount1 + row.amount2 + row.amount3;
 
             row.gbp1 = row.amount1 * 22;
