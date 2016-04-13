@@ -43,7 +43,7 @@
 }
 
 .ag-account {
-    background-color: ivory;
+    background-color: inherit;
     border: 1px solid darkgoldenrod;
     box-shadow: 1px 1px 1px #888888;
 }
