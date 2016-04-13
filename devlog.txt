@@ -12,7 +12,7 @@
 ### <end-file_info>
 
 main:
-  - caption:  this needs more work if it is going to work using mint_gaga_one recipe
+  - caption:  mint_gaga_one recipe works all of a sudden -- export saved
     rectype:  rrmini02
     datebeg:  Tue Apr 12 19:49:13 2016 
     dateend:  Tue Apr 12 19:49:13 2016 
