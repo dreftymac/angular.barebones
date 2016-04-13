@@ -87,11 +87,11 @@
     function createRowData() {
         var rows = [];
         ['Ales','Larger','Cider','Wine','Spirits'].forEach( function (item) {
-            rows.push({category: 'Alcoholic Drinks', item: item});
+            rows.push({category: 'INTRODUCTION', item: item});
         });
 
         ['Water','Juice','Soda','Milk'].forEach( function (item) {
-            rows.push({category: 'Non-Alcoholic Drinks', item: item});
+            rows.push({category: 'ACCOUNTING AND FINANCIAL REPORTING', item: item});
         });
 
         rows.forEach( function(row) {
