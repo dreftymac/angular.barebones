@@ -9,7 +9,7 @@
             field: "category", rowGroupIndex: 0, hide: true
         },
         {
-            headerName: 'Section'
+            headerName: ''
             ,"field": "amount1"
             //children: [
             //    {headerName: "Units", field: "amount1", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
@@ -17,7 +17,7 @@
             //]
         },
         {
-            headerName: 'Subtitle'
+            headerName: 'Status'
             ,"field": "amount2"            
             //children: [
             //    {headerName: "Units", field: "amount2", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
@@ -25,7 +25,7 @@
             //]
         },
         {
-            headerName: 'Status'
+            headerName: ''
             ,"field": "amount3"            
             
             //children: [
