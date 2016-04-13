@@ -9,7 +9,7 @@
             field: "fasmhead", rowGroupIndex: 0, hide: true
         },
         {
-            headerName: 'Status'
+            headerName: ''
             ,"field": "fasmstat"
         },
         {
