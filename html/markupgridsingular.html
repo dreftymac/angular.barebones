@@ -27,12 +27,13 @@
               ,"fasmdate":item["fasmdate"]
               ,"fasmcapt":item["fasmcapt"]
               ,"fasmauth":item["fasmauth"]
+              ,"rowaction":''
               };
             if(vout["fasmhead"]=='INTRODUCTION'){vout["weight"]='-5';}
             if(true){vout["fasmsect"]='[5.001] '+vout["title"];}
             return vout;
             });
-    jsonp02 =   _.sortBy(jsonp02, "weight");
+    jsonp02 = _.sortBy(jsonp02, "weight");
     </script>
     <script>
       (function(vinput) {
@@ -47,7 +48,7 @@
             {
                 headerName: ''
                 ,"field": "fasmstat"
-                ,"width": 125
+                ,"width": 110
                 // YES_WORKY ;; turned off angularCompileRows
                 // YES_WORKY ;; output HTML ... XSS danger
                 ,"cellRenderer": function(params){ console.log(params['node']['data']); return '<a href="http://www.yahoo.com">yahoo</a><span title="the tooltip">2+3</span>';}
@@ -55,12 +56,17 @@
             {
                 headerName: ''
                 ,"field": "fasmauth"            
-                ,"width": 125
-            },
-            {
+                ,"width": 110
+            }
+            ,{
                 headerName: ''
                 ,"field": "fasmdate"            
-                ,"width": 125
+                ,"width": 110
+            }
+            ,{
+                headerName: ''
+                ,"field": "rowaction"            
+                ,"width": 110
             }
         ];
     
