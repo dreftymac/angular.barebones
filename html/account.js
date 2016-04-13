@@ -87,7 +87,7 @@
             //row.fasmstat = Math.round(Math.random() * 100);
             row.fasmstat = 'repealed';
             row.fasmauth = 'by UO Board of Trustees';
-            row.fasmdate = 'Wednesday December 12 2014';
+            row.fasmdate = "12\/10\/2014";
             //row.amountTotal = row.fasmstat + row.fasmauth + row.fasmdate;
 
             row.gbp1 = row.fasmstat * 22;
