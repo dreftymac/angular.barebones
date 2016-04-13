@@ -6,14 +6,14 @@
 
     var columnDefs = [
         {
-            field: "category", rowGroupIndex: 0, hide: true
-        },
-        {
-            headerName: ''
-            ,"field": "fasmstat"
+            field: "fasmhead", rowGroupIndex: 0, hide: true
         },
         {
             headerName: 'Status'
+            ,"field": "fasmstat"
+        },
+        {
+            headerName: ''
             ,"field": "fasmauth"            
         },
         {
@@ -71,7 +71,7 @@
          ,'[5.00] Roles and responsibilities'
          ,'[5.00] Roles and responsibilities'
          ].forEach( function (item) {
-            rows.push({category: 'INTRODUCTION', item: item});
+            rows.push({fasmhead: 'INTRODUCTION', item: item});
         });
 
         ['[5.00] Roles and responsibilities'
@@ -79,21 +79,13 @@
          ,'[5.00] Roles and responsibilities'
          ,'[5.00] Roles and responsibilities'        
          ].forEach( function (item) {
-            rows.push({category: 'ACCOUNTING AND FINANCIAL REPORTING', item: item});
+            rows.push({fasmhead: 'ACCOUNTING AND FINANCIAL REPORTING', item: item});
         });
 
         rows.forEach( function(row) {
-
-            //row.fasmstat = Math.round(Math.random() * 100);
             row.fasmstat = 'repealed';
             row.fasmauth = 'by UO Board of Trustees';
             row.fasmdate = "12\/10\/2014";
-            //row.amountTotal = row.fasmstat + row.fasmauth + row.fasmdate;
-
-            row.gbp1 = row.fasmstat * 22;
-            row.gbp2 = row.fasmauth * 22;
-            row.gbp3 = row.fasmdate * 22;
-            //row.gbpTotal = row.amountTotal * 22;
         });
 
         return rows;
