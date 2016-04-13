@@ -39,13 +39,13 @@
 
 .ag-account .ag-footer-cell {
     border-top: 1px solid grey;
-    border-bottom: 4px double grey;
+    border-bottom: 1px double grey;
 }
 
 .ag-account {
     background-color: ivory;
     border: 1px solid darkgoldenrod;
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 1px 1px 1px #888888;
 }
 
 label {
