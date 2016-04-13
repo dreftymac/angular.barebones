@@ -48,18 +48,18 @@
             {
                 headerName: ''
                 ,"field": "fasmstat"
-                ,"width": 75
-                
+                ,"width": 125
+                ,"cellRenderer": function(params){ console.log(params); return '<span title="the tooltip">{{value}}</span>';}
             },
             {
                 headerName: ''
                 ,"field": "fasmauth"            
-                ,"width": 75
+                ,"width": 125
             },
             {
                 headerName: ''
                 ,"field": "fasmdate"            
-                ,"width": 75
+                ,"width": 125
             }
         ];
     
