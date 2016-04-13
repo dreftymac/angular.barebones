@@ -47,7 +47,7 @@
     }
 
     var groupColumn = {
-        headerName: "Beverage",
+        headerName: "Alpha",
         width: 200,
         field: 'item',
         comparator: agGrid.defaultGroupComparator,
