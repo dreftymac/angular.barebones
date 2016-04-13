@@ -57,19 +57,19 @@
     };
 
     var gridOptions = {
-        columnDefs: columnDefs,
-        rowData: createRowData(),
-        rowSelection: 'single',
-        groupHeaders: true,
-        groupDefaultExpanded: -1,
-        groupIncludeFooter: true,
-        enableColResize: true,
-        enableSorting: false,
-        forPrint: true,
-        groupColumnDef: groupColumn,
-        suppressMenuColumnPanel: true,
-        suppressMenuFilterPanel: true,
-        suppressMenuMainPanel: true,
+        columnDefs              : columnDefs,
+        rowData                 : createRowData(),
+        rowSelection            : 'single',
+        groupHeaders            : true,
+        groupDefaultExpanded    : -1,
+        groupIncludeFooter      : true,
+        enableColResize         : true,
+        enableSorting           : false,
+        forPrint                : true,
+        groupColumnDef          : groupColumn,
+        suppressMenuColumnPanel : true,
+        suppressMenuFilterPanel : true,
+        suppressMenuMainPanel   : true,
         getRowHeight: function(params) {
             if (params.node.footer) {
                 return 40;
