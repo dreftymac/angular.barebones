@@ -67,31 +67,6 @@
 
     function createRowData() {
         var rows = [];
-        //['[5.00] Roles and responsibilities'
-        // ,'[5.00] Roles and responsibilities'
-        // ,'[5.00] Roles and responsibilities'
-        // ,'[5.00] Roles and responsibilities'
-        // ,'[5.00] Roles and responsibilities'
-        // ,'[5.00] Roles and responsibilities'
-        // ,'[5.00] Roles and responsibilities'
-        // ,'[5.00] Roles and responsibilities'
-        // ].forEach( function (item) {
-        //    rows.push({fasmhead: 'INTRODUCTION', item: item});
-        //});
-        //
-        //['[5.00] Roles and responsibilities'
-        // ,'[5.00] Roles and responsibilities'
-        // ,'[5.00] Roles and responsibilities'
-        // ,'[5.00] Roles and responsibilities'        
-        // ].forEach( function (item) {
-        //    rows.push({fasmhead: 'ACCOUNTING AND FINANCIAL REPORTING', item: item});
-        //});
-        //
-        //rows.forEach( function(row) {
-        //    row.fasmstat = 'repealed';
-        //    row.fasmauth = 'by UO Board of Trustees';
-        //    row.fasmdate = "12\/10\/2014";
-        //});
         rows = vinput;
         return rows;
     }
