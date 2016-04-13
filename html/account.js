@@ -50,6 +50,7 @@
         suppressMenuColumnPanel : true,
         suppressMenuFilterPanel : true,
         suppressMenuMainPanel   : true,
+        suppressContextMenu     : true,
         getRowHeight: function(params) {
             if (params.node.footer) {
                 return 40;
