@@ -11,20 +11,24 @@
         {
             headerName: ''
             ,"field": "fasmstat"
+            ,"width": 100
+            
         },
         {
             headerName: ''
             ,"field": "fasmauth"            
+            ,"width": 100
         },
         {
             headerName: ''
             ,"field": "fasmdate"            
+            ,"width": 100
         }
     ];
 
     var groupColumn = {
         headerName:     "Title",
-        width:          400,
+        width:          440,
         field:          'fasmsect',
         comparator:     agGrid.defaultGroupComparator,
         cellRenderer: {
