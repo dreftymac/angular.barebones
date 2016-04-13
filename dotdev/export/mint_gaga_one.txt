@@ -1,0 +1,1236 @@
+$view = new view();
+$view->name = 'view01policy01';
+$view->description = 'Display and manage FPM policy content migrated from OUS FASOM';
+$view->tag = 'default';
+$view->base_table = 'node';
+$view->human_name = 'view01policy01';
+$view->core = 7;
+$view->api_version = '3.0';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+/* Display: Master */
+$handler = $view->new_display('default', 'Master', 'default');
+$handler->display->display_options['title'] = 'view01policy01';
+$handler->display->display_options['use_more_always'] = FALSE;
+$handler->display->display_options['access']['type'] = 'perm';
+$handler->display->display_options['cache']['type'] = 'none';
+$handler->display->display_options['query']['type'] = 'views_query';
+$handler->display->display_options['exposed_form']['type'] = 'basic';
+$handler->display->display_options['pager']['type'] = 'none';
+$handler->display->display_options['pager']['options']['offset'] = '0';
+$handler->display->display_options['style_plugin'] = 'views_json';
+$handler->display->display_options['style_options']['plaintext_output'] = 1;
+$handler->display->display_options['style_options']['remove_newlines'] = 0;
+$handler->display->display_options['style_options']['jsonp_prefix'] = '';
+$handler->display->display_options['style_options']['using_views_api_mode'] = 0;
+$handler->display->display_options['style_options']['object_arrays'] = 0;
+$handler->display->display_options['style_options']['numeric_strings'] = 0;
+$handler->display->display_options['style_options']['bigint_string'] = 0;
+$handler->display->display_options['style_options']['pretty_print'] = 0;
+$handler->display->display_options['style_options']['unescaped_slashes'] = 0;
+$handler->display->display_options['style_options']['unescaped_unicode'] = 0;
+$handler->display->display_options['style_options']['char_encoding'] = array();
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area']['id'] = 'area';
+$handler->display->display_options['header']['area']['table'] = 'views';
+$handler->display->display_options['header']['area']['field'] = 'area';
+/* Field: Content: Title */
+$handler->display->display_options['fields']['title']['id'] = 'title';
+$handler->display->display_options['fields']['title']['table'] = 'node';
+$handler->display->display_options['fields']['title']['field'] = 'title';
+$handler->display->display_options['fields']['title']['label'] = '';
+$handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+$handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+/* Field: Content: lst01fasmhead01 */
+$handler->display->display_options['fields']['field_lst01fashead01']['id'] = 'field_lst01fashead01';
+$handler->display->display_options['fields']['field_lst01fashead01']['table'] = 'field_data_field_lst01fashead01';
+$handler->display->display_options['fields']['field_lst01fashead01']['field'] = 'field_lst01fashead01';
+$handler->display->display_options['fields']['field_lst01fashead01']['label'] = 'fashead';
+$handler->display->display_options['fields']['field_lst01fashead01']['element_label_colon'] = FALSE;
+/* Sort criterion: Content: Post date */
+$handler->display->display_options['sorts']['created']['id'] = 'created';
+$handler->display->display_options['sorts']['created']['table'] = 'node';
+$handler->display->display_options['sorts']['created']['field'] = 'created';
+$handler->display->display_options['sorts']['created']['order'] = 'DESC';
+/* Sort criterion: Content: lst01fasmhead01 (field_lst01fashead01) */
+$handler->display->display_options['sorts']['field_lst01fashead01_value']['id'] = 'field_lst01fashead01_value';
+$handler->display->display_options['sorts']['field_lst01fashead01_value']['table'] = 'field_data_field_lst01fashead01';
+$handler->display->display_options['sorts']['field_lst01fashead01_value']['field'] = 'field_lst01fashead01_value';
+/* Filter criterion: Content: Published */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'node';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = 1;
+$handler->display->display_options['filters']['status']['group'] = 1;
+$handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'page' => 'page',
+);
+/* Filter criterion: Content: lst01fasmhead01 (field_lst01fashead01) */
+$handler->display->display_options['filters']['field_lst01fashead01_value']['id'] = 'field_lst01fashead01_value';
+$handler->display->display_options['filters']['field_lst01fashead01_value']['table'] = 'field_data_field_lst01fashead01';
+$handler->display->display_options['filters']['field_lst01fashead01_value']['field'] = 'field_lst01fashead01_value';
+$handler->display->display_options['filters']['field_lst01fashead01_value']['operator'] = 'not empty';
+$handler->display->display_options['filters']['field_lst01fashead01_value']['value'] = array(
+  0 => '0',
+);
+/* Filter criterion: Content: lst01fasmhead01 (field_lst01fashead01) */
+$handler->display->display_options['filters']['field_lst01fashead01_value_1']['id'] = 'field_lst01fashead01_value_1';
+$handler->display->display_options['filters']['field_lst01fashead01_value_1']['table'] = 'field_data_field_lst01fashead01';
+$handler->display->display_options['filters']['field_lst01fashead01_value_1']['field'] = 'field_lst01fashead01_value';
+$handler->display->display_options['filters']['field_lst01fashead01_value_1']['operator'] = 'not';
+$handler->display->display_options['filters']['field_lst01fashead01_value_1']['value'] = array(
+  0 => '0',
+);
+
+/* Display: jsonp01 */
+$handler = $view->new_display('page', 'jsonp01', 'page_2');
+$handler->display->display_options['defaults']['style_plugin'] = FALSE;
+$handler->display->display_options['style_plugin'] = 'views_json';
+$handler->display->display_options['style_options']['root_object'] = 'Items';
+$handler->display->display_options['style_options']['top_child_object'] = '';
+$handler->display->display_options['style_options']['plaintext_output'] = 1;
+$handler->display->display_options['style_options']['remove_newlines'] = 0;
+$handler->display->display_options['style_options']['format'] = 'exhibit';
+$handler->display->display_options['style_options']['jsonp_prefix'] = 'var jsonp01 = ';
+$handler->display->display_options['style_options']['using_views_api_mode'] = 0;
+$handler->display->display_options['style_options']['object_arrays'] = 0;
+$handler->display->display_options['style_options']['numeric_strings'] = 0;
+$handler->display->display_options['style_options']['bigint_string'] = 0;
+$handler->display->display_options['style_options']['pretty_print'] = 0;
+$handler->display->display_options['style_options']['unescaped_slashes'] = 0;
+$handler->display->display_options['style_options']['unescaped_unicode'] = 0;
+$handler->display->display_options['style_options']['char_encoding'] = array();
+$handler->display->display_options['defaults']['style_options'] = FALSE;
+$handler->display->display_options['defaults']['row_plugin'] = FALSE;
+$handler->display->display_options['defaults']['row_options'] = FALSE;
+$handler->display->display_options['defaults']['fields'] = FALSE;
+/* Field: Content: lst01fasmhead01 */
+$handler->display->display_options['fields']['field_lst01fashead01']['id'] = 'field_lst01fashead01';
+$handler->display->display_options['fields']['field_lst01fashead01']['table'] = 'field_data_field_lst01fashead01';
+$handler->display->display_options['fields']['field_lst01fashead01']['field'] = 'field_lst01fashead01';
+$handler->display->display_options['fields']['field_lst01fashead01']['label'] = 'fasmhead';
+$handler->display->display_options['fields']['field_lst01fashead01']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_lst01fashead01']['element_default_classes'] = FALSE;
+$handler->display->display_options['path'] = 'view01policy01/jsonp01';
+
+/* Display: jsonp02 */
+$handler = $view->new_display('page', 'jsonp02', 'page_3');
+$handler->display->display_options['defaults']['style_plugin'] = FALSE;
+$handler->display->display_options['style_plugin'] = 'views_json';
+$handler->display->display_options['style_options']['root_object'] = 'Items';
+$handler->display->display_options['style_options']['top_child_object'] = '';
+$handler->display->display_options['style_options']['plaintext_output'] = 1;
+$handler->display->display_options['style_options']['remove_newlines'] = 0;
+$handler->display->display_options['style_options']['format'] = 'exhibit';
+$handler->display->display_options['style_options']['jsonp_prefix'] = 'var jsonp02 =';
+$handler->display->display_options['style_options']['using_views_api_mode'] = 0;
+$handler->display->display_options['style_options']['object_arrays'] = 0;
+$handler->display->display_options['style_options']['numeric_strings'] = 0;
+$handler->display->display_options['style_options']['bigint_string'] = 0;
+$handler->display->display_options['style_options']['pretty_print'] = 0;
+$handler->display->display_options['style_options']['unescaped_slashes'] = 0;
+$handler->display->display_options['style_options']['unescaped_unicode'] = 0;
+$handler->display->display_options['style_options']['char_encoding'] = array();
+$handler->display->display_options['defaults']['style_options'] = FALSE;
+$handler->display->display_options['defaults']['row_plugin'] = FALSE;
+$handler->display->display_options['defaults']['row_options'] = FALSE;
+$handler->display->display_options['defaults']['fields'] = FALSE;
+/* Field: Content: lst01fasmhead01 */
+$handler->display->display_options['fields']['field_lst01fashead01']['id'] = 'field_lst01fashead01';
+$handler->display->display_options['fields']['field_lst01fashead01']['table'] = 'field_data_field_lst01fashead01';
+$handler->display->display_options['fields']['field_lst01fashead01']['field'] = 'field_lst01fashead01';
+$handler->display->display_options['fields']['field_lst01fashead01']['label'] = 'fasmhead';
+$handler->display->display_options['fields']['field_lst01fashead01']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_lst01fashead01']['element_default_classes'] = FALSE;
+/* Field: Content: Title */
+$handler->display->display_options['fields']['title']['id'] = 'title';
+$handler->display->display_options['fields']['title']['table'] = 'node';
+$handler->display->display_options['fields']['title']['field'] = 'title';
+$handler->display->display_options['fields']['title']['label'] = 'title';
+$handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+$handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+/* Field: Content: Nid */
+$handler->display->display_options['fields']['nid']['id'] = 'nid';
+$handler->display->display_options['fields']['nid']['table'] = 'node';
+$handler->display->display_options['fields']['nid']['field'] = 'nid';
+$handler->display->display_options['fields']['nid']['label'] = 'nid';
+$handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['nid']['element_default_classes'] = FALSE;
+/* Field: Content: Nid */
+$handler->display->display_options['fields']['nid_1']['id'] = 'nid_1';
+$handler->display->display_options['fields']['nid_1']['table'] = 'node';
+$handler->display->display_options['fields']['nid_1']['field'] = 'nid';
+$handler->display->display_options['fields']['nid_1']['label'] = 'linkedit';
+$handler->display->display_options['fields']['nid_1']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['nid_1']['alter']['text'] = 'https://fpm.uoregon.edu/node/[nid]/edit/policyrevoker';
+$handler->display->display_options['fields']['nid_1']['element_label_colon'] = FALSE;
+/* Field: Content: Nid */
+$handler->display->display_options['fields']['nid_2']['id'] = 'nid_2';
+$handler->display->display_options['fields']['nid_2']['table'] = 'node';
+$handler->display->display_options['fields']['nid_2']['field'] = 'nid';
+$handler->display->display_options['fields']['nid_2']['label'] = 'linkview';
+$handler->display->display_options['fields']['nid_2']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['nid_2']['alter']['text'] = 'https://fpm.uoregon.edu/node/[nid]';
+$handler->display->display_options['fields']['nid_2']['element_label_colon'] = FALSE;
+/* Field: Content: fasmcapt01 */
+$handler->display->display_options['fields']['field_fasmcapt01']['id'] = 'field_fasmcapt01';
+$handler->display->display_options['fields']['field_fasmcapt01']['table'] = 'field_data_field_fasmcapt01';
+$handler->display->display_options['fields']['field_fasmcapt01']['field'] = 'field_fasmcapt01';
+$handler->display->display_options['fields']['field_fasmcapt01']['label'] = 'fasmcapt';
+$handler->display->display_options['fields']['field_fasmcapt01']['element_label_colon'] = FALSE;
+/* Field: Content: fasmlastmodd */
+$handler->display->display_options['fields']['field_fasmlastmodd']['id'] = 'field_fasmlastmodd';
+$handler->display->display_options['fields']['field_fasmlastmodd']['table'] = 'field_data_field_fasmlastmodd';
+$handler->display->display_options['fields']['field_fasmlastmodd']['field'] = 'field_fasmlastmodd';
+$handler->display->display_options['fields']['field_fasmlastmodd']['label'] = 'fasmdate';
+$handler->display->display_options['fields']['field_fasmlastmodd']['alter']['alter_text'] = TRUE;
+$handler->display->display_options['fields']['field_fasmlastmodd']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['field_fasmlastmodd']['element_default_classes'] = FALSE;
+$handler->display->display_options['fields']['field_fasmlastmodd']['settings'] = array(
+  'format_type' => 'short',
+  'fromto' => '',
+  'multiple_number' => '',
+  'multiple_from' => '',
+  'multiple_to' => '',
+  'show_remaining_days' => 0,
+);
+/* Field: Content: fasmsect01 */
+$handler->display->display_options['fields']['field_fasmsect']['id'] = 'field_fasmsect';
+$handler->display->display_options['fields']['field_fasmsect']['table'] = 'field_data_field_fasmsect';
+$handler->display->display_options['fields']['field_fasmsect']['field'] = 'field_fasmsect';
+$handler->display->display_options['fields']['field_fasmsect']['label'] = 'fasmsect';
+$handler->display->display_options['fields']['field_fasmsect']['element_label_colon'] = FALSE;
+/* Field: Content: fasmstat01 */
+$handler->display->display_options['fields']['field_fasmstat01']['id'] = 'field_fasmstat01';
+$handler->display->display_options['fields']['field_fasmstat01']['table'] = 'field_data_field_fasmstat01';
+$handler->display->display_options['fields']['field_fasmstat01']['field'] = 'field_fasmstat01';
+$handler->display->display_options['fields']['field_fasmstat01']['label'] = 'fasmstat';
+$handler->display->display_options['fields']['field_fasmstat01']['element_label_colon'] = FALSE;
+/* Field: Content: lst01fasmhead01 */
+$handler->display->display_options['fields']['field_lst01fashead01_1']['id'] = 'field_lst01fashead01_1';
+$handler->display->display_options['fields']['field_lst01fashead01_1']['table'] = 'field_data_field_lst01fashead01';
+$handler->display->display_options['fields']['field_lst01fashead01_1']['field'] = 'field_lst01fashead01';
+$handler->display->display_options['fields']['field_lst01fashead01_1']['label'] = 'fasmhead';
+$handler->display->display_options['fields']['field_lst01fashead01_1']['element_label_colon'] = FALSE;
+/* Field: Content: Status changed by */
+$handler->display->display_options['fields']['field_fasmrepp01']['id'] = 'field_fasmrepp01';
+$handler->display->display_options['fields']['field_fasmrepp01']['table'] = 'field_data_field_fasmrepp01';
+$handler->display->display_options['fields']['field_fasmrepp01']['field'] = 'field_fasmrepp01';
+$handler->display->display_options['fields']['field_fasmrepp01']['label'] = 'fasmauth';
+$handler->display->display_options['fields']['field_fasmrepp01']['element_label_colon'] = FALSE;
+$handler->display->display_options['path'] = 'view01policy01/jsonp02';
+
+/* Display: vbo01update02 */
+$handler = $view->new_display('page', 'vbo01update02', 'page_4');
+$handler->display->display_options['display_description'] = 'update a field value in the nodes';
+$handler->display->display_options['defaults']['style_plugin'] = FALSE;
+$handler->display->display_options['style_plugin'] = 'table';
+$handler->display->display_options['style_options']['columns'] = array(
+  'title' => 'title',
+  'views_bulk_operations' => 'views_bulk_operations',
+);
+$handler->display->display_options['style_options']['default'] = '-1';
+$handler->display->display_options['style_options']['info'] = array(
+  'title' => array(
+    'sortable' => 0,
+    'default_sort_order' => 'asc',
+    'align' => '',
+    'separator' => '',
+    'empty_column' => 0,
+  ),
+  'views_bulk_operations' => array(
+    'align' => '',
+    'separator' => '',
+    'empty_column' => 0,
+  ),
+);
+$handler->display->display_options['defaults']['style_options'] = FALSE;
+$handler->display->display_options['defaults']['row_plugin'] = FALSE;
+$handler->display->display_options['defaults']['row_options'] = FALSE;
+$handler->display->display_options['defaults']['fields'] = FALSE;
+/* Field: Bulk operations: Content revision */
+$handler->display->display_options['fields']['views_bulk_operations']['id'] = 'views_bulk_operations';
+$handler->display->display_options['fields']['views_bulk_operations']['table'] = 'node_revision';
+$handler->display->display_options['fields']['views_bulk_operations']['field'] = 'views_bulk_operations';
+$handler->display->display_options['fields']['views_bulk_operations']['label'] = 'update02';
+$handler->display->display_options['fields']['views_bulk_operations']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['views_bulk_operations']['element_default_classes'] = FALSE;
+$handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['display_type'] = '0';
+$handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['enable_select_all_pages'] = 1;
+$handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['row_clickable'] = 1;
+$handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['force_single'] = 0;
+$handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['entity_load_capacity'] = '10';
+$handler->display->display_options['fields']['views_bulk_operations']['vbo_operations'] = array(
+  'action::views_bulk_operations_modify_action' => array(
+    'selected' => 1,
+    'postpone_processing' => 0,
+    'skip_confirmation' => 0,
+    'override_label' => 0,
+    'label' => '',
+    'settings' => array(
+      'show_all_tokens' => 0,
+      'display_values' => array(
+        'page::field_fasmstat01' => 'page::field_fasmstat01',
+      ),
+    ),
+  ),
+);
+/* Field: Content: Title */
+$handler->display->display_options['fields']['title']['id'] = 'title';
+$handler->display->display_options['fields']['title']['table'] = 'node';
+$handler->display->display_options['fields']['title']['field'] = 'title';
+$handler->display->display_options['fields']['title']['label'] = '';
+$handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+$handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+$handler->display->display_options['defaults']['sorts'] = FALSE;
+/* Sort criterion: Content: Title */
+$handler->display->display_options['sorts']['title']['id'] = 'title';
+$handler->display->display_options['sorts']['title']['table'] = 'node';
+$handler->display->display_options['sorts']['title']['field'] = 'title';
+$handler->display->display_options['defaults']['filter_groups'] = FALSE;
+$handler->display->display_options['defaults']['filters'] = FALSE;
+/* Filter criterion: Content: Published */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'node';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = 1;
+$handler->display->display_options['filters']['status']['group'] = 1;
+$handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'page' => 'page',
+);
+$handler->display->display_options['filters']['type']['group'] = 1;
+$handler->display->display_options['path'] = 'view01policy01/vbo01update02';
+
+/* Display: vbo01update01 */
+$handler = $view->new_display('page', 'vbo01update01', 'page_1');
+$handler->display->display_options['defaults']['style_plugin'] = FALSE;
+$handler->display->display_options['style_plugin'] = 'table';
+$handler->display->display_options['style_options']['columns'] = array(
+  'title' => 'title',
+  'views_bulk_operations' => 'views_bulk_operations',
+);
+$handler->display->display_options['style_options']['default'] = '-1';
+$handler->display->display_options['style_options']['info'] = array(
+  'title' => array(
+    'sortable' => 0,
+    'default_sort_order' => 'asc',
+    'align' => '',
+    'separator' => '',
+    'empty_column' => 0,
+  ),
+  'views_bulk_operations' => array(
+    'align' => '',
+    'separator' => '',
+    'empty_column' => 0,
+  ),
+);
+$handler->display->display_options['defaults']['style_options'] = FALSE;
+$handler->display->display_options['defaults']['row_plugin'] = FALSE;
+$handler->display->display_options['defaults']['row_options'] = FALSE;
+$handler->display->display_options['defaults']['fields'] = FALSE;
+/* Field: Bulk operations: Content revision */
+$handler->display->display_options['fields']['views_bulk_operations']['id'] = 'views_bulk_operations';
+$handler->display->display_options['fields']['views_bulk_operations']['table'] = 'node_revision';
+$handler->display->display_options['fields']['views_bulk_operations']['field'] = 'views_bulk_operations';
+$handler->display->display_options['fields']['views_bulk_operations']['label'] = 'update01';
+$handler->display->display_options['fields']['views_bulk_operations']['element_label_colon'] = FALSE;
+$handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['display_type'] = '0';
+$handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['enable_select_all_pages'] = 1;
+$handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['row_clickable'] = 1;
+$handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['force_single'] = 0;
+$handler->display->display_options['fields']['views_bulk_operations']['vbo_settings']['entity_load_capacity'] = '10';
+$handler->display->display_options['fields']['views_bulk_operations']['vbo_operations'] = array(
+  'action::views_bulk_operations_modify_action' => array(
+    'selected' => 1,
+    'postpone_processing' => 0,
+    'skip_confirmation' => 0,
+    'override_label' => 0,
+    'label' => '',
+    'settings' => array(
+      'show_all_tokens' => 0,
+      'display_values' => array(
+        'page::field_lst01fashead01' => 'page::field_lst01fashead01',
+      ),
+    ),
+  ),
+);
+/* Field: Content: Title */
+$handler->display->display_options['fields']['title']['id'] = 'title';
+$handler->display->display_options['fields']['title']['table'] = 'node';
+$handler->display->display_options['fields']['title']['field'] = 'title';
+$handler->display->display_options['fields']['title']['label'] = '';
+$handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+$handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+$handler->display->display_options['defaults']['sorts'] = FALSE;
+/* Sort criterion: Content: Title */
+$handler->display->display_options['sorts']['title']['id'] = 'title';
+$handler->display->display_options['sorts']['title']['table'] = 'node';
+$handler->display->display_options['sorts']['title']['field'] = 'title';
+$handler->display->display_options['defaults']['filter_groups'] = FALSE;
+$handler->display->display_options['defaults']['filters'] = FALSE;
+/* Filter criterion: Content: Published */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'node';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = 1;
+$handler->display->display_options['filters']['status']['group'] = 1;
+$handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'page' => 'page',
+);
+/* Filter criterion: Content: lst01fasmhead01 (field_lst01fashead01) */
+$handler->display->display_options['filters']['field_lst01fashead01_value']['id'] = 'field_lst01fashead01_value';
+$handler->display->display_options['filters']['field_lst01fashead01_value']['table'] = 'field_data_field_lst01fashead01';
+$handler->display->display_options['filters']['field_lst01fashead01_value']['field'] = 'field_lst01fashead01_value';
+$handler->display->display_options['filters']['field_lst01fashead01_value']['operator'] = 'empty';
+$handler->display->display_options['path'] = 'view01policy01/vbo01update01';
+
+/* Display: results01 */
+$handler = $view->new_display('page', 'results01', 'page');
+$handler->display->display_options['defaults']['title'] = FALSE;
+$handler->display->display_options['defaults']['style_plugin'] = FALSE;
+$handler->display->display_options['style_plugin'] = 'default';
+$handler->display->display_options['style_options']['default_row_class'] = FALSE;
+$handler->display->display_options['style_options']['row_class_special'] = FALSE;
+$handler->display->display_options['defaults']['style_options'] = FALSE;
+$handler->display->display_options['defaults']['row_plugin'] = FALSE;
+$handler->display->display_options['row_plugin'] = 'fields';
+$handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+$handler->display->display_options['defaults']['row_options'] = FALSE;
+$handler->display->display_options['defaults']['header'] = FALSE;
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area']['id'] = 'area';
+$handler->display->display_options['header']['area']['table'] = 'views';
+$handler->display->display_options['header']['area']['field'] = 'area';
+$handler->display->display_options['header']['area']['label'] = 'inc000';
+$handler->display->display_options['header']['area']['empty'] = TRUE;
+$handler->display->display_options['header']['area']['content'] = '    <!-- ------------------------------------------------------------------------ -->
+    <script type="text/javascript"
+            src="https://s69682.gridserver.com/_weblib/js/angularjs/underscore.min.js"
+            ></script>
+    <script type="text/javascript"
+            src="https://s69682.gridserver.com/_weblib/js/nunjucks/nunjucks.2.4.1.js"
+            ></script>    
+    <script type="text/javascript"
+            src="https://s69682.gridserver.com/_weblib/js/jquery/jquery-2.2.2.js"
+            ></script>';
+$handler->display->display_options['header']['area']['format'] = 'full_html';
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area_1']['id'] = 'area_1';
+$handler->display->display_options['header']['area_1']['table'] = 'views';
+$handler->display->display_options['header']['area_1']['field'] = 'area';
+$handler->display->display_options['header']['area_1']['label'] = 'inc001';
+$handler->display->display_options['header']['area_1']['empty'] = TRUE;
+$handler->display->display_options['header']['area_1']['content'] = '<!-- ------------------------------------------------------------------------ -->
+<script>
+$.getJSON("https://fpm.uoregon.edu/view01policy01/jsonp02", function(data) {
+    var noop
+        ,data000
+        ,data001
+        ,tmpl001
+        ,rend001
+        ;
+    // initialize from raw JSON input
+    // data000 = data;
+    data001       =   data;
+    // Convert flat simpletable into a workbook. Rows in each worksheet grouped by fasmhead field.
+    data001       =   _.groupBy( data001, function(recc){ vout=recc[\'fasmhead\']; return(vout);} );
+    // Create dictionary
+    // * wkbk001
+    // * worksheet name list
+    data001       =   {"noop":"_x_"
+         ,"wkbk001":       data001
+         ,"wkshnamelist":  _.sortBy(_.keys(data001), function(item){return item.toString();})
+       };
+    // handle one-off INTRODUCTION kludge until we get a \'weight\' value on each worksheet name
+    data001[\'wkshnamelist\'] = _.filter(data001[\'wkshnamelist\'], function(item){ return item != \'INTRODUCTION\'; });
+    data001[\'wkshnamelist\'] = [\'INTRODUCTION\'].concat(data001[\'wkshnamelist\']);
+    // sort each worksheet in wkbk001 by title field
+    data001[\'wkbk001\']      = _.mapObject(data001[\'wkbk001\'], function(val, key){ return _.sortBy( val, \'title\' );} );
+    // render output
+    tmpl001 = $(\'#tmpl001\').html();
+    rend001 = nunjucks.renderString( tmpl001, data001 );
+    $(\'#output\').html(rend001);
+    // console log 
+    console.log( data001 );
+    alert( rend001 );
+});
+</script>';
+$handler->display->display_options['header']['area_1']['format'] = 'full_html';
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area_2']['id'] = 'area_2';
+$handler->display->display_options['header']['area_2']['table'] = 'views';
+$handler->display->display_options['header']['area_2']['field'] = 'area';
+$handler->display->display_options['header']['area_2']['label'] = 'inc002';
+$handler->display->display_options['header']['area_2']['empty'] = TRUE;
+$handler->display->display_options['header']['area_2']['content'] = '<script type="text/html" id="tmpl001">
+  <h2>Output Header</h2>
+  {% for sheet in wkshnamelist -%}
+  <h3>{{ sheet }}</h3>
+  <ul>
+  {% for ixx in range(0,wkbk001[sheet] |length()) -%}        
+    <li><a href="{{ wkbk001[sheet][ixx].nid }}">{{ wkbk001[sheet][ixx].title }}</a></li>
+  {% endfor %}
+  </ul>      
+  {% endfor %}
+</script>';
+$handler->display->display_options['header']['area_2']['format'] = 'full_html';
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area_3']['id'] = 'area_3';
+$handler->display->display_options['header']['area_3']['table'] = 'views';
+$handler->display->display_options['header']['area_3']['field'] = 'area';
+$handler->display->display_options['header']['area_3']['label'] = 'inc003';
+$handler->display->display_options['header']['area_3']['empty'] = TRUE;
+$handler->display->display_options['header']['area_3']['content'] = '<div id="output">Hello World!</div>';
+$handler->display->display_options['header']['area_3']['format'] = 'full_html';
+$handler->display->display_options['defaults']['fields'] = FALSE;
+/* Field: Content: Title */
+$handler->display->display_options['fields']['title']['id'] = 'title';
+$handler->display->display_options['fields']['title']['table'] = 'node';
+$handler->display->display_options['fields']['title']['field'] = 'title';
+$handler->display->display_options['fields']['title']['label'] = '';
+$handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+$handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+/* Field: Content: lst01fasmhead01 */
+$handler->display->display_options['fields']['field_lst01fashead01']['id'] = 'field_lst01fashead01';
+$handler->display->display_options['fields']['field_lst01fashead01']['table'] = 'field_data_field_lst01fashead01';
+$handler->display->display_options['fields']['field_lst01fashead01']['field'] = 'field_lst01fashead01';
+$handler->display->display_options['fields']['field_lst01fashead01']['label'] = 'fashead';
+$handler->display->display_options['fields']['field_lst01fashead01']['element_label_colon'] = FALSE;
+/* Field: Content: Nid */
+$handler->display->display_options['fields']['nid']['id'] = 'nid';
+$handler->display->display_options['fields']['nid']['table'] = 'node';
+$handler->display->display_options['fields']['nid']['field'] = 'nid';
+$handler->display->display_options['fields']['nid']['label'] = 'nid';
+$handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+$handler->display->display_options['defaults']['filter_groups'] = FALSE;
+$handler->display->display_options['defaults']['filters'] = FALSE;
+/* Filter criterion: Content: Published */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'node';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = 1;
+$handler->display->display_options['filters']['status']['group'] = 1;
+$handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'page' => 'page',
+);
+/* Filter criterion: Content: lst01fasmhead01 (field_lst01fashead01) */
+$handler->display->display_options['filters']['field_lst01fashead01_value']['id'] = 'field_lst01fashead01_value';
+$handler->display->display_options['filters']['field_lst01fashead01_value']['table'] = 'field_data_field_lst01fashead01';
+$handler->display->display_options['filters']['field_lst01fashead01_value']['field'] = 'field_lst01fashead01_value';
+$handler->display->display_options['filters']['field_lst01fashead01_value']['operator'] = 'not empty';
+$handler->display->display_options['filters']['field_lst01fashead01_value']['value'] = array(
+  0 => '0',
+);
+/* Filter criterion: Content: lst01fasmhead01 (field_lst01fashead01) */
+$handler->display->display_options['filters']['field_lst01fashead01_value_1']['id'] = 'field_lst01fashead01_value_1';
+$handler->display->display_options['filters']['field_lst01fashead01_value_1']['table'] = 'field_data_field_lst01fashead01';
+$handler->display->display_options['filters']['field_lst01fashead01_value_1']['field'] = 'field_lst01fashead01_value';
+$handler->display->display_options['filters']['field_lst01fashead01_value_1']['operator'] = 'not';
+$handler->display->display_options['filters']['field_lst01fashead01_value_1']['value'] = array(
+  0 => '0',
+);
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid']['id'] = 'nid';
+$handler->display->display_options['filters']['nid']['table'] = 'node';
+$handler->display->display_options['filters']['nid']['field'] = 'nid';
+$handler->display->display_options['filters']['nid']['value']['value'] = '-1';
+$handler->display->display_options['path'] = 'view01policy01/results01';
+
+/* Display: results02 */
+$handler = $view->new_display('page', 'results02', 'page_5');
+$handler->display->display_options['defaults']['title'] = FALSE;
+$handler->display->display_options['title'] = 'FPM Policy Manager';
+$handler->display->display_options['display_description'] = 'report output';
+$handler->display->display_options['defaults']['style_plugin'] = FALSE;
+$handler->display->display_options['style_plugin'] = 'default';
+$handler->display->display_options['style_options']['default_row_class'] = FALSE;
+$handler->display->display_options['style_options']['row_class_special'] = FALSE;
+$handler->display->display_options['defaults']['style_options'] = FALSE;
+$handler->display->display_options['defaults']['row_plugin'] = FALSE;
+$handler->display->display_options['row_plugin'] = 'fields';
+$handler->display->display_options['defaults']['row_options'] = FALSE;
+$handler->display->display_options['defaults']['header'] = FALSE;
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area']['id'] = 'area';
+$handler->display->display_options['header']['area']['table'] = 'views';
+$handler->display->display_options['header']['area']['field'] = 'area';
+$handler->display->display_options['header']['area']['label'] = 'init00';
+$handler->display->display_options['header']['area']['empty'] = TRUE;
+$handler->display->display_options['header']['area']['content'] = '<!-- { init00 } -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"            ></script>
+<script src="https://s69682.gridserver.com/_weblib/js/angularjs/angular.ng-modules.js"        ></script>
+<script src="https://s69682.gridserver.com/_weblib/js/angularjs/underscore.min.js"            ></script>
+<style> 
+.breadcrumb {display:none;}
+</style>';
+$handler->display->display_options['header']['area']['format'] = 'full_html';
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area_1']['id'] = 'area_1';
+$handler->display->display_options['header']['area_1']['table'] = 'views';
+$handler->display->display_options['header']['area_1']['field'] = 'area';
+$handler->display->display_options['header']['area_1']['label'] = 'init01';
+$handler->display->display_options['header']['area_1']['empty'] = TRUE;
+$handler->display->display_options['header']['area_1']['content'] = '<!-- { init01 } -->
+<script src="https://fpm.uoregon.edu/view01policy01/jsonp02"       ></script>';
+$handler->display->display_options['header']['area_1']['format'] = 'full_html';
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area_2']['id'] = 'area_2';
+$handler->display->display_options['header']['area_2']['table'] = 'views';
+$handler->display->display_options['header']['area_2']['field'] = 'area';
+$handler->display->display_options['header']['area_2']['label'] = 'init02';
+$handler->display->display_options['header']['area_2']['empty'] = TRUE;
+$handler->display->display_options['header']['area_2']['content'] = '<!-- { init02 } -->
+<script>
+  var moduleA = angular.module("MyModuleA", [])
+        .filter(\'to_trusted\', [\'$sce\', function($sce){
+          return function(text) {
+            return $sce.trustAsHtml(text);
+          };
+        }])
+        .filter(\'capitalize\', function() {
+          return function(input, scope) {
+            if (input!=null) {
+                var stringArr = input.split(" ");
+                var result = "";
+                var cap = stringArr.length;
+                for(var x = 0; x < cap; x++) {
+                  stringArr[x].toLowerCase();
+                  if(x === cap - 1) {
+                    result += stringArr[x].substring(0,1).toUpperCase() + stringArr[x].substring(1);
+                  } else {
+                    result += stringArr[x].substring(0,1).toUpperCase() + stringArr[x].substring(1) + " ";
+                  }
+                }
+              return result;
+            }
+          }
+        })
+        ;
+  moduleA.controller("MyControllerA", function($scope) {
+      // ------------------------------------------------------------------------
+      $scope.grpfield01             =   \'fasmhead\';
+      $scope.datatable01            =   _.clone( jsonp02["Items"] );
+      $scope.datatable01            =   _.map($scope.datatable01 ,
+                                              function(row){
+                                                row[$scope.grpfield01] = row[\'title\'].toUpperCase();
+                                                return row;
+                                              });
+      $scope.datatable01            =   _.sortBy($scope.datatable01,  $scope.grpfield01);
+      $scope.datatable01            =   _.groupBy($scope.datatable01, $scope.grpfield01);
+      $scope.datatable02            =   _.keys(_.clone($scope.datatable01));
+      $scope.datatable02.unshift(\'^\');
+      console.log( $scope.datatable01 );
+      console.log( $scope.datatable02 );
+  });
+</script>';
+$handler->display->display_options['header']['area_2']['format'] = 'full_html';
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area_3']['id'] = 'area_3';
+$handler->display->display_options['header']['area_3']['table'] = 'views';
+$handler->display->display_options['header']['area_3']['field'] = 'area';
+$handler->display->display_options['header']['area_3']['label'] = 'init04';
+$handler->display->display_options['header']['area_3']['empty'] = TRUE;
+$handler->display->display_options['header']['area_3']['content'] = '<!-- { init04 } -->     
+<div ng-module="MyModuleA" class="main-container container">
+  <div ng-controller="MyControllerA" class="row" style="margin-left:1em;padding-top:0.50em;padding-bottom:1em;">
+     <div class="col-md-12">
+       <div class="btn-toolbar" role="toolbar">
+        <ul>
+        <li class="ng-cloak" ng-repeat="item in datatable01">{{item[0].fasmhead}}</li>
+        </ul>
+       </div>
+     </div>
+  </div>
+</div>';
+$handler->display->display_options['header']['area_3']['format'] = 'full_html';
+$handler->display->display_options['defaults']['filter_groups'] = FALSE;
+$handler->display->display_options['defaults']['filters'] = FALSE;
+/* Filter criterion: Content: Published */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'node';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = 1;
+$handler->display->display_options['filters']['status']['group'] = 1;
+$handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'page' => 'page',
+);
+$handler->display->display_options['filters']['type']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid']['id'] = 'nid';
+$handler->display->display_options['filters']['nid']['table'] = 'node';
+$handler->display->display_options['filters']['nid']['field'] = 'nid';
+$handler->display->display_options['filters']['nid']['value']['value'] = '-1';
+$handler->display->display_options['path'] = 'view01policy01/results02';
+
+/* Display: results03 */
+$handler = $view->new_display('page', 'results03', 'page_6');
+$handler->display->display_options['defaults']['title'] = FALSE;
+$handler->display->display_options['title'] = 'FPM Policy Manager';
+$handler->display->display_options['display_description'] = 'report output';
+$handler->display->display_options['defaults']['cache'] = FALSE;
+$handler->display->display_options['cache']['type'] = 'time';
+$handler->display->display_options['cache']['results_lifespan'] = '300';
+$handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+$handler->display->display_options['cache']['output_lifespan'] = '300';
+$handler->display->display_options['cache']['output_lifespan_custom'] = '0';
+$handler->display->display_options['defaults']['style_plugin'] = FALSE;
+$handler->display->display_options['style_plugin'] = 'default';
+$handler->display->display_options['style_options']['default_row_class'] = FALSE;
+$handler->display->display_options['style_options']['row_class_special'] = FALSE;
+$handler->display->display_options['defaults']['style_options'] = FALSE;
+$handler->display->display_options['defaults']['row_plugin'] = FALSE;
+$handler->display->display_options['row_plugin'] = 'fields';
+$handler->display->display_options['defaults']['row_options'] = FALSE;
+$handler->display->display_options['defaults']['header'] = FALSE;
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area']['id'] = 'area';
+$handler->display->display_options['header']['area']['table'] = 'views';
+$handler->display->display_options['header']['area']['field'] = 'area';
+$handler->display->display_options['header']['area']['label'] = 'init00';
+$handler->display->display_options['header']['area']['content'] = '<!-- { init00 } -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"            ></script>
+<script src="https://s69682.gridserver.com/_weblib/js/angularjs/angular.ng-modules.js"        ></script>
+<script src="https://s69682.gridserver.com/_weblib/js/angularjs/underscore.min.js"            ></script>
+<style> 
+.breadcrumb {display:none;}
+</style>';
+$handler->display->display_options['header']['area']['format'] = 'full_html';
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area_1']['id'] = 'area_1';
+$handler->display->display_options['header']['area_1']['table'] = 'views';
+$handler->display->display_options['header']['area_1']['field'] = 'area';
+$handler->display->display_options['header']['area_1']['label'] = 'init01';
+$handler->display->display_options['header']['area_1']['content'] = '<!-- { init01 } -->
+<script src="https://fpm.uoregon.edu/view01policy01/jsonp02"       ></script>';
+$handler->display->display_options['header']['area_1']['format'] = 'full_html';
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area_2']['id'] = 'area_2';
+$handler->display->display_options['header']['area_2']['table'] = 'views';
+$handler->display->display_options['header']['area_2']['field'] = 'area';
+$handler->display->display_options['header']['area_2']['label'] = 'init02';
+$handler->display->display_options['header']['area_2']['content'] = '<!-- { init02 } -->
+<script>
+  var moduleA = angular.module("MyModuleA", [])
+        .filter(\'to_trusted\', [\'$sce\', function($sce){
+          return function(text) {
+            return $sce.trustAsHtml(text);
+          };
+        }])
+        .filter(\'capitalize\', function() {
+          return function(input, scope) {
+            if (input!=null) {
+                var stringArr = input.split(" ");
+                var result = "";
+                var cap = stringArr.length;
+                for(var x = 0; x < cap; x++) {
+                  stringArr[x].toLowerCase();
+                  if(x === cap - 1) {
+                    result += stringArr[x].substring(0,1).toUpperCase() + stringArr[x].substring(1);
+                  } else {
+                    result += stringArr[x].substring(0,1).toUpperCase() + stringArr[x].substring(1) + " ";
+                  }
+                }
+              return result;
+            }
+          }
+        })
+        ;
+  moduleA.controller("MyControllerA", function($scope) {
+      // ------------------------------------------------------------------------
+      $scope.grpfield01             =   \'fasmhead\';
+      $scope.datatable01            =   _.clone( jsonp02["Items"] );
+      $scope.datatable01            =   _.map($scope.datatable01 ,
+                                              function(row){
+                                                row[$scope.grpfield01] = row[\'title\'].toUpperCase();
+                                                return row;
+                                              });
+      $scope.datatable01            =   _.sortBy($scope.datatable01,  $scope.grpfield01);
+      $scope.datatable01            =   _.groupBy($scope.datatable01, $scope.grpfield01);
+      $scope.datatable02            =   _.keys(_.clone($scope.datatable01));
+      $scope.datatable02.unshift(\'^\');
+      console.log( $scope.datatable01 );
+      console.log( $scope.datatable02 );
+  });
+</script>';
+$handler->display->display_options['header']['area_2']['format'] = 'full_html';
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area_3']['id'] = 'area_3';
+$handler->display->display_options['header']['area_3']['table'] = 'views';
+$handler->display->display_options['header']['area_3']['field'] = 'area';
+$handler->display->display_options['header']['area_3']['label'] = 'init04';
+$handler->display->display_options['header']['area_3']['content'] = '<!-- { init04 } -->     
+<div ng-module="MyModuleA" class="main-container container">
+  <div ng-controller="MyControllerA" class="row" style="margin-left:1em;padding-top:0.50em;padding-bottom:1em;">
+     <div class="col-md-12">
+       <div class="btn-toolbar" role="toolbar">
+        <ul>
+        <li class="ng-cloak" ng-repeat="item in datatable01">{{item[0].fasmhead}}</li>
+        </ul>
+       </div>
+     </div>
+  </div>
+</div>';
+$handler->display->display_options['header']['area_3']['format'] = 'full_html';
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area_4']['id'] = 'area_4';
+$handler->display->display_options['header']['area_4']['table'] = 'views';
+$handler->display->display_options['header']['area_4']['field'] = 'area';
+$handler->display->display_options['header']['area_4']['label'] = 'init05';
+$handler->display->display_options['header']['area_4']['empty'] = TRUE;
+$handler->display->display_options['header']['area_4']['content'] = '    <!-- { init00 } -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js" ></script>
+    <script src="https://s69682.gridserver.com/_weblib/js/angularjs/angular.ng-modules.js" ></script>
+    <script src="https://s69682.gridserver.com/_weblib/js/angularjs/underscore.min.js" ></script>
+    
+    <!-- { init01 } -->
+    <script src="https://fpm.uoregon.edu/view01policy01/jsonp01" ></script>
+    <script src="https://fpm.uoregon.edu/view01policy01/jsonp02" ></script>
+
+    <!-- { init02 } -->
+    <script>
+      var moduleA = angular.module("MyModuleA", [])
+            .filter(\'to_trusted\', [\'$sce\', function($sce){
+              return function(text) {
+                return $sce.trustAsHtml(text);
+              };
+            }])
+            .filter(\'capitalize\', function() {
+              return function(input, scope) {
+                if (input!=null) {
+                    var stringArr = input.split(" ");
+                    var result = "";
+                    var cap = stringArr.length;
+                    for(var x = 0; x < cap; x++) {
+                      stringArr[x].toLowerCase();
+                      if(x === cap - 1) {
+                        result += stringArr[x].substring(0,1).toUpperCase() + stringArr[x].substring(1);
+                      } else {
+                        result += stringArr[x].substring(0,1).toUpperCase() + stringArr[x].substring(1) + " ";
+                      }
+                    }
+                  return result;
+                }
+              }
+            })
+            ;
+      moduleA.controller("MyControllerA", function($scope) {
+          // ------------------------------------------------------------------------
+          $scope.grpfield01             =   \'fasmhead\';
+          $scope.datatable01            =   _.clone( jsonp01["Items"] );
+          $scope.datatable02            =   _.clone( jsonp02["Items"] );
+          //
+          $scope.datatable02            =   _.map( $scope.datatable02 , function(item){
+                  vout = { "noop":0
+                    ,"weight":item["fasmhead"].charCodeAt(0)
+                    ,"fasmhead":item["fasmhead"]
+                    ,"title":item["title"]
+                    ,"nid":item["nid"]
+                    ,"linkedit":item["linkedit"]
+                    ,"linkview":item["linkview"]
+                    };
+                  if(vout["fasmhead"]==\'INTRODUCTION\'){vout["weight"]=\'-5\';}
+                  return vout;
+                  });
+          $scope.datatable02            =   _.sortBy($scope.datatable02, "weight");          
+          $scope.datatable02            =   _.groupBy($scope.datatable02, $scope.grpfield01);
+          //;;
+          //console.log( $scope.datatable02 );
+          //console.log( $scope.datatable02 );
+      });
+    </script>
+
+    <style> 
+    .breadcrumb {display:none;}
+    </style> 
+
+    <!-- { init05 } -->     
+    <div ng-module="MyModuleA" class="main-container container">
+      <div ng-controller="MyControllerA" class="row" style="margin-left:1em;padding-top:0.50em;padding-bottom:1em;">
+         <div class="col-md-12">
+
+            <dl ng-repeat="tmpgrp in datatable02">
+              <dt>{{ tmpgrp[0].fasmhead }}</dt>
+              <dd>
+                <ul>
+                  <li ng-repeat="row in tmpgrp">
+                    <a ng-href="{{row.linkview}}"><i class="icon-book icon-white"></i>{{ row.title }}</a>
+                    [<a ng-href="{{row.linkedit}}"><i class="icon-book icon-white"></i>{{ \'edit\' }}</a>]
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+
+         </div>
+      </div>
+    </div>
+';
+$handler->display->display_options['header']['area_4']['format'] = 'full_html';
+$handler->display->display_options['defaults']['filter_groups'] = FALSE;
+$handler->display->display_options['defaults']['filters'] = FALSE;
+/* Filter criterion: Content: Published */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'node';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = 1;
+$handler->display->display_options['filters']['status']['group'] = 1;
+$handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'page' => 'page',
+);
+$handler->display->display_options['filters']['type']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid']['id'] = 'nid';
+$handler->display->display_options['filters']['nid']['table'] = 'node';
+$handler->display->display_options['filters']['nid']['field'] = 'nid';
+$handler->display->display_options['filters']['nid']['value']['value'] = '-1';
+$handler->display->display_options['path'] = 'view01policy01/results03';
+
+/* Display: results04 */
+$handler = $view->new_display('page', 'results04', 'page_8');
+$handler->display->display_options['defaults']['title'] = FALSE;
+$handler->display->display_options['title'] = 'FPM Policy Manager';
+$handler->display->display_options['display_description'] = 'report output';
+$handler->display->display_options['defaults']['cache'] = FALSE;
+$handler->display->display_options['cache']['type'] = 'time';
+$handler->display->display_options['cache']['results_lifespan'] = '300';
+$handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+$handler->display->display_options['cache']['output_lifespan'] = '300';
+$handler->display->display_options['cache']['output_lifespan_custom'] = '0';
+$handler->display->display_options['defaults']['style_plugin'] = FALSE;
+$handler->display->display_options['style_plugin'] = 'default';
+$handler->display->display_options['style_options']['default_row_class'] = FALSE;
+$handler->display->display_options['style_options']['row_class_special'] = FALSE;
+$handler->display->display_options['defaults']['style_options'] = FALSE;
+$handler->display->display_options['defaults']['row_plugin'] = FALSE;
+$handler->display->display_options['row_plugin'] = 'fields';
+$handler->display->display_options['defaults']['row_options'] = FALSE;
+$handler->display->display_options['defaults']['header'] = FALSE;
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area']['id'] = 'area';
+$handler->display->display_options['header']['area']['table'] = 'views';
+$handler->display->display_options['header']['area']['field'] = 'area';
+$handler->display->display_options['header']['area']['label'] = 'init00';
+$handler->display->display_options['header']['area']['empty'] = TRUE;
+$handler->display->display_options['header']['area']['content'] = '    <!-- region00 -->
+    <!-- Bootstrap -->
+    <!-- link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js" ></script>
+    <script src="https://s69682.gridserver.com/_weblib/js/angularjs/angular.ng-modules.js" ></script>
+    <script src="https://s69682.gridserver.com/_weblib/js/angularjs/underscore.min.js" ></script>
+
+    <!-- region01 -->
+    <!-- you don\'t need ignore=notused in your code, this is just here to trick the cache -->
+    <script src="https://www.ag-grid.com/dist/ag-grid-enterprise.js?ignore=notused19"></script>
+    <script src="https://fpm.uoregon.edu/view01policy01/jsonp02"></script>
+    <script>
+    jsonp02 = _.clone( jsonp02["Items"] );
+    console.log(jsonp02);
+    jsonp02 = _.map( jsonp02 , function(item){
+            vout = { "noop":0
+              ,"weight":item["fasmhead"].charCodeAt(0)
+              ,"fasmhead":item["fasmhead"]
+              ,"title":item["title"]
+              ,"nid":item["nid"]
+              ,"linkedit":item["linkedit"]
+              ,"linkview":item["linkview"]
+              ,"fasmstat":item["fasmstat"]
+              ,"fasmsect":item["fasmsect"]
+              ,"fasmdate":item["fasmdate"]
+              ,"fasmcapt":item["fasmcapt"]
+              ,"fasmauth":item["fasmauth"]
+              };
+            if(vout["fasmhead"]==\'INTRODUCTION\'){vout["weight"]=\'-5\';}
+            if(true){vout["fasmsect"]=\'[5.001] \'+vout["title"];}
+            return vout;
+            });
+    jsonp02 =   _.sortBy(jsonp02, "weight");
+    </script>
+    <script>
+      (function(vinput) {
+        var valueCellStyle = {
+            \'text-align\': \'right\'
+        };
+    
+        var columnDefs = [
+            {
+                field: "fasmhead", rowGroupIndex: 0, hide: true
+            },
+            {
+                headerName: \'\'
+                ,"field": "fasmstat"
+                ,"width": 75
+                
+            },
+            {
+                headerName: \'\'
+                ,"field": "fasmauth"            
+                ,"width": 75
+            },
+            {
+                headerName: \'\'
+                ,"field": "fasmdate"            
+                ,"width": 75
+            }
+        ];
+    
+        var groupColumn = {
+            headerName:     "Title",
+            width:          525,
+            field:          \'fasmsect\',
+            comparator:     agGrid.defaultGroupComparator,
+            cellRenderer: {
+                renderer: "group"
+            }
+        };
+    
+        var gridOptions = {
+            columnDefs              : columnDefs,
+            rowData                 : createRowData(),
+            rowSelection            : \'single\',
+            groupHeaders            : true,
+            groupDefaultExpanded    : -1,
+            groupIncludeFooter      : false,
+            enableColResize         : true,
+            enableSorting           : true,
+            forPrint                : true,
+            groupColumnDef          : groupColumn,
+            suppressMenuColumnPanel : true,
+            suppressMenuFilterPanel : true,
+            suppressMenuMainPanel   : true,
+            suppressContextMenu     : true,
+            getRowHeight: function(params) {
+                if (params.node.footer) {
+                    return 40;
+                } else {
+                    return 25;
+                }
+            },
+            icons: {
+                groupExpanded: \'<i class="fa fa-minus-square-o"></i> \',
+                groupContracted: \'<i class="fa fa-plus-square-o"></i> \'
+            },
+            enableFilter: false
+        };
+    
+        function createRowData() {
+            var rows = [];
+            rows = vinput;
+            return rows;
+        }
+    
+        // setup the grid after the page has finished loading
+        document.addEventListener(\'DOMContentLoaded\', function() {
+            var gridDiv = document.querySelector(\'#exampleAccountGrid\');
+            new agGrid.Grid(gridDiv, gridOptions);
+        });
+    
+    })(jsonp02);
+    </script>
+    <style>
+      /** ------------------------------------------------------------------------ 
+       * begin_ row zebra striping
+       */
+      .ag-row-odd {
+         background-color: #f6f6f6;
+      }
+      
+      .ag-row-even {
+         background-color: white;
+      }
+      
+      .ag-fresh i {
+          padding-right:7px;
+          padding-bottom:4px;
+      }
+      
+      .ag-fresh .ag-cell {
+          padding: 4px 10px 4px 4px;
+      }
+      
+      .ag-fresh .ag-header-container {
+          font-weight: bold;
+      }
+      
+      .ag-fresh .ag-header-cell {
+          border-bottom: 1px solid black;
+      }
+      
+      .ag-fresh .cell-col {
+          border-left: 1px solid black;
+          border-right: 1px solid black;
+          border-bottom: 1px solid black;
+          border-top: 1px solid black;
+      }
+      
+      .ag-fresh .cell-col-2 {
+          off-background-color: gainsboro;
+      }
+      .ag-fresh .cell-col-4 {
+          off-background-color: gainsboro;
+      }
+      .ag-fresh .cell-col-6 {
+          off-background-color: gainsboro;
+      }
+      .ag-fresh .cell-col-8 {
+          off-background-color: gainsboro;
+      }
+      
+      .ag-fresh .ag-group-cell {
+          font-weight: bold;
+      }
+      
+      .ag-fresh .ag-row-group-cell-text {
+          padding-left: 0px;
+          padding-right: 0px;
+      }
+      
+      .ag-fresh .ag-footer-cell {
+          border-top: 0px solid grey;
+          border-bottom: 0px double grey;
+      }
+      
+      label {
+          font-weight: normal !important;
+      }
+    </style>
+';
+$handler->display->display_options['header']['area']['format'] = 'full_html';
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area_1']['id'] = 'area_1';
+$handler->display->display_options['header']['area_1']['table'] = 'views';
+$handler->display->display_options['header']['area_1']['field'] = 'area';
+$handler->display->display_options['header']['area_1']['label'] = 'init01';
+$handler->display->display_options['header']['area_1']['empty'] = TRUE;
+$handler->display->display_options['header']['area_1']['content'] = '    <!-- region02 -->
+    <div ng-controller="accountController" style="width: 800px;">
+        <div id="exampleAccountGrid" style="height: 100%;" ag-grid="gridOptions" class="ag-fresh">
+        </div>
+    </div>';
+$handler->display->display_options['header']['area_1']['format'] = 'full_html';
+$handler->display->display_options['defaults']['filter_groups'] = FALSE;
+$handler->display->display_options['defaults']['filters'] = FALSE;
+/* Filter criterion: Content: Published */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'node';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = 1;
+$handler->display->display_options['filters']['status']['group'] = 1;
+$handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'page' => 'page',
+);
+$handler->display->display_options['filters']['type']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid']['id'] = 'nid';
+$handler->display->display_options['filters']['nid']['table'] = 'node';
+$handler->display->display_options['filters']['nid']['field'] = 'nid';
+$handler->display->display_options['filters']['nid']['value']['value'] = '-1';
+$handler->display->display_options['path'] = 'view01policy01/results04';
+
+/* Display: test01 */
+$handler = $view->new_display('page', 'test01', 'page_7');
+$handler->display->display_options['display_description'] = 'test escaping of tags in header and footer text';
+$handler->display->display_options['defaults']['style_plugin'] = FALSE;
+$handler->display->display_options['style_plugin'] = 'default';
+$handler->display->display_options['style_options']['default_row_class'] = FALSE;
+$handler->display->display_options['style_options']['row_class_special'] = FALSE;
+$handler->display->display_options['defaults']['style_options'] = FALSE;
+$handler->display->display_options['defaults']['row_plugin'] = FALSE;
+$handler->display->display_options['row_plugin'] = 'fields';
+$handler->display->display_options['defaults']['row_options'] = FALSE;
+$handler->display->display_options['defaults']['header'] = FALSE;
+/* Header: Global: Text area */
+$handler->display->display_options['header']['area']['id'] = 'area';
+$handler->display->display_options['header']['area']['table'] = 'views';
+$handler->display->display_options['header']['area']['field'] = 'area';
+$handler->display->display_options['header']['area']['label'] = 'inc000';
+$handler->display->display_options['header']['area']['empty'] = TRUE;
+$handler->display->display_options['header']['area']['content'] = '  <body>
+    <!-- place the custom tag anywhere inside the body -->
+    <divx></divx>
+
+    <!-- include the tag -->
+    <script type="riot/tag">
+      <divx>
+        <h3>{ message }</h3>
+
+        <table style="border:3px solid black;">
+          <tr each={ mytable }>
+            <td>{ fname }</td><td>{ lname }</td><td>{ age }</td>
+          </tr>
+        </table>
+
+        this.message = "hello world"
+        this.mytable = [
+           { "age": 33, "fname": "Zorick", "lname":"Alford"    }
+          ,{ "age": 33, "fname": "Yorick", "lname":"Brownford" }
+          ,{ "age": 33, "fname": "Xorick", "lname":"Charford"  }
+        ];
+      </divx>
+    </script>
+
+    <!-- include riot.js -->
+    <script src="https://cdn.jsdelivr.net/riot/2.3/riot+compiler.min.js"></script>
+
+    <!-- mount the tag -->
+    <script>riot.mount(\'divx\', {"opts":{"message":"world"}})</script>
+  </body>';
+$handler->display->display_options['header']['area']['format'] = 'full_html';
+$handler->display->display_options['defaults']['filter_groups'] = FALSE;
+$handler->display->display_options['defaults']['filters'] = FALSE;
+/* Filter criterion: Content: Published */
+$handler->display->display_options['filters']['status']['id'] = 'status';
+$handler->display->display_options['filters']['status']['table'] = 'node';
+$handler->display->display_options['filters']['status']['field'] = 'status';
+$handler->display->display_options['filters']['status']['value'] = 1;
+$handler->display->display_options['filters']['status']['group'] = 1;
+$handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+/* Filter criterion: Content: Type */
+$handler->display->display_options['filters']['type']['id'] = 'type';
+$handler->display->display_options['filters']['type']['table'] = 'node';
+$handler->display->display_options['filters']['type']['field'] = 'type';
+$handler->display->display_options['filters']['type']['value'] = array(
+  'page' => 'page',
+);
+$handler->display->display_options['filters']['type']['group'] = 1;
+/* Filter criterion: Content: Nid */
+$handler->display->display_options['filters']['nid']['id'] = 'nid';
+$handler->display->display_options['filters']['nid']['table'] = 'node';
+$handler->display->display_options['filters']['nid']['field'] = 'nid';
+$handler->display->display_options['filters']['nid']['operator'] = '<';
+$handler->display->display_options['filters']['nid']['value']['value'] = '0';
+$handler->display->display_options['path'] = 'view01policy01/test01';
