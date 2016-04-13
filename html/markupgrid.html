@@ -5,11 +5,14 @@
 
     <!-- Bootstrap -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="account.css" rel="stylesheet">
+    <script src="https://s69682.gridserver.com/_weblib/js/angularjs/underscore.min.js" ></script>    
 
     <!-- you don't need ignore=notused in your code, this is just here to trick the cache -->
     <script src="https://www.ag-grid.com/dist/ag-grid-enterprise.js?ignore=notused19"></script>
     <script src="https://fpm.uoregon.edu/view01policy01/jsonp02"></script>
+    <script>
+    jsonp02 = _.clone( jsonp02["Items"] );        
+    </script>
     <script src="account.js"></script>
 
     <style>
@@ -17,7 +20,7 @@
             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
         }
     </style>
-
+    <link href="account.css" rel="stylesheet" />
 </head>
 
 <body>
