@@ -40,7 +40,7 @@
         groupDefaultExpanded    : -1,
         groupIncludeFooter      : false,
         enableColResize         : true,
-        enableSorting           : false,
+        enableSorting           : true,
         forPrint                : true,
         groupColumnDef          : groupColumn,
         suppressMenuColumnPanel : true,
