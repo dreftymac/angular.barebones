@@ -14,7 +14,6 @@
     <script src="https://fpm.uoregon.edu/view01policy01/jsonp02"></script>
     <script>
     jsonp02 = _.clone( jsonp02["Items"] );
-    console.log(jsonp02);
     jsonp02 = _.map( jsonp02 , function(item){
             vout = { "noop":0
               ,"weight":item["fasmhead"].charCodeAt(0)
@@ -49,7 +48,7 @@
                 headerName: ''
                 ,"field": "fasmstat"
                 ,"width": 125
-                ,"cellRenderer": function(params){ console.log(params); return '<span title="the tooltip">{{value}}</span>';}
+                ,"cellRenderer": function(params){ console.log(params['node']); return '<span title="the tooltip">{{value}}</span>';}
             },
             {
                 headerName: ''
