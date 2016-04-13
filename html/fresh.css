@@ -1,5 +1,5 @@
 tbody tr:nth-child(odd) {
-   background-color: #ccc;
+   off-background-color: #ccc;
 }
 
 .ag-fresh i {
@@ -27,16 +27,16 @@ tbody tr:nth-child(odd) {
 }
 
 .ag-fresh .cell-col-2 {
-    background-color: gainsboro;
+    off-background-color: gainsboro;
 }
 .ag-fresh .cell-col-4 {
-    background-color: gainsboro; 
+    off-background-color: gainsboro; 
 }
 .ag-fresh .cell-col-6 {
-    background-color: gainsboro;
+    off-background-color: gainsboro;
 }
 .ag-fresh .cell-col-8 {
-    background-color: gainsboro;
+    off-background-color: gainsboro;
 }
 
 .ag-fresh .ag-group-cell {
@@ -54,7 +54,7 @@ tbody tr:nth-child(odd) {
 }
 
 .ag-fresh {
-    background-color: inherit;
+    off-background-color: inherit;
     border: 0px solid darkgoldenrod;
     box-shadow: 0px 0px 0px #888888;
 }
