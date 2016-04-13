@@ -9,7 +9,8 @@
             field: "category", rowGroupIndex: 0, hide: false
         },
         {
-            headerName: 'Section',
+            headerName: 'Section'
+            ,"field": "amount1"
             //children: [
             //    {headerName: "Units", field: "amount1", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
             //    {headerName: "GBP", field: "gbp1", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
