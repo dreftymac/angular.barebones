@@ -1,9 +1,9 @@
-.ag-body .ag-row-odd {
+.ag-row-odd {
    background-color: #f6f6f6;
 }
 
-.ag-body .ag-row-even {
-         background-color: white;
+.ag-row-even {
+   background-color: white;
 }
 
 .ag-fresh i {
