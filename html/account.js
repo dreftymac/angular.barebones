@@ -10,31 +10,31 @@
         },
         {
             headerName: 'Week 1',
-            children: [
-                {headerName: "Units", field: "amount1", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
-                {headerName: "GBP", field: "gbp1", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
-            ]
+            //children: [
+            //    {headerName: "Units", field: "amount1", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
+            //    {headerName: "GBP", field: "gbp1", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
+            //]
         },
         {
             headerName: 'Week 2',
-            children: [
-                {headerName: "Units", field: "amount2", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
-                {headerName: "GBP", field: "gbp2", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
-            ]
+            //children: [
+            //    {headerName: "Units", field: "amount2", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
+            //    {headerName: "GBP", field: "gbp2", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
+            //]
         },
         {
             headerName: 'Week 3',
-            children: [
-                {headerName: "Units", field: "amount3", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
-                {headerName: "GBP", field: "gbp3", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
-            ]
+            //children: [
+            //    {headerName: "Units", field: "amount3", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
+            //    {headerName: "GBP", field: "gbp3", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
+            //]
         },
         {
             headerName: 'Period Total',
-            children: [
-                {headerName: "Units", field: "amountTotal", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
-                {headerName: "GBP", field: "gbpTotal", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
-            ]
+            //children: [
+            //    {headerName: "Units", field: "amountTotal", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
+            //    {headerName: "GBP", field: "gbpTotal", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
+            //]
         }
     ];
 
@@ -47,10 +47,10 @@
     }
 
     var groupColumn = {
-        headerName: "Alpha",
-        width: 400,
-        field: 'item',
-        comparator: agGrid.defaultGroupComparator,
+        headerName:     "Major Section",
+        width:          400,
+        field:          'item',
+        comparator:     agGrid.defaultGroupComparator,
         cellRenderer: {
             renderer: "group"
         }
