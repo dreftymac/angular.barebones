@@ -9,28 +9,28 @@
             field: "category", rowGroupIndex: 0, hide: true
         },
         {
-            headerName: 'Week 1',
+            headerName: 'Section',
             //children: [
             //    {headerName: "Units", field: "amount1", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
             //    {headerName: "GBP", field: "gbp1", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
             //]
         },
         {
-            headerName: 'Week 2',
+            headerName: 'Subtitle',
             //children: [
             //    {headerName: "Units", field: "amount2", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
             //    {headerName: "GBP", field: "gbp2", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
             //]
         },
         {
-            headerName: 'Week 3',
+            headerName: 'Status',
             //children: [
             //    {headerName: "Units", field: "amount3", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
             //    {headerName: "GBP", field: "gbp3", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
             //]
         },
         {
-            headerName: 'Period Total',
+            headerName: 'Status',
             //children: [
             //    {headerName: "Units", field: "amountTotal", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
             //    {headerName: "GBP", field: "gbpTotal", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
@@ -47,7 +47,7 @@
     }
 
     var groupColumn = {
-        headerName:     "Major Section",
+        headerName:     "Major Title",
         width:          400,
         field:          'item',
         comparator:     agGrid.defaultGroupComparator,
@@ -78,8 +78,8 @@
             }
         },
         icons: {
-            groupExpanded: '<i class="fa fa-minus-square-o"></i>',
-            groupContracted: '<i class="fa fa-plus-square-o"></i>'
+            groupExpanded: '<i class="fa fa-minus-square-o"></i> ',
+            groupContracted: '<i class="fa fa-plus-square-o"></i> '
         },
         enableFilter: false
     };
