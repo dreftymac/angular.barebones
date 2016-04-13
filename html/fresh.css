@@ -1,3 +1,6 @@
+/** ------------------------------------------------------------------------ 
+ * begin_ row zebra striping
+ */
 .ag-row-odd {
    background-color: #f6f6f6;
 }
