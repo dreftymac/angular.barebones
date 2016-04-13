@@ -6,7 +6,7 @@
 
     var columnDefs = [
         {
-            field: "category", rowGroupIndex: 0, hide: false
+            field: "category", rowGroupIndex: 0, hide: true
         },
         {
             headerName: 'Week 1',
