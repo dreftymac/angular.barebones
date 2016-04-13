@@ -57,12 +57,6 @@
     border-bottom: 0px double grey;
 }
 
-.ag-fresh {
-    off-background-color: inherit;
-    border: 1px solid darkgoldenrod;
-    box-shadow: 1px 1px 1px #888888;
-}
-
 label {
     font-weight: normal !important;
 }
