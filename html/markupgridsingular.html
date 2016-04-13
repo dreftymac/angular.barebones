@@ -49,6 +49,7 @@
                 ,"field": "fasmstat"
                 ,"width": 125
                 // YES_WORKY ;; turned off angularCompileRows
+                // YES_WORKY ;; output HTML ... XSS danger
                 ,"cellRenderer": function(params){ console.log(params['node']['data']); return '<a href="http://www.yahoo.com">yahoo</a><span title="the tooltip">2+3</span>';}
             },
             {
