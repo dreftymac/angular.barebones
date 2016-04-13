@@ -58,7 +58,7 @@
         rowSelection            : 'single',
         groupHeaders            : true,
         groupDefaultExpanded    : -1,
-        groupIncludeFooter      : true,
+        groupIncludeFooter      : false,
         enableColResize         : true,
         enableSorting           : false,
         forPrint                : true,
