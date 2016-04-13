@@ -10,36 +10,16 @@
         },
         {
             headerName: ''
-            ,"field": "amount1"
-            //children: [
-            //    {headerName: "Units", field: "amount1", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
-            //    {headerName: "GBP", field: "gbp1", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
-            //]
+            ,"field": "fasmstat"
         },
         {
             headerName: 'Status'
-            ,"field": "amount2"            
-            //children: [
-            //    {headerName: "Units", field: "amount2", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
-            //    {headerName: "GBP", field: "gbp2", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
-            //]
+            ,"field": "fasmauth"            
         },
         {
             headerName: ''
-            ,"field": "amount3"            
-            
-            //children: [
-            //    {headerName: "Units", field: "amount3", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
-            //    {headerName: "GBP", field: "gbp3", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
-            //]
+            ,"field": "fasmdate"            
         }
-        //,{
-        //    headerName: 'Status',
-        //    //children: [
-        //    //    {headerName: "Units", field: "amountTotal", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
-        //    //    {headerName: "GBP", field: "gbpTotal", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
-        //    //]
-        //}
     ];
 
     var groupColumn = {
@@ -104,15 +84,15 @@
 
         rows.forEach( function(row) {
 
-            //row.amount1 = Math.round(Math.random() * 100);
-            row.amount1 = 'repealed';
-            row.amount2 = 'by UO Board of Trustees';
-            row.amount3 = 'Wednesday December 12 2014';
-            //row.amountTotal = row.amount1 + row.amount2 + row.amount3;
+            //row.fasmstat = Math.round(Math.random() * 100);
+            row.fasmstat = 'repealed';
+            row.fasmauth = 'by UO Board of Trustees';
+            row.fasmdate = 'Wednesday December 12 2014';
+            //row.amountTotal = row.fasmstat + row.fasmauth + row.fasmdate;
 
-            row.gbp1 = row.amount1 * 22;
-            row.gbp2 = row.amount2 * 22;
-            row.gbp3 = row.amount3 * 22;
+            row.gbp1 = row.fasmstat * 22;
+            row.gbp2 = row.fasmauth * 22;
+            row.gbp3 = row.fasmdate * 22;
             //row.gbpTotal = row.amountTotal * 22;
         });
 
