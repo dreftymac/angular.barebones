@@ -48,7 +48,7 @@
 
     var groupColumn = {
         headerName: "Alpha",
-        width: 300,
+        width: 400,
         field: 'item',
         comparator: agGrid.defaultGroupComparator,
         cellRenderer: {
