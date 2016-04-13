@@ -90,6 +90,10 @@
          ,'[5.00] Roles and responsibilities'
          ,'[5.00] Roles and responsibilities'
          ,'[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
+         ,'[5.00] Roles and responsibilities'
          ].forEach( function (item) {
             rows.push({category: 'INTRODUCTION', item: item});
         });
