@@ -6,7 +6,7 @@
 
     var columnDefs = [
         {
-            field: "category", rowGroupIndex: 0, hide: true
+            field: "category", rowGroupIndex: 0, hide: false
         },
         {
             headerName: 'Section',
@@ -47,7 +47,7 @@
     }
 
     var groupColumn = {
-        headerName:     "Major Title",
+        headerName:     "Title",
         width:          400,
         field:          'item',
         comparator:     agGrid.defaultGroupComparator,
