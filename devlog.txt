@@ -10,3 +10,16 @@
 ###         devlog.txt
 ###         
 ### <end-file_info>
+
+main:
+  - caption:  this needs more work if it is going to work using mint_gaga_one recipe
+    rectype:  rrmini02
+    datebeg:  Tue Apr 12 19:49:13 2016 
+    dateend:  Tue Apr 12 19:49:13 2016 
+    tags:     tags
+    desc:     desc
+    seealso:  seealso
+    dreftymacid: wilhelm_nail_kate
+    wwbody: |
+        
+
