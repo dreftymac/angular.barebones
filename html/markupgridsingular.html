@@ -49,9 +49,6 @@
                 headerName: ''
                 ,"field": "fasmstat"
                 ,"width": 110
-                // YES_WORKY ;; turned off angularCompileRows
-                // YES_WORKY ;; output HTML ... XSS danger
-                ,"cellRenderer": function(params){ console.log(params['node']['data']); return '<a href="http://www.yahoo.com">yahoo</a><span title="the tooltip">2+3</span>';}
             },
             {
                 headerName: ''
@@ -67,6 +64,19 @@
                 headerName: ''
                 ,"field": "rowaction"            
                 ,"width": 110
+                // YES_WORKY ;; turned off angularCompileRows
+                // YES_WORKY ;; output HTML ... XSS danger
+                ,"cellRenderer": function(params){
+                  var vout = '';
+                  if(params['node']['data']){vout = [''
+                      ,'<a href="'
+                      ,params['node']['data']['linkedit']
+                      ,'">[edit]</a>'
+                      ]}
+                  vout = vout.join('');
+                  return vout;
+                }
+                
             }
         ];
     
