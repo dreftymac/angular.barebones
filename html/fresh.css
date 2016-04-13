@@ -1,5 +1,9 @@
-tbody tr:nth-child(odd) {
-   off-background-color: #ccc;
+.ag-body .ag-row-odd {
+   background-color: #f6f6f6;
+}
+
+.ag-body .ag-row-even {
+         background-color: white;
 }
 
 .ag-fresh i {
@@ -30,7 +34,7 @@ tbody tr:nth-child(odd) {
     off-background-color: gainsboro;
 }
 .ag-fresh .cell-col-4 {
-    off-background-color: gainsboro; 
+    off-background-color: gainsboro;
 }
 .ag-fresh .cell-col-6 {
     off-background-color: gainsboro;
