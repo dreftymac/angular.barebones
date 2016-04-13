@@ -42,14 +42,6 @@
         //}
     ];
 
-    function currencyRenderer(params) {
-        if (params.value) {
-            return '£ ' + params.value.toLocaleString();
-        } else {
-            return null;
-        }
-    }
-
     var groupColumn = {
         headerName:     "Title",
         width:          400,
