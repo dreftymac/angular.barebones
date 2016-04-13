@@ -11,6 +11,20 @@
 ###         
 ### <end-file_info>
 
+todo:
+  - caption:      TODO ;; update alter text
+    rectype:      rrtodo3
+    status:       "DONE|PROCESSING|HOLD|TODO"
+    category:     "__blank__"
+    dreftymacid:  "__blank__"
+    tags:         tags
+    seealso:      seealso
+    date:         Tue Apr 12 21:09:50 2016
+    due:          Tue Apr12 
+    wwbody: |
+        $handler->display->display_options['fields']['nid_1']['alter']['text'] = 'https://fpm.uoregon.edu/node/[nid]/edit/policyrevoker';
+        $handler->display->display_options['fields']['nid_1']['alter']['text'] = 'https://fpm.uoregon.edu/node/[nid]/edit/policyrevoker?destination=[originating_display]';
+
 main:
   
   - caption:  need to figure out cellRenderer for clickable links
