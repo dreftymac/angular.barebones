@@ -12,6 +12,29 @@
 ### <end-file_info>
 
 main:
+  
+  - caption:  need to figure out cellRenderer for clickable links
+    rectype:  rrmini02
+    datebeg:  Tue Apr 12 20:01:00 2016 
+    dateend:  Tue Apr 12 20:01:00 2016 
+    tags:     tags
+    desc:     desc
+    seealso:  seealso
+    dreftymacid: oral_skater_headier
+    wwbody: |
+      https://github.com/ceolter/ag-grid/issues/85
+      https://github.com/ceolter/ag-grid/issues/393
+      ageCellRendererFunc(params) {
+        var eSpan = document.createElement('button');
+        eSpan.innerHTML = 'Del';
+        eSpan.addEventListener('click', function() {
+          console.log('button clicked');
+        });
+        return eSpan;
+      }
+
+
+  
   - caption:  mint_gaga_one recipe works all of a sudden -- export saved
     rectype:  rrmini02
     datebeg:  Tue Apr 12 19:49:13 2016 
