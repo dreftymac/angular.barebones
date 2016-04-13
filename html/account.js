@@ -17,26 +17,29 @@
             //]
         },
         {
-            headerName: 'Subtitle',
+            headerName: 'Subtitle'
+            ,"field": "amount2"            
             //children: [
             //    {headerName: "Units", field: "amount2", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
             //    {headerName: "GBP", field: "gbp2", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
             //]
         },
         {
-            headerName: 'Status',
+            headerName: 'Status'
+            ,"field": "amount3"            
+            
             //children: [
             //    {headerName: "Units", field: "amount3", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
             //    {headerName: "GBP", field: "gbp3", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
             //]
-        },
-        {
-            headerName: 'Status',
-            //children: [
-            //    {headerName: "Units", field: "amountTotal", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
-            //    {headerName: "GBP", field: "gbpTotal", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
-            //]
         }
+        //,{
+        //    headerName: 'Status',
+        //    //children: [
+        //    //    {headerName: "Units", field: "amountTotal", width: 70, aggFunc: 'sum', cellStyle: valueCellStyle},
+        //    //    {headerName: "GBP", field: "gbpTotal", width: 70, cellRenderer: currencyRenderer, aggFunc: 'sum', cellStyle: valueCellStyle}
+        //    //]
+        //}
     ];
 
     function currencyRenderer(params) {
