@@ -1,4 +1,4 @@
-(function() {
+(function(vinput) {
 
     var valueCellStyle = {
         'text-align': 'right'
@@ -87,7 +87,7 @@
             row.fasmauth = 'by UO Board of Trustees';
             row.fasmdate = "12\/10\/2014";
         });
-
+        rows = vinput;
         return rows;
     }
 
@@ -97,5 +97,5 @@
         new agGrid.Grid(gridDiv, gridOptions);
     });
 
-})();
+})(jsonp02);
 
