@@ -23,24 +23,19 @@
 
 .ag-account .cell-col-2 {
     background-color: gainsboro;
-    border: 1px solid black;    
 }
 .ag-account .cell-col-4 {
-    background-color: gainsboro;
-    border: 1px solid black;    
+    background-color: gainsboro; 
 }
 .ag-account .cell-col-6 {
     background-color: gainsboro;
-    border: 1px solid black;    
 }
 .ag-account .cell-col-8 {
     background-color: gainsboro;
-    border: 1px solid black;    
 }
 
 .ag-account .ag-group-cell {
     font-weight: bold;
-    border: 1px solid black;    
 }
 
 .ag-account .ag-row-group-cell-text {
