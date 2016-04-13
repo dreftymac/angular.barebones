@@ -943,10 +943,8 @@ $handler->display->display_options['header']['area']['label'] = 'init00';
 $handler->display->display_options['header']['area']['empty'] = TRUE;
 $handler->display->display_options['header']['area']['content'] = '    <!-- region00 -->
     <!-- Bootstrap -->
-    <!-- link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js" ></script>
-    <script src="https://s69682.gridserver.com/_weblib/js/angularjs/angular.ng-modules.js" ></script>
-    <script src="https://s69682.gridserver.com/_weblib/js/angularjs/underscore.min.js" ></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://s69682.gridserver.com/_weblib/js/angularjs/underscore.min.js" ></script>    
 
     <!-- region01 -->
     <!-- you don\'t need ignore=notused in your code, this is just here to trick the cache -->
@@ -954,7 +952,6 @@ $handler->display->display_options['header']['area']['content'] = '    <!-- regi
     <script src="https://fpm.uoregon.edu/view01policy01/jsonp02"></script>
     <script>
     jsonp02 = _.clone( jsonp02["Items"] );
-    console.log(jsonp02);
     jsonp02 = _.map( jsonp02 , function(item){
             vout = { "noop":0
               ,"weight":item["fasmhead"].charCodeAt(0)
@@ -968,12 +965,13 @@ $handler->display->display_options['header']['area']['content'] = '    <!-- regi
               ,"fasmdate":item["fasmdate"]
               ,"fasmcapt":item["fasmcapt"]
               ,"fasmauth":item["fasmauth"]
+              ,"rowaction":\'\'
               };
             if(vout["fasmhead"]==\'INTRODUCTION\'){vout["weight"]=\'-5\';}
             if(true){vout["fasmsect"]=\'[5.001] \'+vout["title"];}
             return vout;
             });
-    jsonp02 =   _.sortBy(jsonp02, "weight");
+    jsonp02 = _.sortBy(jsonp02, "weight");
     </script>
     <script>
       (function(vinput) {
@@ -988,18 +986,35 @@ $handler->display->display_options['header']['area']['content'] = '    <!-- regi
             {
                 headerName: \'\'
                 ,"field": "fasmstat"
-                ,"width": 75
-                
+                ,"width": 110
             },
             {
                 headerName: \'\'
                 ,"field": "fasmauth"            
-                ,"width": 75
-            },
-            {
+                ,"width": 110
+            }
+            ,{
                 headerName: \'\'
                 ,"field": "fasmdate"            
-                ,"width": 75
+                ,"width": 110
+            }
+            ,{
+                headerName: \'\'
+                ,"field": "rowaction"            
+                ,"width": 110
+                // YES_WORKY ;; turned off angularCompileRows
+                // YES_WORKY ;; output HTML ... XSS danger
+                ,"cellRenderer": function(params){
+                  var vout = \'\';
+                  if(params[\'node\'][\'data\']){vout = [\'\'
+                      ,\'<a href="\'
+                      ,params[\'node\'][\'data\'][\'linkedit\']
+                      ,\'?destination=view01policy01/results04\'
+                      ,\'">[edit]</a>\'
+                      ].join(\'\')}
+                  return vout;
+                }
+                
             }
         ];
     
@@ -1014,6 +1029,7 @@ $handler->display->display_options['header']['area']['content'] = '    <!-- regi
         };
     
         var gridOptions = {
+            angularCompileRows      : false,
             columnDefs              : columnDefs,
             rowData                 : createRowData(),
             rowSelection            : \'single\',
@@ -1122,8 +1138,7 @@ $handler->display->display_options['header']['area']['content'] = '    <!-- regi
       label {
           font-weight: normal !important;
       }
-    </style>
-';
+    </style>';
 $handler->display->display_options['header']['area']['format'] = 'full_html';
 /* Header: Global: Text area */
 $handler->display->display_options['header']['area_1']['id'] = 'area_1';
