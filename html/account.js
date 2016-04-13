@@ -25,7 +25,7 @@
     var groupColumn = {
         headerName:     "Title",
         width:          400,
-        field:          'item',
+        field:          'fasmsect',
         comparator:     agGrid.defaultGroupComparator,
         cellRenderer: {
             renderer: "group"
