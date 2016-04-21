@@ -59,8 +59,7 @@ angular.module('DemoApp', [])
       //-- */
       
       // Demo value to show url-encoding upon submission
-      // $scope.appForm.dataSubmitted       = $httpParamSerializer($scope.appForm.data);
-      // $scope.appForm.dataSubmittedJQLike = $httpParamSerializerJQLike($scope.appForm.data);
+      $scope.appForm.dataSubmittedJQLike = $httpParamSerializerJQLike($scope.appForm.data);
     }
   };
 }])

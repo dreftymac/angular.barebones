@@ -36,7 +36,7 @@ main:
             * the variable namespaces are all isolated
         * working with angular1.4 addon components for postmethod test
         * PROBLEM -- does (aka luis perez "lays_coins_rocks formula") work with host_least_script syntax style
-        * demo.stripdown-001
+        * demo.stripdown-001 ;; udpate stripdown
 
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
     rectype:  rrmini02
