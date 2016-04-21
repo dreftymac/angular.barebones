@@ -23,17 +23,18 @@ main:
     seealso:  seealso
     dreftymacid: unusual_replying_sewn
     wwbody: |
-        * add scope to the module arrays -- NO_WORKY
-        * add scope and function to the main module   -- NO_WORKY
-        * remove function and leave scope -- NO_WORKY
-        * remove scope and just leave the modules -- YES_WORKY
-        * add controller and interaction with modules -- PERHAPS_WORKY
-        * use the modules exclusively and do not add on any controllers -- YES_WORKY
-        * remove the extra controller but leave it in the html -- YES_WORKY
+        * NO_WORKY  -- add scope to the module arrays 
+        * NO_WORKY  -- add scope and function to the main module   
+        * NO_WORKY  -- remove function and leave scope 
+        * YES_WORKY -- remove scope and just leave the modules 
+        * NO_WORKY  -- add controller and interaction with modules 
+        * YES_WORKY -- use the modules exclusively and do not add on any controllers 
+        * YES_WORKY -- remove the extra controller but leave it in the html 
             * the individual controller output breaks, but the other modules stil show good output
             * href="./dotdev/image/unusual_replying_sewn-001.png"
-        * try working with $scope vars on the sibling_modules and the parent_containing appmodule -- NO_WORKY
+        * NO_WORKY  -- working with $scope vars on the sibling_modules and the parent_containing appmodule 
             * the variable namespaces are all isolated
+        * working with angular1.4 addon components for postmethod test
 
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
     rectype:  rrmini02
