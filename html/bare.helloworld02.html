@@ -40,28 +40,30 @@
         <fieldset>
           <legend>Alpha</legend>
           <div ng-controller="MyControllerAlpha">
-              {{name}}
+              {{name}} <br/>
+              {{name |exclaim |reverse }} <br/>
+              {{name |exclaim }} <br/>
           </div>
         </fieldset>
 
         <fieldset>
           <legend>Bravo</legend>
           <div ng-controller="MyControllerBravo">
-              {{name}}
+              {{name |reverse }}  <br/>
           </div>
         </fieldset>
 
         <fieldset>
           <legend>Charlie</legend>
           <div ng-controller="MyControllerCharlie">
-              {{name}}
+              {{name |exclaim }}  <br/>
           </div>
         </fieldset>
 
         <fieldset>
           <legend>Alpha Again</legend>
           <div ng-controller="MyControllerAlpha">
-              {{name}}
+              {{name}}  <br/>
           </div>
         </fieldset>
 
