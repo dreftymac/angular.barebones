@@ -3,8 +3,8 @@ angular.module('DemoApp', [])
  // Form directive
 .directive('appForm', function() {
   return {
-    restrict: 'E',
-    scope: {},
+    restrict:   'E',
+    scope:      {},
     controller: 'AppFormCtrl',
     templateUrl: 'demo.postmethod-appform.html'
   };
@@ -32,10 +32,10 @@ angular.module('DemoApp', [])
     dataSubmitted: '',
     
     submit: function() {
-       // Here you would normally post the data to the server
-       // Note how the data property is assigned explicitly a value url-encoded by the new service
-       // Note the headers and the lack of transformRequest
-       // $httpParamSerializerJQLike can also be used, as it better handles encoding complex data structures
+      // Here you would normally post the data to the server
+      // Note how the data property is assigned explicitly a value url-encoded by the new service
+      // Note the headers and the lack of transformRequest
+      // $httpParamSerializerJQLike can also be used, as it better handles encoding complex data structures
       /*
       $http({
         url: 'some-api-endpoint',
@@ -49,23 +49,22 @@ angular.module('DemoApp', [])
       }).success(function(response) { //... });
       */
       
-       // Demo value to show url-encoding upon submission
+      // Demo value to show url-encoding upon submission
       $scope.appForm.dataSubmitted       = $httpParamSerializer($scope.appForm.data);
       $scope.appForm.dataSubmittedJQLike = $httpParamSerializerJQLike($scope.appForm.data);
     }
   };
 }])
 
- // Demo filter to show a live preview of $httpParamSerializer url-encoding
+// Demo filter to show a live preview of $httpParamSerializer url-encoding
 .filter('urlEncodeDefault', ['$httpParamSerializer', function($httpParamSerializer) {
   var urlEncodeFilter = function(formData) {
     return decodeURIComponent($httpParamSerializer(formData));
-  };
-  
-  urlEncodeFilter.$stateful = true;
-  
+  };  
+  urlEncodeFilter.$stateful = true;  
   return urlEncodeFilter;
 }])
+
 // Demo filter to show a live preview of $httpParamSerializerJQLike url-encoding
 .filter('urlEncodeJQLike', ['$httpParamSerializerJQLike', function($httpParamSerializerJQLike) {
   var urlEncodeFilter = function(formData) {
