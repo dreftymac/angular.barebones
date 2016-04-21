@@ -12,16 +12,8 @@
 <h3>Form data - live - JSON</h3>
 <pre>{{appForm.data | json}}</pre>
 
-<h3>Form data - live - encoded with $httpParamSerializer</h3>
-<pre>{{appForm.data | urlEncodeDefault}}</pre>
-
 <h3>Form data - live - encoded with $httpParamSerializerJQLike</h3>
 <pre>{{appForm.data | urlEncodeJQLike}}</pre>
-
-<div ng-if="appForm.dataSubmitted">
-<h3>Form data - submitted - with $httpParamSerializer</h3>
-<pre>{{appForm.dataSubmitted}}</pre>
-</div>
 
 <div ng-if="appForm.dataSubmittedJQLike">
 <h3>Form data - submitted - with $httpParamSerializerJQLike</h3>

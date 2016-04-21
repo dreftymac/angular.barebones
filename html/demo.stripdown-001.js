@@ -48,8 +48,6 @@ angular.module('DemoApp', [])
       $http({noop:'x'        
         ,url: 'http://putsreq.com/DMaUeX6aRYjmmUrIo1e1'
         ,method: 'POST'
-        //data: $httpParamSerializer($scope.appForm.data),
-        // OR
         ,data: $httpParamSerializerJQLike($scope.appForm.data)
         ,headers: {'Accept-Language':'en'          
           ,'Content-Type': 'application/x-www-form-urlencoded'
@@ -64,22 +62,11 @@ angular.module('DemoApp', [])
   };
 }])
 
-// Demo filter to show a live preview of $httpParamSerializer url-encoding
-.filter('urlEncodeDefault', ['$httpParamSerializer', function($httpParamSerializer) {
-  var urlEncodeFilter = function(formData) {
-    return decodeURIComponent($httpParamSerializer(formData));
-  };  
-  urlEncodeFilter.$stateful = true;  
-  return urlEncodeFilter;
-}])
-
 // Demo filter to show a live preview of $httpParamSerializerJQLike url-encoding
 .filter('urlEncodeJQLike', ['$httpParamSerializerJQLike', function($httpParamSerializerJQLike) {
   var urlEncodeFilter = function(formData) {
     return decodeURIComponent($httpParamSerializerJQLike(formData));
-  };
-  
+  };  
   urlEncodeFilter.$stateful = true;
-  
   return urlEncodeFilter;
 }]);
