@@ -11,6 +11,33 @@
 //          strip down  host_least
 // <end-file_info>
 
+// ------------------------------------------------------------------------
+// begin_ declare sibling_modules
+
+// Alpha
+var moduleAlpha = angular.module("MyModuleAlpha", []);
+moduleAlpha.controller("MyControllerAlpha", function($scope ,$http, $httpParamSerializer, $httpParamSerializerJQLike){
+    $scope.name = "Alpha 123";
+    $scope.alpha1 = 'alpha1';
+});
+
+// Bravo
+var moduleBravo = angular.module("MyModuleBravo", []);
+moduleBravo.controller("MyControllerBravo", function($scope) {
+    $scope.name = "Bravo 123";
+    $scope.bravo1 = 'bravo1';
+});
+
+// Charlie
+var moduleCharlie = angular.module("MyModuleCharlie", []);
+moduleCharlie.controller("MyControllerCharlie", function($scope) {
+    $scope.name = "Charlie 123";
+    $scope.charlie1 = 'charlie1';
+});
+
+// ------------------------------------------------------------------------
+// begin_ declare parent_containing DemoApp
+
 angular.module('DemoApp', [])
 
 // Form directive

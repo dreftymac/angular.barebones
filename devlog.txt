@@ -36,7 +36,10 @@ main:
             * the variable namespaces are all isolated
         * working with angular1.4 addon components for postmethod test
         * PROBLEM -- does (aka luis perez "lays_coins_rocks formula") work with host_least_script syntax style
-        * demo.stripdown-001 ;; udpate stripdown
+        * bare.helloworld02
+            * href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/bare.helloworld02.js"
+            * href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/bare.hellworld02.html"            
+        * demo.stripdown-001 ;; 
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/demo.stripdown-001.js"
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/demo.stripdown-001.html"
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/demo.stripdown-001-appform.html"            
