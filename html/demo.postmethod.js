@@ -2,10 +2,9 @@
 // main:
 //   - date: created="Thu Apr 21 09:03:55 2016"
 //     last: lastmod="Thu Apr 21 09:03:55 2016"
-//     tags:   tags 
-//     author: created="__author__"
-//     dreftymacid:    "host_least_script"
-//     filetype:       "yaml"
+//     tags: tags 
+//     dreftymacid: "host_least_script"
+//     filetype: "yaml"
 //     seealso: |
 //         *
 //     desc: |
@@ -67,8 +66,8 @@ angular.module('DemoApp', [])
       //-- */
       
       // Demo value to show url-encoding upon submission
-      //$scope.appForm.dataSubmitted       = $httpParamSerializer($scope.appForm.data);
-      //$scope.appForm.dataSubmittedJQLike = $httpParamSerializerJQLike($scope.appForm.data);
+      // $scope.appForm.dataSubmitted       = $httpParamSerializer($scope.appForm.data);
+      // $scope.appForm.dataSubmittedJQLike = $httpParamSerializerJQLike($scope.appForm.data);
     }
   };
 }])
