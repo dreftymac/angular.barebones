@@ -12,36 +12,20 @@
 ###         
 ### <end-file_info>
 
-todo:
-  
-  - caption:      TODO ;; figure out how to handle the pdf files
-    rectype:      rrtodo3
-    status:       "DONE|PROCESSING|HOLD|TODO"
-    category:     "__blank__"
-    dreftymacid:  "__blank__"
-    tags:         tags
-    seealso:      seealso
-    date:         Tue Apr 12 21:15:37 2016
-    due:          Tue Apr12 
-    wwbody: |
-         
-  - caption:      TODO ;; update alter text
-    rectype:      rrtodo3
-    status:       "DONE|PROCESSING|HOLD|TODO"
-    category:     "__blank__"
-    dreftymacid:  "__blank__"
-    tags:         tags
-    seealso:      seealso
-    date:         Tue Apr 12 21:09:50 2016
-    due:          Tue Apr12 
-    wwbody: |
-        ## update views altertext
-        $handler->display->display_options['fields']['nid_1']['alter']['text'] = 'https://fpm.uoregon.edu/node/[nid]/edit/policyrevoker';
-        $handler->display->display_options['fields']['nid_1']['alter']['text'] = 'https://fpm.uoregon.edu/node/[nid]/edit/policyrevoker?destination=[originating_display]';
-        
-        ## change edit hyperlink to a 'revoke' button
-
 main:
+
+  - caption:  YES_WORKY -- post registering at http://putsreq.com/DMaUeX6aRYjmmUrIo1e1/inspect
+    rectype:  rrmini02
+    datebeg:  Wed Apr 20 19:17:45 2016 
+    dateend:  Wed Apr 20 19:17:45 2016 
+    tags:     tags
+    desc:     desc
+    seealso:  seealso
+    dreftymacid: __dreftymacid__
+    qquestion:  __qquestion__
+    qanswer:    __qanswer__
+    wwbody: |
+        wwbody
 
   - caption:  NO_WORKY -- error message when attempt requestbin post      
     rectype:  rrmini02
@@ -66,7 +50,9 @@ main:
         
         ## links
         http://stackoverflow.com/questions/10179756/using-requestbin
-
+        
+        ## alternative, use putsreq .. more flexible than requestb.in
+        href="smartpath://mytrybits/p/tryputsreq/devlog.txt"
 
   - caption:  angularjs post method
     rectype:  rrmini02

@@ -11,7 +11,8 @@ angular.module('DemoApp', [])
 })
 
  // Form controller
-.controller('AppFormCtrl', ['$scope', '$http', '$httpParamSerializer', '$httpParamSerializerJQLike', function($scope, $http, $httpParamSerializer, $httpParamSerializerJQLike) {
+.controller('AppFormCtrl', ['$scope', '$http', '$httpParamSerializer', '$httpParamSerializerJQLike',
+                            function($scope, $http, $httpParamSerializer, $httpParamSerializerJQLike) {
   $scope.appForm = {
     fields: [
       {name: 'name', type:'text', placeholder: 'Name (Bob York)'},
@@ -45,7 +46,6 @@ angular.module('DemoApp', [])
         ,data: $httpParamSerializerJQLike($scope.appForm.data)
         ,headers: {'Accept-Language':'en'          
           ,'Content-Type': 'application/x-www-form-urlencoded'
-          //,'Origin': 'http://dreftymac.bounceme.net/'          
           ,'Access-Control-Allow-Origin': '*'          
         }
       }).success(function(response) { console.log(response) });
