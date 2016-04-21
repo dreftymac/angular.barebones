@@ -1,3 +1,18 @@
+// <beg-file_info>
+// main:
+//   - date: created="Thu Apr 21 09:03:55 2016"
+//     last: lastmod="Thu Apr 21 09:03:55 2016"
+//     tags:   tags 
+//     author: created="__author__"
+//     dreftymacid:    "host_least_script"
+//     filetype:       "yaml"
+//     seealso: |
+//         *
+//     desc: |
+//          syntax style host_least
+//          try syntax styhle host_least on the basic helloworld demo
+// <end-file_info>
+
 angular.module('DemoApp', [])
 
  // Form directive
