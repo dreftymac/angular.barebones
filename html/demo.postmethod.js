@@ -43,8 +43,9 @@ angular.module('DemoApp', [])
         //data: $httpParamSerializer($scope.appForm.data),
         // OR
         ,data: $httpParamSerializerJQLike($scope.appForm.data)
-        ,headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
+        ,headers: {'Accept-Language':'en'          
+          ,'Content-Type': 'application/x-www-form-urlencoded'
+          ,'Access-Control-Allow-Origin': '*'          
         }
       }).success(function(response) { console.log(response) });
       //-- */
