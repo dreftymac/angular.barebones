@@ -45,7 +45,7 @@ angular.module('DemoApp', [])
         ,data: $httpParamSerializerJQLike($scope.appForm.data)
         ,headers: {'Accept-Language':'en'          
           ,'Content-Type': 'application/x-www-form-urlencoded'
-          ,'Origin': 'http://dreftymac.bounceme.net/'          
+          //,'Origin': 'http://dreftymac.bounceme.net/'          
           ,'Access-Control-Allow-Origin': '*'          
         }
       }).success(function(response) { console.log(response) });
