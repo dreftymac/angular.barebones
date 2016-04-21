@@ -17,10 +17,10 @@ angular.module('DemoApp', [])
 // Form directive
 .directive('appForm', function() {
   return {
-    restrict:   'A',
-    scope:      {},
-    controller: 'AppFormCtrl',
-    templateUrl: 'demo.postmethod-appform.html'
+    restrict:     'A',
+    scope:        {},
+    controller:   'AppFormCtrl',
+    templateUrl:  'demo.postmethod-appform.html'
   };
 })
 

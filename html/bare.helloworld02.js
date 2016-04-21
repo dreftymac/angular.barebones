@@ -15,19 +15,19 @@
 // begin_ declare co_modules
 
 // Alpha
-var moduleAlpha = angular.module("MyModuleAlpha", []);
+var moduleAlpha = angular.module("MyModuleAlpha", [$scope]);
 moduleAlpha.controller("MyControllerAlpha", function($scope) {
     $scope.name = "Alpha 123";
 });      
 
 // Bravo
-var moduleBravo = angular.module("MyModuleBravo", []);
+var moduleBravo = angular.module("MyModuleBravo", [$scope]);
 moduleBravo.controller("MyControllerBravo", function($scope) {
     $scope.name = "Bravo 123";
 });      
 
 // Charlie
-var moduleCharlie = angular.module("MyModuleCharlie", []);
+var moduleCharlie = angular.module("MyModuleCharlie", [$scope]);
 moduleCharlie.controller("MyControllerCharlie", function($scope) {
     $scope.name = "Charlie 123";
 });      

@@ -13,7 +13,18 @@
 ### <end-file_info>
 
 main:
-  
+
+  - caption:  changes to href="./html/bare.helloworld02.html"
+    rectype:  rrmini02
+    datebeg:  Thu Apr 21 11:51:52 2016 
+    dateend:  Thu Apr 21 11:51:52 2016 
+    tags:     tags
+    desc:     desc
+    seealso:  seealso
+    dreftymacid: unusual_replying_sewn
+    wwbody: |
+        * add scope to the module arrays
+
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
     rectype:  rrmini02
     datebeg:  Thu Apr 21 11:35:45 2016 
