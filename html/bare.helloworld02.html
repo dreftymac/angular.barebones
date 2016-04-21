@@ -15,6 +15,7 @@
     ###         * bare minimum to see if ng is working
     ###         * bare minimum example using Luis Perez angular.ng-modules
     ###             * (aka luis perez "lays_coins_rocks formula")
+    ###         * bare example using hosts_least syntax style
     ### <end-file_info>
     } -->
     <meta charset="utf-8">
@@ -23,27 +24,7 @@
     <script src="http://s69682.gridserver.com/_weblib/js/angularjs/angular-filter.min.js" ></script>
     <link   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css"  />
     <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"     ></script-->
-    <script>
-      // Alpha
-      var moduleAlpha = angular.module("MyModuleAlpha", []);
-      moduleAlpha.controller("MyControllerAlpha", function($scope) {
-          $scope.name = "Alpha 123";
-      });      
-      
-      // Bravo
-      var moduleBravo = angular.module("MyModuleBravo", []);
-      moduleBravo.controller("MyControllerBravo", function($scope) {
-          $scope.name = "Bravo 123";
-      });      
-      
-      // Charlie
-      var moduleCharlie = angular.module("MyModuleCharlie", []);
-      moduleCharlie.controller("MyControllerCharlie", function($scope) {
-          $scope.name = "Charlie 123";
-      });      
-
-      angular.module("AppModule", ["MyModuleAlpha", "MyModuleBravo", "MyModuleCharlie"]);
-    </script>
+    <script src="./bare.helloworld02.js" ></script>
   </head>
   <body ng-app="AppModule">
 
