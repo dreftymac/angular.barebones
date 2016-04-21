@@ -34,8 +34,7 @@ moduleCharlie.controller("MyControllerCharlie", function($scope) {
 
 // ------------------------------------------------------------------------
 // begin_ declare AppModule
-angular.module("AppModule",['$scope'
-     , "MyModuleAlpha"
+angular.module("AppModule",[ "MyModuleAlpha"
      , "MyModuleBravo"
      , "MyModuleCharlie"
      ])
