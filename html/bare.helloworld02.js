@@ -34,16 +34,11 @@ moduleCharlie.controller("MyControllerCharlie", function($scope) {
 
 // ------------------------------------------------------------------------
 // begin_ declare AppModule
-angular.module("AppModule",
-    ['$scope'
+angular.module("AppModule",['$scope'
      , "MyModuleAlpha"
      , "MyModuleBravo"
      , "MyModuleCharlie"
-     , function($scope){
-            $scope.myalpha  = 'one';
-            $scope.mybravo  = 'one';
-            $scope.mycharl  = 'one';
-}])
+     ])
 
 // filter -- string transform 
 .filter('exclaim',  function() {
