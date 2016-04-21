@@ -38,7 +38,11 @@ moduleCharlie.controller("MyControllerCharlie", function($scope) {
 // ------------------------------------------------------------------------
 // begin_ declare parent_containing DemoApp
 
-angular.module('DemoApp', [])
+angular.module('DemoApp', [''
+  , "MyModuleAlpha"
+  , "MyModuleBravo"
+  , "MyModuleCharlie"
+])
 
 // Form directive
 .directive('appForm', function() {
