@@ -16,9 +16,11 @@
 
 // Alpha
 var moduleAlpha = angular.module("MyModuleAlpha", []);
-moduleAlpha.controller("MyControllerAlpha", function($scope ,$http, $httpParamSerializer, $httpParamSerializerJQLike){
+moduleAlpha.controller("MyControllerAlpha", function($scope ,$http, $httpParamSerializerJQLike){
     $scope.name = "Alpha 123";
     $scope.alpha1 = 'alpha1';
+    console.log($http);
+    console.log($httpParamSerializerJQLike);
 });
 
 // Bravo
