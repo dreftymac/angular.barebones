@@ -1,6 +1,8 @@
 body {font-size:12px;}
 h3 {padding:5px 0 0 0;margin:10px 0 5px 0;border-top:1px solid;font-family:arial;}
-pre {margin-top:0px;word-break:break-word;}
+pre {margin-top:0px;word-break:break-word;
+  background-color:gainsboro;
+  }
 
 
 form {padding:1em;background:#EEE;}
