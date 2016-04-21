@@ -24,20 +24,28 @@
     <link   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css"  />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"     ></script>
     <script>
-      var moduleA = angular.module("MyModuleA", []);
-      moduleA.controller("MyControllerA", function($scope) {
-          $scope.name = "Bob A";
-      });
+      // Alpha
+      var moduleAlpha = angular.module("MyModuleAlpha", []);
+      moduleAlpha.controller("MyControllerAlpha", function($scope) {
+          $scope.name = "Alpha 123";
+      });      
+      
+      // Bravo
+      var moduleBravo = angular.module("MyModuleBravo", []);
+      moduleBravo.controller("MyControllerBravo", function($scope) {
+          $scope.name = "Bravo 123";
+      });      
+      
+      // Charlie
+      var moduleCharlie = angular.module("MyModuleCharlie", []);
+      moduleCharlie.controller("MyControllerCharlie", function($scope) {
+          $scope.name = "Charlie 123";
+      });      
 
-      var moduleB = angular.module("MyModuleB", []);
-      moduleB.controller("MyControllerB", function($scope) {
-          $scope.name = "Steve B";
-      });
-
-      angular.module("CombineModule", ["MyModuleA", "MyModuleB"]);
+      angular.module("AppModule", ["MyModuleAlpha", "MyModuleBravo", "MyModuleCharlie"]);
     </script>
   </head>
-  <body ng-app="CombineModule">
+  <body ng-app="AppModule">
 
       <xmp>
       ## seealso:
@@ -50,21 +58,25 @@
       
       * DeveloperTymac can only have one ng-app per page.
       * DeveloperTymac can only associate a single module with a single HTML element.
+      
+      ## workaround
+      * use the lays_coins_rocks formula with a javascript module by luis perez.
       </xmp>
 
       <div>
           <h1>myDiv1</h1>
-          <div ng-controller="MyControllerA">
+          <div ng-controller="MyControllerAlpha">
               {{name}}
           </div>
       </div>
 
       <div>
           <h1>myDiv2</h1>
-          <div ng-controller="MyControllerB">
+          <div ng-controller="MyControllerBravo">
               {{name}}
           </div>
       </div>
+      
   </body>
 </html>
 
