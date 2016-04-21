@@ -38,8 +38,8 @@ moduleCharlie.controller("MyControllerCharlie", function($scope) {
 // ------------------------------------------------------------------------
 // begin_ declare parent_containing DemoApp
 
-angular.module('DemoApp', [''
-  , "MyModuleAlpha"
+angular.module('DemoApp', [
+  "MyModuleAlpha"
   , "MyModuleBravo"
   , "MyModuleCharlie"
 ])
