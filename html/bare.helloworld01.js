@@ -3,9 +3,8 @@
 //   - date: created="Thu Apr 21 09:19:42 2016"
 //     last: lastmod="Thu Apr 21 09:19:42 2016"
 //     tags:   tags 
-//     author: created="__author__"
-//     dreftymacid:    "wizardly_fire_awful"
-//     filetype:       "yaml"
+//     dreftymacid: "wizardly_fire_awful"
+//     filetype: "yaml"
 //     seealso: |
 //         *
 //     desc: |
@@ -14,12 +13,12 @@
 
 angular.module('helloworld01', [])
 
- // Form directive
-.directive('appForm', function() {
-  return {
-    restrict:   'E',
-    scope:      {},
-    controller: 'AppFormCtrl',
-    templateUrl: 'demo.postmethod-appform.html'
-  };
-})
+// // Form directive
+//.directive('appForm', function() {
+//  return {
+//    restrict:   'E',
+//    scope:      {},
+//    controller: 'AppFormCtrl',
+//    templateUrl: 'demo.postmethod-appform.html'
+//  };
+//})
