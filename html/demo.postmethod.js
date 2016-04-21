@@ -6,7 +6,7 @@ angular.module('DemoApp', [])
     restrict: 'E',
     scope: {},
     controller: 'AppFormCtrl',
-    templateUrl: 'app-form.html'
+    templateUrl: 'demo.postmethod-appform.html'
   };
 })
 
