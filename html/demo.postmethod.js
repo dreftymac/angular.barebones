@@ -36,22 +36,22 @@ angular.module('DemoApp', [])
       // Note how the data property is assigned explicitly a value url-encoded by the new service
       // Note the headers and the lack of transformRequest
       // $httpParamSerializerJQLike can also be used, as it better handles encoding complex data structures
-      /*
-      $http({
-        url: 'some-api-endpoint',
-        method: 'POST',
-        data: $httpParamSerializer($scope.appForm.data),
-         // OR
-        data: $httpParamSerializerJQLike($scope.appForm.data)
-        headers: {
+      ///*
+      $http({noop:'x'        
+        ,url: 'http://requestb.in/1evt6ux1'
+        ,method: 'POST'
+        //data: $httpParamSerializer($scope.appForm.data),
+        // OR
+        ,data: $httpParamSerializerJQLike($scope.appForm.data)
+        ,headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
         }
-      }).success(function(response) { //... });
-      */
+      }).success(function(response) { console.log(response) });
+      //-- */
       
       // Demo value to show url-encoding upon submission
-      $scope.appForm.dataSubmitted       = $httpParamSerializer($scope.appForm.data);
-      $scope.appForm.dataSubmittedJQLike = $httpParamSerializerJQLike($scope.appForm.data);
+      //$scope.appForm.dataSubmitted       = $httpParamSerializer($scope.appForm.data);
+      //$scope.appForm.dataSubmittedJQLike = $httpParamSerializerJQLike($scope.appForm.data);
     }
   };
 }])
