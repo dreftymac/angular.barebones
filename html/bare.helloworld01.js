@@ -18,7 +18,12 @@ angular.module('helloworld01', [])
   var vout = function(input) {
     return  ['!!!',input,'!!!'].join(' ');
   };
-  
+  return vout;
+})
+
+// Demo filter -- simple string transformation
+.filter('reverse',  function() {
+  var vout = function (input) {return input.split('').reverse().join('');}
   return vout;
 })
 
