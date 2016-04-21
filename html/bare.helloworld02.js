@@ -12,7 +12,7 @@
 // <end-file_info>
 
 // ------------------------------------------------------------------------
-// begin_ declare co_modules
+// begin_ declare sibling_modules
 
 // Alpha
 var moduleAlpha = angular.module("MyModuleAlpha", []);
@@ -33,11 +33,11 @@ moduleCharlie.controller("MyControllerCharlie", function($scope) {
 });      
 
 // ------------------------------------------------------------------------
-// begin_ declare AppModule
+// begin_ declare parent_containing AppModule
 angular.module("AppModule",[ "MyModuleAlpha"
      , "MyModuleBravo"
      , "MyModuleCharlie"
-     ])
+])
 
 // filter -- string transform 
 .filter('exclaim',  function() {

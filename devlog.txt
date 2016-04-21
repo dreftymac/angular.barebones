@@ -29,7 +29,9 @@ main:
         * remove scope and just leave the modules -- YES_WORKY
         * add controller and interaction with modules -- PERHAPS_WORKY
         * use the modules exclusively and do not add on any controllers -- YES_WORKY
-        * remove the extra controller but leave it in the html -- 
+        * remove the extra controller but leave it in the html -- YES_WORKY
+            * the individual controller output breaks, but the other modules stil show good output
+            * href="./dotdev/image/unusual_replying_sewn-001.png"
 
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
     rectype:  rrmini02
