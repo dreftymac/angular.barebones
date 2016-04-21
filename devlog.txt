@@ -13,7 +13,18 @@
 ### <end-file_info>
 
 main:
-
+  
+  - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
+    rectype:  rrmini02
+    datebeg:  Thu Apr 21 11:35:45 2016 
+    dateend:  Thu Apr 21 11:35:45 2016 
+    tags:     tags
+    desc:     desc
+    seealso:  seealso
+    dreftymacid: shrank_enhance_algae
+    wwbody: |
+        href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/demo.postmethod.html" find="app-form"
+        
   - caption:  YES_WORKY -- post registering at http://putsreq.com/DMaUeX6aRYjmmUrIo1e1/inspect
     rectype:  rrmini02
     datebeg:  Wed Apr 20 19:17:45 2016 
@@ -61,10 +72,10 @@ main:
     seealso:  seealso
     dreftymacid: braun_meatier_warlords
     wwbody: |
+      * posting with angularjs1.4 ;; http://stackoverflow.com/a/30970229/42223
       * posting with angularjs1x  ;; http://www.bennadel.com/blog/2615-posting-form-data-with-http-in-angularjs.htm
       * posting with angularjs1x  ;; href="smartpath://mytrybits/a/tryangularjs/lab.one/webroot/barebones.post.method.htm
       * posting with angularjs1x  ;; href="regain://rectify_taming_diana"
-      * posting with angularjs1.4 ;; http://stackoverflow.com/a/30970229/42223
       
   - caption:  need to figure out cellRenderer for clickable links
     rectype:  rrmini02
