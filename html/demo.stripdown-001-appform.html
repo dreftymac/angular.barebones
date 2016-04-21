@@ -2,14 +2,14 @@
 
 <form ng-submit="appForm.submit();">
   <div ng-repeat="field in appForm.fields">
-    <label>{{field.name}}</label>
+    <label>{{field.name |uppercase() }}</label>
     <input ng-if="!field.parent_name"  type="{{field.type}" placeholder="{{field.placeholder}}" ng-model="appForm.data[field.name]">
   </div>
   <button>Submit</button>
 </form>
 
 <h3>Form data - live - JSON</h3>
-<pre>{{appForm.data | json}}</pre>
+<pre>{{appForm.data | json }}</pre>
 
 <h3>Form data - live - encoded with $httpParamSerializerJQLike</h3>
 <pre>{{appForm.data | urlEncodeJQLike}}</pre>
