@@ -1,0 +1,12 @@
+body {font-size:12px;}
+h3 {padding:5px 0 0 0;margin:10px 0 5px 0;border-top:1px solid;font-family:arial;}
+pre {margin-top:0px;word-break:break-word;
+  background-color:gainsboro;
+  padding:2em;
+  border: 1px solid silver;
+  }
+
+
+form {padding:1em;background:#EEE;}
+form div {margin:0.5em 0;}
+form input {display:block;width:100%;padding:8px;font-size:0.9em;box-sizing:border-box;}
