@@ -44,9 +44,9 @@ angular.module("AppModule",[ "MyModuleAlpha"
     // ********************
     // init
     $scope.localalpha  = 1;
-    $scope.globalalpha = moduleAlpha.$scope.name;
+    //$scope.globalalpha = moduleAlpha.$scope.name;
     //
-    console.log(scope);
+    console.log($scope);
 }])
 
 // filter -- string transform 
