@@ -3,8 +3,7 @@
 <form ng-submit="appForm.submit();">
   <div ng-repeat="field in appForm.fields">
     <label>{{field.name}}</label>
-    <input ng-if="!field.parent_name" type="{{field.type}" placeholder="{{field.placeholder}}" ng-model="appForm.data[field.name]">
-    <input ng-if="field.parent_name" type="{{field.type}" placeholder="{{field.placeholder}}" ng-model="appForm.data[field.parent_name][field.name]">
+    <input ng-if="field.parent_name"  type="{{field.type}" placeholder="{{field.placeholder}}" ng-model="appForm.data[field.parent_name][field.name]">
   </div>
   <button>Submit</button>
 </form>
