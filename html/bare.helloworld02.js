@@ -39,18 +39,6 @@ angular.module("AppModule",[ "MyModuleAlpha"
      , "MyModuleCharlie"
      ])
 
-// controller -- ctlSimpleTest controller addon
-.controller('ctlSimpleTest', ['$scope', function($scope){
-    // ********************
-    // init
-    $scope.localalpha  = 1;
-    //$scope.globalalpha = moduleAlpha.$scope.name;
-    
-    // console log digging
-    console.log(moduleAlpha);
-    console.log($scope);
-}])
-
 // filter -- string transform 
 .filter('exclaim',  function() {
   var vout = function(input) {return ['!!!',input,'!!!'].join(' ');};
