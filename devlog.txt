@@ -21,9 +21,7 @@ main:
     tags:     tags
     desc:     desc
     seealso:  seealso
-    dreftymacid: __dreftymacid__
-    qquestion:  __qquestion__
-    qanswer:    __qanswer__
+    dreftymacid: watchful_beamy_marian
     wwbody: |
         wwbody
 
