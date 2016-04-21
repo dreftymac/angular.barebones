@@ -17,22 +17,6 @@
 // Alpha
 var moduleAlpha = angular.module("MyModuleAlpha", []);
 
-//moduleAlpha.controller("MyControllerAlpha", function($scope ,$http, $httpParamSerializer, $httpParamSerializerJQLike){
-//    $scope.name = "Alpha 123";
-//    $scope.alpha1 = 'alpha1';
-//});
-
-// Form directive
-moduleAlpha.directive('appForm', function() {
-  return {
-    restrict:     'A',
-    scope:        {},
-    controller:   'AppFormCtrl',
-    templateUrl:  "./demo.stripdown-001-appform.html"
-  };
-})
-;
-
 // Form controller
 moduleAlpha.controller('MyControllerAlpha', ['$scope', '$http', '$httpParamSerializer', '$httpParamSerializerJQLike',
                             function($scope, $http, $httpParamSerializer, $httpParamSerializerJQLike) {
@@ -74,6 +58,24 @@ moduleAlpha.controller('MyControllerAlpha', ['$scope', '$http', '$httpParamSeria
   };
 }])
 ;
+
+//moduleAlpha.controller("MyControllerAlpha", function($scope ,$http, $httpParamSerializer, $httpParamSerializerJQLike){
+//    $scope.name = "Alpha 123";
+//    $scope.alpha1 = 'alpha1';
+//});
+
+// Form directive
+moduleAlpha.directive('appForm', function() {
+  return {
+    restrict:     'A',
+    scope:        {},
+    controller:   'AppFormCtrl',
+    templateUrl:  "./demo.stripdown-001-appform.html"
+  };
+})
+;
+
+
 
 // Demo filter to show a live preview of $httpParamSerializerJQLike url-encoding
 moduleAlpha.filter('urlEncodeJQLike', ['$httpParamSerializerJQLike', function($httpParamSerializerJQLike) {
