@@ -69,6 +69,16 @@ moduleAlpha.controller("MyControllerAlpha", function($scope ,$http, $httpParamSe
     
 });
 
+// Form directive
+moduleAlpha.directive('appForm', function() {
+  return {
+    restrict:     'A',
+    scope:        {},
+    controller:   'MyControllerAlpha',
+    templateUrl:  "demo.helloworld02-appform.html"
+  };
+})
+
 // Bravo
 var moduleBravo = angular.module("MyModuleBravo", []);
 moduleBravo.controller("MyControllerBravo", function($scope) {
@@ -89,16 +99,6 @@ angular.module("AppModule",[ "MyModuleAlpha"
      , "MyModuleBravo"
      , "MyModuleCharlie"
 ])
-
-// Form directive
-.directive('appForm', function() {
-  return {
-    restrict:     'A',
-    scope:        {},
-    controller:   'MyControllerAlpha',
-    templateUrl:  "demo.helloworld02-appform.html"
-  };
-})
 
 // filter -- string transform
 .filter('exclaim',  function() {
