@@ -27,8 +27,11 @@
     <![endif]-->
   </head>
   <body ng-controller="AppCtrl" ng-cloak="">
-    <p>This demo is a really ugly example of the basic functionality of this module.  Have a look
-      through the code and get a feel for how everything works.</p>
+    <p>
+      This demo is a really ugly example of the basic functionality of this module.  Have a look
+      through the code and get a feel for how everything works.
+    </p>
+    
     <dynamic-form class="col-md-8" template-url="form-template.js" ng-model="urlFormData">
       <dynamic-form class="col-md-12" template="stdFormTemplate" ng-model="stdFormData">
         <legend>template= test</legend>
@@ -42,7 +45,7 @@
       </div>
     </div>
     <!-- Load scripts at the end for performance. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script data-require="angular.js@1.4.2" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
     <script src="../dynamic-forms.js"></script>
     <script src="app.js"></script>
   </body>

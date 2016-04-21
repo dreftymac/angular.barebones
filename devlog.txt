@@ -42,7 +42,8 @@ main:
         * removed demo stripdown and replaced with demo.helloworld02
         * added JSONFORM demo for angularjs
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/jsonform/demo/index.html" 
-            * href="smartpath://mymedia/2014/git/github/angular1x.barebones/jsonform/demo/barebones01.html" 
+            * href="smartpath://mymedia/2014/git/github/angular1x.barebones/jsonform/demo/barebones01.html"
+            * https://github.com/danhunsaker/angular-dynamic-forms
 
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
     rectype:  rrmini02
