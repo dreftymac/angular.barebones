@@ -13,12 +13,22 @@
 
 angular.module('helloworld01', [])
 
-// // Form directive
-//.directive('appForm', function() {
-//  return {
-//    restrict:   'E',
-//    scope:      {},
-//    controller: 'AppFormCtrl',
-//    templateUrl: 'demo.postmethod-appform.html'
+// Demo filter to show a live preview of $httpParamSerializerJQLike url-encoding
+.filter('exclaim',  function() {
+  var vout = function(input) {
+    return  ['!!!',input,'!!!'].join(' ');
+  };
+  
+  return vout;
+})
+
+//// Demo filter to show a live preview of $httpParamSerializerJQLike url-encoding
+//.filter('urlEncodeJQLike', ['$httpParamSerializerJQLike', function($httpParamSerializerJQLike) {
+//  var urlEncodeFilter = function(formData) {
+//    return decodeURIComponent($httpParamSerializerJQLike(formData));
 //  };
-//})
+//  
+//  urlEncodeFilter.$stateful = true;
+//  
+//  return urlEncodeFilter;
+//}]);

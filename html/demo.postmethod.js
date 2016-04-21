@@ -15,7 +15,7 @@
 
 angular.module('DemoApp', [])
 
- // Form directive
+// Form directive
 .directive('appForm', function() {
   return {
     restrict:   'E',
@@ -25,7 +25,7 @@ angular.module('DemoApp', [])
   };
 })
 
- // Form controller
+// Form controller
 .controller('AppFormCtrl', ['$scope', '$http', '$httpParamSerializer', '$httpParamSerializerJQLike',
                             function($scope, $http, $httpParamSerializer, $httpParamSerializerJQLike) {
   $scope.appForm = {
