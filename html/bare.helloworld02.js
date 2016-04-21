@@ -16,7 +16,8 @@
 
 // Alpha
 var moduleAlpha = angular.module("MyModuleAlpha", []);
-moduleAlpha.controller("MyControllerAlpha", function($scope ,$http, $httpParamSerializerJQLike){
+moduleAlpha.controller("MyControllerAlpha", ['$scope', '$http', '$httpParamSerializerJQLike'
+                                             ,function($scope ,$http, $httpParamSerializerJQLike){
   $scope.name   = "Alpha 123";
   $scope.alpha1 = 'alpha1';
   //console.log($http);
@@ -67,7 +68,7 @@ moduleAlpha.controller("MyControllerAlpha", function($scope ,$http, $httpParamSe
     }
   };    
     
-});
+}]);
 
 // Form directive
 moduleAlpha.directive('appForm', function() {
