@@ -16,7 +16,7 @@
 
 // Alpha
 var moduleAlpha = angular.module("MyModuleAlpha", []);
-moduleAlpha.controller("MyControllerAlpha", function($scope ,$http, $httpParamSerializer, $httpParamSerializerJQLike){
+moduleAlpha.controller("MyControllerAlpha", function($scope){
     $scope.name = "Alpha 123";
     $scope.alpha1 = 'alpha1';
 });
@@ -50,7 +50,7 @@ angular.module('DemoApp', [
     restrict:     'A',
     scope:        {},
     controller:   'AppFormCtrl',
-    templateUrl:  "./demo.stripdown-001-appform.html"
+    templateUrl:  "./demo.helloworld02-appform.html"
   };
 })
 
