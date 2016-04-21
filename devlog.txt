@@ -23,7 +23,7 @@ main:
     seealso:  seealso
     dreftymacid: unusual_replying_sewn
     wwbody: |
-        * add scope to the module arrays
+        * add scope to the module arrays -- NO_WORKY
 
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
     rectype:  rrmini02
