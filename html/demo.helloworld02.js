@@ -84,11 +84,11 @@ angular.module('DemoApp', [
           ,'Content-Type': 'application/x-www-form-urlencoded'
           ,'Access-Control-Allow-Origin': '*'          
         }
-      }).success(function(response) { console.log(response) });
+      }).success(function(response){ console.log(response) });
       //-- */
       
       // Demo value to show url-encoding upon submission
-      $scope.appForm.dataSubmittedJQLike = $httpParamSerializerJQLike($scope.appForm.data);
+      $scope.appForm.dataSubmitted = $httpParamSerializerJQLike($scope.appForm.data);
     }
   };
 }])
