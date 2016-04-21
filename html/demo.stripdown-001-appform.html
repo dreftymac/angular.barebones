@@ -8,14 +8,14 @@
   <button>Submit</button>
 </form>
 
-<h3>Form data - live - JSON</h3>
+<h3>Live Parameters</h3>
 <pre>{{appForm.data | json }}</pre>
 
-<h3>Form data - live - encoded with $httpParamSerializerJQLike</h3>
-<pre>{{appForm.data | urlEncodeJQLike}}</pre>
+<!--h3>Form data - live - encoded with $httpParamSerializerJQLike</h3>
+<pre>{{appForm.data | urlEncodeJQLike}}</pre-->
 
 <div ng-if="appForm.dataSubmittedJQLike">
-<h3>Form data - submitted - with $httpParamSerializerJQLike</h3>
+  <h3>Form data - submitted - with $httpParamSerializerJQLike</h3>
   <pre>
     https:/listener.uoregon.edu/bao-quikpay/web/listener.php?{{appForm.dataSubmittedJQLike}}
   </pre>

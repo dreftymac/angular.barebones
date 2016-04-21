@@ -59,8 +59,8 @@ angular.module('DemoApp', [
                             function($scope, $http, $httpParamSerializer, $httpParamSerializerJQLike) {
   $scope.appForm = {
     fields: [
-      {name: 'name', type:'text', placeholder: 'Name (Bob York)'},
-      {name: 'email', type:'email', placeholder: 'Email (example@example.com)'},
+      {name: 'name', type:'text', placeholder: 'Valued Customer'},
+      {name: 'email', type:'email', placeholder: 'valued@example.com'},
     ],
     
     data: {
