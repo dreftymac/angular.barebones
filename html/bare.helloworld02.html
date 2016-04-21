@@ -37,14 +37,13 @@
   <body ng-app="AppModule">
 
     <div>
-      
-        <div ng-app="AppModule">        
-          <div data-app-form="true"></div>        
-        </div>        
-      
+            
         <fieldset>
           <legend>Alpha</legend>
           <div ng-controller="MyControllerAlpha">
+                
+              <div data-app-form="true"></div>        
+                        
               {{name}} <br/>
               {{name |exclaim |reverse }} <br/>
               {{name |exclaim }} <br/>
