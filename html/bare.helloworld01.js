@@ -13,7 +13,7 @@
 
 angular.module('helloworld01', [])
 
-// Demo filter to show a live preview of $httpParamSerializerJQLike url-encoding
+// Demo filter -- simple string transformation
 .filter('exclaim',  function() {
   var vout = function(input) {
     return  ['!!!',input,'!!!'].join(' ');
