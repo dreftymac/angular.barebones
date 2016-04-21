@@ -1,0 +1,23 @@
+<h3>Form</h3>
+
+<form ng-submit="appForm.submit();">
+  <div ng-repeat="field in appForm.fields">
+    <label>{{field.name |uppercase }}</label>
+    <input ng-if="!field.parent_name"  type="{{field.type}" placeholder="{{field.placeholder}}" ng-model="appForm.data[field.name]">
+  </div>
+  <button>Submit</button>
+</form>
+
+<h3>Live Parameters</h3>
+<pre>{{appForm.data | json }}</pre>
+
+<!--h3>Form data - live - encoded with $httpParamSerializerJQLike</h3>
+<pre>{{appForm.data | urlEncodeJQLike}}</pre-->
+
+<div ng-if="appForm.dataSubmitted">
+  <h3>Form data submitted</h3>
+  <pre>
+    https:/listener.uoregon.edu/bao-quikpay/web/listener.php?{{appForm.dataSubmitted}}
+  </pre>
+</div>
+
