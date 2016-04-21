@@ -2,7 +2,7 @@
 
 <form ng-submit="appForm.submit();">
   <div ng-repeat="field in appForm.fields">
-    <label>{{field.name |uppercase() }}</label>
+    <label>{{field.name |uppercase }}</label>
     <input ng-if="!field.parent_name"  type="{{field.type}" placeholder="{{field.placeholder}}" ng-model="appForm.data[field.name]">
   </div>
   <button>Submit</button>
