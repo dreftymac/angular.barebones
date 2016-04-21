@@ -16,10 +16,11 @@
 
 // Alpha
 var moduleAlpha = angular.module("MyModuleAlpha", []);
-moduleAlpha.controller("MyControllerAlpha", function($scope ,$http, $httpParamSerializer, $httpParamSerializerJQLike){
-    $scope.name = "Alpha 123";
-    $scope.alpha1 = 'alpha1';
-});
+
+//moduleAlpha.controller("MyControllerAlpha", function($scope ,$http, $httpParamSerializer, $httpParamSerializerJQLike){
+//    $scope.name = "Alpha 123";
+//    $scope.alpha1 = 'alpha1';
+//});
 
 // Form directive
 moduleAlpha.directive('appForm', function() {
@@ -33,17 +34,19 @@ moduleAlpha.directive('appForm', function() {
 ;
 
 // Form controller
-moduleAlpha.controller('AppFormCtrl', ['$scope', '$http', '$httpParamSerializer', '$httpParamSerializerJQLike',
+moduleAlpha.controller('MyControllerAlpha', ['$scope', '$http', '$httpParamSerializer', '$httpParamSerializerJQLike',
                             function($scope, $http, $httpParamSerializer, $httpParamSerializerJQLike) {
-  $scope.appForm = {
+  $scope.name     = "alpha 123";
+  $scope.alpha1   = 'alpha1';
+  $scope.appForm  = {
     fields: [
       {name: 'name', type:'text', placeholder: 'Valued Customer'},
       {name: 'email', type:'email', placeholder: 'valued@example.com'},
     ],
     
     data: {
-      name:  '',
-      email: '',
+      name:  "",
+      email: "",
     },
     
     dataSubmitted: '',
