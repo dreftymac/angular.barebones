@@ -21,31 +21,8 @@ moduleAlpha.controller("MyControllerAlpha", function($scope ,$http, $httpParamSe
     $scope.alpha1 = 'alpha1';
 });
 
-// Bravo
-var moduleBravo = angular.module("MyModuleBravo", []);
-moduleBravo.controller("MyControllerBravo", function($scope) {
-    $scope.name = "Bravo 123";
-    $scope.bravo1 = 'bravo1';
-});
-
-// Charlie
-var moduleCharlie = angular.module("MyModuleCharlie", []);
-moduleCharlie.controller("MyControllerCharlie", function($scope) {
-    $scope.name = "Charlie 123";
-    $scope.charlie1 = 'charlie1';
-});
-
-// ------------------------------------------------------------------------
-// begin_ declare parent_containing DemoApp
-
-angular.module('DemoApp', [
-  "MyModuleAlpha"
-  , "MyModuleBravo"
-  , "MyModuleCharlie"
-])
-
 // Form directive
-.directive('appForm', function() {
+moduleAlpha.directive('appForm', function() {
   return {
     restrict:     'A',
     scope:        {},
@@ -53,9 +30,10 @@ angular.module('DemoApp', [
     templateUrl:  "./demo.stripdown-001-appform.html"
   };
 })
+;
 
 // Form controller
-.controller('AppFormCtrl', ['$scope', '$http', '$httpParamSerializer', '$httpParamSerializerJQLike',
+moduleAlpha.controller('AppFormCtrl', ['$scope', '$http', '$httpParamSerializer', '$httpParamSerializerJQLike',
                             function($scope, $http, $httpParamSerializer, $httpParamSerializerJQLike) {
   $scope.appForm = {
     fields: [
@@ -92,6 +70,31 @@ angular.module('DemoApp', [
     }
   };
 }])
+;
+
+// Bravo
+var moduleBravo = angular.module("MyModuleBravo", []);
+moduleBravo.controller("MyControllerBravo", function($scope) {
+    $scope.name = "Bravo 123";
+    $scope.bravo1 = 'bravo1';
+});
+
+// Charlie
+var moduleCharlie = angular.module("MyModuleCharlie", []);
+moduleCharlie.controller("MyControllerCharlie", function($scope) {
+    $scope.name = "Charlie 123";
+    $scope.charlie1 = 'charlie1';
+});
+
+// ------------------------------------------------------------------------
+// begin_ declare parent_containing DemoApp
+
+angular.module('DemoApp', [
+  "MyModuleAlpha"
+  , "MyModuleBravo"
+  , "MyModuleCharlie"
+])
+
 
 // Demo filter to show a live preview of $httpParamSerializerJQLike url-encoding
 .filter('urlEncodeJQLike', ['$httpParamSerializerJQLike', function($httpParamSerializerJQLike) {
