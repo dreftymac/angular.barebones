@@ -39,10 +39,7 @@ main:
         * bare.helloworld02
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/bare.helloworld02.js"
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/bare.hellworld02.html"            
-        * demo.stripdown-001 ;; 
-            * href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/demo.stripdown-001.js"
-            * href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/demo.stripdown-001.html"
-            * href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/demo.stripdown-001-appform.html"            
+        * removed demo stripdown and replaced with demo.helloworld02        
 
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
     rectype:  rrmini02
