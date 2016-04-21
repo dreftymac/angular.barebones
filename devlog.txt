@@ -6,12 +6,25 @@
 ###     dreftymacid: "dawn_julia_lyric"
 ###     seealso: |
 ###         * cd c:/sm/docs/mymedia/2014/git/github/angular1x.barebones
+###         * href="regain://mint_gaga_one" 
 ###     desc: |
 ###         devlog.txt
 ###         
 ### <end-file_info>
 
 todo:
+  - caption:      TODO ;; figure out how to handle the pdf files
+    rectype:      rrtodo3
+    status:       "DONE|PROCESSING|HOLD|TODO"
+    category:     "__blank__"
+    dreftymacid:  "__blank__"
+    tags:         tags
+    seealso:      seealso
+    date:         Tue Apr 12 21:15:37 2016
+    due:          Tue Apr12 
+    wwbody: |
+         
+
   - caption:      TODO ;; update alter text
     rectype:      rrtodo3
     status:       "DONE|PROCESSING|HOLD|TODO"
@@ -22,8 +35,11 @@ todo:
     date:         Tue Apr 12 21:09:50 2016
     due:          Tue Apr12 
     wwbody: |
+        ## update views altertext
         $handler->display->display_options['fields']['nid_1']['alter']['text'] = 'https://fpm.uoregon.edu/node/[nid]/edit/policyrevoker';
         $handler->display->display_options['fields']['nid_1']['alter']['text'] = 'https://fpm.uoregon.edu/node/[nid]/edit/policyrevoker?destination=[originating_display]';
+        
+        ## change edit hyperlink to a 'revoke' button
 
 main:
   
@@ -46,8 +62,6 @@ main:
         });
         return eSpan;
       }
-
-
   
   - caption:  mint_gaga_one recipe works all of a sudden -- export saved
     rectype:  rrmini02
