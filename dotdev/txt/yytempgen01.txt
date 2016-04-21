@@ -25,7 +25,7 @@ __yaml__:
     pathinclude:      pathinclude
     template:         |
       {% for row in maintable -%}
-      {{-"\n"-}}  
+      {{-"\n"-}}
       // {{ row.caption }}
       var module{{row.caption}} = angular.module("MyModule{{row.caption}}", []);
       module{{row.caption}}.controller("MyController{{row.caption}}", function($scope) {
