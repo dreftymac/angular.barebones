@@ -72,6 +72,15 @@ moduleAlpha.controller('AppFormCtrl', ['$scope', '$http', '$httpParamSerializer'
 }])
 ;
 
+// Demo filter to show a live preview of $httpParamSerializerJQLike url-encoding
+moduleAlpha.filter('urlEncodeJQLike', ['$httpParamSerializerJQLike', function($httpParamSerializerJQLike) {
+  var urlEncodeFilter = function(formData) {
+    return decodeURIComponent($httpParamSerializerJQLike(formData));
+  };  
+  urlEncodeFilter.$stateful = true;
+  return urlEncodeFilter;
+}]);
+
 // Bravo
 var moduleBravo = angular.module("MyModuleBravo", []);
 moduleBravo.controller("MyControllerBravo", function($scope) {
@@ -96,11 +105,4 @@ angular.module('DemoApp', [
 ])
 
 
-// Demo filter to show a live preview of $httpParamSerializerJQLike url-encoding
-.filter('urlEncodeJQLike', ['$httpParamSerializerJQLike', function($httpParamSerializerJQLike) {
-  var urlEncodeFilter = function(formData) {
-    return decodeURIComponent($httpParamSerializerJQLike(formData));
-  };  
-  urlEncodeFilter.$stateful = true;
-  return urlEncodeFilter;
-}]);
+
