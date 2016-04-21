@@ -27,7 +27,8 @@ main:
         * add scope and function to the main module   -- NO_WORKY
         * remove function and leave scope -- NO_WORKY
         * remove scope and just leave the modules -- YES_WORKY
-        * add controller and interaction with modules -- 
+        * add controller and interaction with modules -- PERHAPS_WORKY
+            * need to do some console.log digging to see if the modules are reachable
 
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
     rectype:  rrmini02

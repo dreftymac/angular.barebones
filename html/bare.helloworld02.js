@@ -45,7 +45,9 @@ angular.module("AppModule",[ "MyModuleAlpha"
     // init
     $scope.localalpha  = 1;
     //$scope.globalalpha = moduleAlpha.$scope.name;
-    //
+    
+    // console log digging
+    console.log(moduleAlpha);
     console.log($scope);
 }])
 
