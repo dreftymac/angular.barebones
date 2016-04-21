@@ -25,7 +25,6 @@ todo:
     due:          Tue Apr12 
     wwbody: |
          
-
   - caption:      TODO ;; update alter text
     rectype:      rrtodo3
     status:       "DONE|PROCESSING|HOLD|TODO"
@@ -52,7 +51,7 @@ main:
     desc:     desc
     seealso:  seealso
     dreftymacid: fistful_clench_virgo
-    wwbody: |
+    wwbody: |    
         ## no access-control-allow origin error ** is therefore not allowed access.
         No 'Access-Control-Allow-Origin' header is present on the requested resource
         http://www.html5rocks.com/en/tutorials/cors/
@@ -64,6 +63,9 @@ main:
         
         ## learnbit
         http://stackoverflow.com/questions/1653308/access-control-allow-origin-multiple-origin-domains
+        
+        ## links
+        http://stackoverflow.com/questions/10179756/using-requestbin
 
 
   - caption:  angularjs post method

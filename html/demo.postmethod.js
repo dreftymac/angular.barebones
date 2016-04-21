@@ -38,7 +38,7 @@ angular.module('DemoApp', [])
       // $httpParamSerializerJQLike can also be used, as it better handles encoding complex data structures
       ///*
       $http({noop:'x'        
-        ,url: 'http://requestb.in/1evt6ux1'
+        ,url: 'http://putsreq.com/DMaUeX6aRYjmmUrIo1e1'
         ,method: 'POST'
         //data: $httpParamSerializer($scope.appForm.data),
         // OR
