@@ -1,0 +1,30 @@
+<h3>Form</h3>
+
+<form ng-submit="appForm.submit();">
+  <div ng-repeat="field in appForm.fields">
+    <label>{{field.name}}</label>
+    <input ng-if="!field.parent_name" type="{{field.type}" placeholder="{{field.placeholder}}" ng-model="appForm.data[field.name]">
+    <input ng-if="field.parent_name" type="{{field.type}" placeholder="{{field.placeholder}}" ng-model="appForm.data[field.parent_name][field.name]">
+  </div>
+  <button>Submit</button>
+</form>
+
+<h3>Form data - live - JSON</h3>
+<pre>{{appForm.data | json}}</pre>
+
+<h3>Form data - live - encoded with $httpParamSerializer</h3>
+<pre>{{appForm.data | urlEncodeDefault}}</pre>
+
+<h3>Form data - live - encoded with $httpParamSerializerJQLike</h3>
+<pre>{{appForm.data | urlEncodeJQLike}}</pre>
+
+<div ng-if="appForm.dataSubmitted">
+<h3>Form data - submitted - with $httpParamSerializer</h3>
+<pre>{{appForm.dataSubmitted}}</pre>
+</div>
+
+<div ng-if="appForm.dataSubmittedJQLike">
+<h3>Form data - submitted - with $httpParamSerializerJQLike</h3>
+<pre>{{appForm.dataSubmittedJQLike}}</pre>
+</div>
+
