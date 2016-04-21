@@ -33,7 +33,7 @@ angular.module('DemoApp', [])
     ],
     
     data: {
-      name: '',
+      name:  '',
       email: '',
     },
     
