@@ -16,21 +16,56 @@
 
 // Alpha
 var moduleAlpha = angular.module("MyModuleAlpha", []);
+moduleAlpha.controller("MyControllerAlpha", function($scope ,$http, $httpParamSerializer, $httpParamSerializerJQLike){
+    $scope.name = "Alpha 123";
+    $scope.alpha1 = 'alpha1';
+});
+
+// Bravo
+var moduleBravo = angular.module("MyModuleBravo", []);
+moduleBravo.controller("MyControllerBravo", function($scope) {
+    $scope.name = "Bravo 123";
+    $scope.bravo1 = 'bravo1';
+});
+
+// Charlie
+var moduleCharlie = angular.module("MyModuleCharlie", []);
+moduleCharlie.controller("MyControllerCharlie", function($scope) {
+    $scope.name = "Charlie 123";
+    $scope.charlie1 = 'charlie1';
+});
+
+// ------------------------------------------------------------------------
+// begin_ declare parent_containing DemoApp
+
+angular.module('DemoApp', [
+  "MyModuleAlpha"
+  , "MyModuleBravo"
+  , "MyModuleCharlie"
+])
+
+// Form directive
+.directive('appForm', function() {
+  return {
+    restrict:     'A',
+    scope:        {},
+    controller:   'AppFormCtrl',
+    templateUrl:  "./demo.stripdown-001-appform.html"
+  };
+})
 
 // Form controller
-moduleAlpha.controller('MyControllerAlpha', ['$scope', '$http', '$httpParamSerializer', '$httpParamSerializerJQLike',
+.controller('AppFormCtrl', ['$scope', '$http', '$httpParamSerializer', '$httpParamSerializerJQLike',
                             function($scope, $http, $httpParamSerializer, $httpParamSerializerJQLike) {
-  $scope.name     = "alpha 123";
-  $scope.alpha1   = 'alpha1';
-  $scope.appForm  = {
+  $scope.appForm = {
     fields: [
       {name: 'name', type:'text', placeholder: 'Valued Customer'},
       {name: 'email', type:'email', placeholder: 'valued@example.com'},
     ],
     
     data: {
-      name:  "",
-      email: "",
+      name:  '',
+      email: '',
     },
     
     dataSubmitted: '',
@@ -57,57 +92,12 @@ moduleAlpha.controller('MyControllerAlpha', ['$scope', '$http', '$httpParamSeria
     }
   };
 }])
-;
-
-//moduleAlpha.controller("MyControllerAlpha", function($scope ,$http, $httpParamSerializer, $httpParamSerializerJQLike){
-//    $scope.name = "Alpha 123";
-//    $scope.alpha1 = 'alpha1';
-//});
-
-// Form directive
-moduleAlpha.directive('appForm', function() {
-  return {
-    restrict:     'A',
-    scope:        {},
-    controller:   'AppFormCtrl',
-    templateUrl:  "./demo.stripdown-001-appform.html"
-  };
-})
-;
-
-
 
 // Demo filter to show a live preview of $httpParamSerializerJQLike url-encoding
-moduleAlpha.filter('urlEncodeJQLike', ['$httpParamSerializerJQLike', function($httpParamSerializerJQLike) {
+.filter('urlEncodeJQLike', ['$httpParamSerializerJQLike', function($httpParamSerializerJQLike) {
   var urlEncodeFilter = function(formData) {
     return decodeURIComponent($httpParamSerializerJQLike(formData));
   };  
   urlEncodeFilter.$stateful = true;
   return urlEncodeFilter;
 }]);
-
-// Bravo
-var moduleBravo = angular.module("MyModuleBravo", []);
-moduleBravo.controller("MyControllerBravo", function($scope) {
-    $scope.name = "Bravo 123";
-    $scope.bravo1 = 'bravo1';
-});
-
-// Charlie
-var moduleCharlie = angular.module("MyModuleCharlie", []);
-moduleCharlie.controller("MyControllerCharlie", function($scope) {
-    $scope.name = "Charlie 123";
-    $scope.charlie1 = 'charlie1';
-});
-
-// ------------------------------------------------------------------------
-// begin_ declare parent_containing DemoApp
-
-angular.module('DemoApp', [
-  "MyModuleAlpha"
-  , "MyModuleBravo"
-  , "MyModuleCharlie"
-])
-
-
-
