@@ -13,6 +13,7 @@
 ### <end-file_info>
 
 todo:
+  
   - caption:      TODO ;; figure out how to handle the pdf files
     rectype:      rrtodo3
     status:       "DONE|PROCESSING|HOLD|TODO"
@@ -42,6 +43,21 @@ todo:
         ## change edit hyperlink to a 'revoke' button
 
 main:
+
+  - caption:  angularjs post method
+    rectype:  rrmini02
+    datebeg:  Wed Apr 20 17:39:45 2016 
+    dateend:  Wed Apr 20 17:39:45 2016 
+    tags:     tags
+    desc:     desc
+    seealso:  seealso
+    dreftymacid: braun_meatier_warlords
+    wwbody: |
+      * posting with angularjs1x  ;; http://www.bennadel.com/blog/2615-posting-form-data-with-http-in-angularjs.htm
+      * posting with angularjs1x  ;; href="smartpath://mytrybits/a/tryangularjs/lab.one/webroot/barebones.post.method.htm
+      * posting with angularjs1x  ;; href="regain://rectify_taming_diana"
+      * posting with angularjs1.4 ;; http://stackoverflow.com/a/30970229/42223
+
   
   - caption:  need to figure out cellRenderer for clickable links
     rectype:  rrmini02
