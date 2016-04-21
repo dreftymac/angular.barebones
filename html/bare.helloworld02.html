@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- {
+    ### <beg-file_info>
+    ### main:
+    ###   - date: created="Wed Sep 23 12:07:28 2015"
+    ###     last: lastmod="Wed Sep 23 12:07:28 2015"
+    ###     tags: angularjs,
+    ###     dreftymacid: "lays_coins_rocks"
+    ###     seealso: |
+    ###         *
+    ###     desc: |
+    ###         * bare.helloworld02
+    ###         * bare minimum to see if ng is working
+    ###         * bare minimum example using Luis Perez angular.ng-modules
+    ###             * (aka luis perez "lays_coins_rocks formula")
+    ### <end-file_info>
+    } -->
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"    ></script>
+    <script src="http://s69682.gridserver.com/_weblib/js/angularjs/angular.ng-modules.js" ></script>
+    <script src="http://s69682.gridserver.com/_weblib/js/angularjs/angular-filter.min.js" ></script>
+    <link   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css"  />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"     ></script>
+    <script>
+      var moduleA = angular.module("MyModuleA", []);
+      moduleA.controller("MyControllerA", function($scope) {
+          $scope.name = "Bob A";
+      });
+
+      var moduleB = angular.module("MyModuleB", []);
+      moduleB.controller("MyControllerB", function($scope) {
+          $scope.name = "Steve B";
+      });
+
+      angular.module("CombineModule", ["MyModuleA", "MyModuleB"]);
+    </script>
+  </head>
+  <body ng-app="CombineModule">
+
+      <xmp>
+      ## seealso:
+      * href="smartpath://mydaydirs/2014/week30/htm/getting.around.ngapp.limitations.htm"
+      * http://www.simplygoodcode.com/2014/04/angularjs-getting-around-ngapp-limitations-with-ngmodule
+      </xmp>
+
+      <xmp>
+      ## angularjs annoyances
+      
+      * DeveloperTymac can only have one ng-app per page.
+      * DeveloperTymac can only associate a single module with a single HTML element.
+      </xmp>
+
+      <div>
+          <h1>myDiv1</h1>
+          <div ng-controller="MyControllerA">
+              {{name}}
+          </div>
+      </div>
+
+      <div>
+          <h1>myDiv2</h1>
+          <div ng-controller="MyControllerB">
+              {{name}}
+          </div>
+      </div>
+  </body>
+</html>
+

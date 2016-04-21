@@ -24,7 +24,6 @@ main:
     dreftymacid: host_least
     wwbody: |
         * successfully used post method with angularjs
-        * 
 
   - caption:  NO_WORKY -- error message when attempt requestbin post      
     rectype:  rrmini02
