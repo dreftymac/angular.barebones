@@ -24,6 +24,8 @@ main:
     dreftymacid: unusual_replying_sewn
     wwbody: |
         * add scope to the module arrays -- NO_WORKY
+        * add scope to the main module   -- NO_WORKY
+        * 
 
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
     rectype:  rrmini02
