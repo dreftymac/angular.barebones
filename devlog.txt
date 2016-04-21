@@ -37,7 +37,8 @@ main:
         * YES_WORKY -- working with angular1.4 addon components for postmethod test
         * YES_WORKY -- function($scope ,$http, $httpParamSerializerJQLike) (no errors by including in function args)
         * NO_WORKY  --  start working on the REPL output
-        * fix broken angular1 output
+        * NO_WORKY  -- error unpr fix broken angular1 output
+            * https://docs.angularjs.org/error/$injector/unpr
 
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
     rectype:  rrmini02
