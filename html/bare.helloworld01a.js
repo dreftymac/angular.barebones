@@ -39,11 +39,10 @@ angular.module('helloworld01', [])
 // ['2,000.50','1,000.50']
 .filter('list_reduce',  function() {
   var vout = function (input) {
-    return input.reduce(function(axx, bxx) {return
-                        parseFloat(axx.toString().split(',').join(''))
-                        +
-                        parseFloat(bxx.toString().split(',').join(''))
-                        ;});
+    return
+      input.reduce(function(axx, bxx) {
+        return parseFloat(axx)+parseFloat(bxx)
+      ;});
   }
   return vout;
 })
