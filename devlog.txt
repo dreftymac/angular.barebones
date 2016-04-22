@@ -64,7 +64,7 @@ main:
                 * 
                 
             
-  - caption:  changes to href="./html/bare.helloworld02.html"
+  - caption:  changes to href="./html/demo.helloworld02.html"
     rectype:  rrmini02
     datebeg:  Thu Apr 21 11:51:52 2016 
     dateend:  Thu Apr 21 11:51:52 2016 
@@ -87,8 +87,8 @@ main:
         * working with angular1.4 addon components for postmethod test
         * YES_WORKY -- (aka luis perez "lays_coins_rocks formula") works with host_least_script syntax style
         * bare.helloworld02
-            * href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/bare.helloworld02.js"
-            * href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/bare.hellworld02.html"            
+            * href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/demo.helloworld02.js"
+            * href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/demo.hellworld02.html"            
         * removed demo stripdown and replaced with demo.helloworld02
 
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
