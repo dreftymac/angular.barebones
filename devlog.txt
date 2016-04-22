@@ -44,11 +44,12 @@ main:
             * LEARNBIT -- "spacer element" use text visibility hidden
             * LEARNBIT -- conditional visibility YES_WORKY works by setting ng-show in attributes
             * LEARNBIT -- calculated value does NO_WORKY not work by setting "val" with {{expression}} (just populates with hardwired value)
+            * LEARNBIT -- ng-hide display (none/block) vs ng-class visibility (hidden/visible). the latter is better to avoid reflow of elements on show-hide
             ##
             * TODO IMPORTANT hyperlink supported, figure out the XSS protection if any, else provide it
             * TODO POST SUBMIT
             * DONE CONDITIONAL VISIBILITY -- YES_WORKY (demo) "attributes": {"ng-show":"stdFormData.howwfind_002"},
-            * TODO COMPUTED FIELDS
+            * DONE COMPUTED FIELDS -- simple arithmetic
                 * https://github.com/danhunsaker/angular-dynamic-forms/issues/28
                 * http://stackoverflow.com/questions/20570491/angularjs-mathematical-calculations-with-ng-model-ng-click-buttons-outputting
                 * QUICK WAY -- add to the form submission postproc code as calculated fields -- DRAWBACK, we want immediate user feedback

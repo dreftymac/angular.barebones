@@ -103,28 +103,28 @@
       ,{
         "type": "select",
         "model": "howwfind_002",
-        "attributes": {"ng-show":"true"},        
+        "attributes": {"ng-show":"true"},
         "label": "select",
         "empty": "",
-        "options": {          
+        "options": {
           "first--99": {"label":  "first option"},
           "second--88": {"label": "second option"},
           "third--77": {"label":  "third option"}
-        }          
-      }      
+        }
+      }
       ,{
         "type": "select",
         "model": "howheard_002",
-        "attributes": {"ng-show":"stdFormData.howwfind_002"},        
+        "attributes": {"ng-class":"'eltInvisible': !stdFormData.howwfind_002"},
         "label": "select",
         "empty": "empty",
-        "options": {          
+        "options": {
           "main": {"label": "first option","group": "group zero"}
           ,"alpha": {"label": "alpha option","group": "group one"}
           ,"bravo": {"label": "bravo option","group": "group one"}
           ,"charl": {"label": "charl option","group": "group one"}
           ,"delta": {"label": "delta option","group": "group one"}
-          
+
           ,"echoo": {"label": "echoo option","group": "group two"}
           ,"foxtr": {"label": "foxtr option","group": "group two"}
           ,"golff": {"label": "golff option","group": "group two"}
@@ -142,8 +142,8 @@
         "model": "testing002_002",
         "attributes": {"style":"background-color:#f5f5f5;"},
         "label": "testing002_002"
-      }      
-      
+      }
+
     ]
   }
 ]

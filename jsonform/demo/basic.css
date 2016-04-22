@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+.eltInvisible {
+  visibility: hidden
+}
+
 [ng-cloak] {
   display: none;
 }
