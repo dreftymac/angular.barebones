@@ -37,8 +37,8 @@
           },
           "second": {
             "label": "second option",
-            "isOn": "on",
-            "isOff": "off"
+            "isOn": "true",
+            "isOff": "false"
           }
         }
       },
