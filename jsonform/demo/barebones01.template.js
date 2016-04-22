@@ -15,22 +15,22 @@
 
       ,{
         "type": "text",
-        "model": "fname01",
+        "model": "pargfname01",
         "label": "Parent First Name"
       }
       ,{
         "type": "text",
-        "model": "lname01",
+        "model": "parglname01",
         "label": "Parent Last Name"
       }
       ,{
         "type": "text",
-        "model": "fname01",
+        "model": "studfname01",
         "label": "Student First Name"
       }
       ,{
         "type": "text",
-        "model": "lname01",
+        "model": "studlname01",
         "label": "Student Last Name"
       }        
     ]
