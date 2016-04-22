@@ -11,7 +11,7 @@
     "model":    "fieldset",
     "label":    "Basic Information",
     "fields": [{"type": "legend","model": "legend01","label":
-               "For more information about registration, please see <a href='http://jsma.uoregon.edu/ArtCamp'>http://jsma.uoregon.edu/ArtCamp</a>."}
+               "For more information about registration, please see the <a href='http://jsma.uoregon.edu/ArtCamp'>JSMA website</a>."}
 
       ,{
         "type": "text",
