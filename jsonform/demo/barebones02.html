@@ -53,9 +53,11 @@
   </head>
   <body ng-app="app" id="ng-app">
 
-    <!--div ng-controller="MyControllerA">    
-      {{ name }}
-    </div-->
+    <div ng-modules="MyModuleA">
+      <div ng-controller="MyControllerA">    
+        {{ name }}
+      </div>
+    </div>
     
     <div ng-controller="AppCtrl" ng-cloak="">
 
