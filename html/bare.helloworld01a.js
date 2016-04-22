@@ -30,22 +30,17 @@ angular.module('helloworld01', [])
 // Demo filter -- modify list
 .filter('list_mult',  function() {
   var vout = function (input) {
-    return input.map(function(ixx) {return parseFloat(ixx.toString().split(',').join('')) * 2;})
+    return input.map(function(ixx) {return parseFloat(ixx) * 2;})
   }
   return vout;
 })
 
-// Demo list_reduce convert array of USA format numbers to their sum
-// ['2,000.50','1,000.50']
+// Demo filter -- modify list
 .filter('list_reduce',  function() {
   var vout = function (input) {
-    return
-      input.reduce(function(axx, bxx) {
-        return parseFloat(axx) + parseFloat(bxx)
-      ;});
+    return input.reduce(function(axx, bxx) {return parseFloat(axx) + parseFloat(bxx);});
   }
   return vout;
 })
 
-       
 ;;;
