@@ -40,6 +40,7 @@ angular.module('helloworld01', [])
   var vout = function (input) {
     return input.reduce(function(axx, bxx) {
       axx = axx.toString().split(',').join('');
+      bxx = bxx.toString().split(',').join('');
       return parseFloat(axx) + parseFloat(bxx);});
   }
   return vout;
