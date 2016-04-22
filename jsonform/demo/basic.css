@@ -25,13 +25,13 @@ pre {
 
 form,
 ng-form {
-  border: 1px solid blue;
-  border-radius: 4px;
+  border: 0px solid gainsboro;
+  border-radius: 2px;
   display: block;
 }
 
 fieldset {
-  border: 1px solid blue;
+  border: 1px solid gainsboro;
   border-radius: 4px;
   display: block;
   padding: .35em .625em .75em;
@@ -47,7 +47,7 @@ fieldset > legend:first-of-type {
   margin-bottom: auto;
   width: inherit;
   padding: inherit;
-  color: gainsboro;
+  color: black;
 }
 
 label,

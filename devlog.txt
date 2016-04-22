@@ -49,6 +49,7 @@ main:
             * YES_WORKY -- address true/false error on checkbox
             * css color gainsboro -- tweaks
             * TODO IMPORTANT hyperlink supported, figure out the XSS protection if any, else provide it
+            * tweaks to css, paper shuffling
 
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
     rectype:  rrmini02

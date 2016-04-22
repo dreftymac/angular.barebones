@@ -1,8 +1,8 @@
 [
   {
-    "type":     "fieldset",
-    "model":    "fieldset",
-    "label":    "Basic Information",
+    "type": "fieldset",
+    "model": "fieldset",
+    "label": "Basic Information",
     "fields": [
       {
         "type": "hidden",
