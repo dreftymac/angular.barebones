@@ -1,0 +1,103 @@
+- {label: image, model: image, source: 'http://angularjs.org/img/AngularJS-large.png',
+  type: image}
+  
+- fields:
+  label: Basic Information
+  model: fieldset001
+  type: fieldset
+  
+  - {label: 'For more information about registration, please see the <a href=''http://jsma.uoregon.edu/ArtCamp''
+      target=''_blank''>JSMA website</a>.', model: legend001, type: legend}
+  - attributes: {style: 'background-color:#f5f5f5;'}
+    label: Parent First Name
+    model: pargfname01
+    type: text
+  - attributes: {style: 'background-color:#f5f5f5;'}
+    label: Parent Last Name
+    model: parglname01
+    type: text
+  - attributes: {style: 'background-color:inherit;'}
+    label: Student First Name
+    model: studfname01
+    type: text
+  - attributes: {style: 'background-color:inherit;'}
+    label: Student Last Name
+    model: studlname01
+    type: text
+
+  
+- fields:
+  - {label: '', model: legend002, type: legend}
+  - attributes: {style: 'width:100%;background-color:#f5f5f5;'}
+    label: Address Line 1
+    model: addressline1_002
+    type: text
+  - attributes: {style: 'width:100%;background-color:inherit;'}
+    label: Address Line 2
+    model: addressline2_002
+    type: text
+  - attributes: {style: 'width:33%;background-color:#f5f5f5;'}
+    label: City
+    model: city_002
+    type: text
+  - attributes: {style: 'width:33%;background-color:#f5f5f5;'}
+    label: State
+    model: state_002
+    type: text
+  - attributes: {style: 'width:33%;background-color:#f5f5f5;'}
+    label: Zip
+    model: zip_002
+    type: text
+  - attributes: {style: 'background-color:inherit;'}
+    label: Emergency Email
+    model: emeremail_002
+    type: text
+  - attributes: {style: 'background-color:inherit;'}
+    label: Emergency Phone
+    model: emertele_002
+    type: text
+  - attributes: {style: 'background-color:#f5f5f5;'}
+    label: Authorized Pickup
+    model: authpick_002
+    type: text
+  - attributes: {style: 'background-color:#f5f5f5;visibility:hidden;'}
+    label: hidden_002
+    model: hidden_002
+    type: text
+    val: hidden_002
+  - attributes: {ng-show: 'true'}
+    empty: ''
+    label: select
+    model: howwfind_002
+    options:
+      first--99: {label: first option}
+      second--88: {label: second option}
+      third--77: {label: third option}
+    type: select
+  - attributes: {ng-class: '{''eltInvisible'': !stdFormData.howwfind_002}'}
+    empty: empty
+    label: select
+    model: howheard_002
+    options:
+      alpha: {group: group one, label: alpha option}
+      bravo: {group: group one, label: bravo option}
+      charl: {group: group one, label: charl option}
+      delta: {group: group one, label: delta option}
+      echoo: {group: group two, label: echoo option}
+      foxtr: {group: group two, label: foxtr option}
+      golff: {group: group two, label: golff option}
+      hotel: {group: group two, label: hotel option}
+      main: {group: group zero, label: first option}
+    type: select
+  - attributes: {style: 'background-color:#f5f5f5;'}
+    label: testing001_002
+    model: testing001_002
+    type: number
+  - attributes: {style: 'background-color:#f5f5f5;'}
+    label: testing002_002
+    model: testing002_002
+    type: number
+  label: Student Details
+  model: fieldset002
+  type: fieldset
+

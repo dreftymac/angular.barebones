@@ -61,8 +61,6 @@ main:
                 * ANNOYANCE -- addition arithmetic in angularjs defaults to string concat
                 * WORKAROUND -- use subtraction instead of addition
             ## barebones02 -- work with addon module on top of JSONFORM
-                * 
-                
             
   - caption:  changes to href="./html/demo.helloworld02.html"
     rectype:  rrmini02
