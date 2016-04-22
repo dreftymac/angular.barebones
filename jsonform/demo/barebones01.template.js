@@ -99,14 +99,19 @@
         "label": "select",
         "empty": "empty",
         "options": {          
-          "second": {
-            "label": "second option",
-            "group": "first group"
-          },
-          "third": {
-            "label": "third option",
-            "group": "second group"
+          "main": {
+            "label": "first option",
+            "group": "group zero"
           }
+          ,"alpha": {"label": "third option","group": "group one"}
+          ,"bravo": {"label": "third option","group": "group one"}
+          ,"charl": {"label": "third option","group": "group one"}
+          ,"delta": {"label": "third option","group": "group one"}
+          
+          ,"echoo": {"label": "third option","group": "group two"}
+          ,"foxtr": {"label": "third option","group": "group two"}
+          ,"golff": {"label": "third option","group": "group two"}
+          ,"hotel": {"label": "third option","group": "group two"}
         }
       }
       ,{
