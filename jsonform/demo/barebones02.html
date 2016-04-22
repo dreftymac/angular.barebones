@@ -35,10 +35,15 @@
     <![endif]-->
 
     <!-- region003 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"    ></script>
+    <script data-require="angularjs@1.4.3" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
     <script src="http://s69682.gridserver.com/_weblib/js/angularjs/angular.ng-modules.js" ></script>
     <script src="http://s69682.gridserver.com/_weblib/js/angularjs/angular-filter.min.js" ></script>
     <!-- /region003 -->
+    
+    <!-- region004 -->
+    <script src="../dynamic-forms.js"></script>
+    <script src="app.js"></script>    
+    <!-- /region004 -->
     
     <script>
       var moduleA = angular.module("MyModuleA", []);
@@ -78,11 +83,6 @@
       
     </div>
     
-    
-    <!-- Load scripts at the end for performance. -->
-    <script data-require="angular.js@1.4.2" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
-    <script src="../dynamic-forms.js"></script>
-    <script src="app.js"></script>
   </body>
 </html>
 

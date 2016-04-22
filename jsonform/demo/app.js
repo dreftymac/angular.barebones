@@ -232,4 +232,5 @@ angular.module('app', ['dynform'])
       
       return angular.toJson(temp, true);
     };
-  });
+  })
+;;;

@@ -49,9 +49,13 @@ main:
                 * make sure the syntax is correct
             * LEARNBIT -- expressions in attributes seem to work with ng, but use single curly brace instead of double
             * LEARNBIT -- angular injects commas into large numbers which ruins arithmetic
+            * LEARNBIT -- adding directives to preexisting angular module
+                * http://stackoverflow.com/questions/20077273/angularjs-two-directives-with-the-same-module-name
+                * http://stackoverflow.com/questions/19172584/angularjs-module-directive-not-responding-consistently
             ##
             * TODO IMPORTANT hyperlink supported, figure out the XSS protection if any, else provide it
             * TODO POST SUBMIT
+            * TODO addon other modules directives filters whatever
             * DONE CONDITIONAL VISIBILITY -- YES_WORKY (demo) "attributes": {"ng-show":"stdFormData.howwfind_002"},
             * DONE COMPUTED FIELDS -- simple arithmetic
                 * https://github.com/danhunsaker/angular-dynamic-forms/issues/28
