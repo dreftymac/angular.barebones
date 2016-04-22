@@ -16,13 +16,23 @@
       ,{
         "type": "text",
         "model": "fname01",
-        "label": "First Name"
+        "label": "Parent First Name"
       }
       ,{
         "type": "text",
         "model": "lname01",
-        "label": "Last Name"
-      }   
+        "label": "Parent Last Name"
+      }
+      ,{
+        "type": "text",
+        "model": "fname01",
+        "label": "Student First Name"
+      }
+      ,{
+        "type": "text",
+        "model": "lname01",
+        "label": "Student Last Name"
+      }        
     ]
   }
 ]
