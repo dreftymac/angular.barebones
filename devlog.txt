@@ -40,6 +40,7 @@ main:
             * LEARNBIT -- rowstriping zebra striping supported by using style attribute
             * LEARNBIT -- rowstriping zebra striping light color = #f5f5f5
             * LEARNBIT -- grouping syntax for select dropdown
+            * LEARNBIT -- "spacer element" text visibility hidden
             ##
             * TODO IMPORTANT hyperlink supported, figure out the XSS protection if any, else provide it
             * TODO POST SUBMIT

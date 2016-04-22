@@ -94,9 +94,10 @@
         "label": "Authorized Pickup"
       }
       ,{
-        "type": "hidden",
+        "type": "text",
         "model": "hidden_002",
         "label": "hidden_002",
+        "attributes": {"style":"background-color:#f5f5f5;visibility:hidden;"},
         "val": "hidden_002"
       }
       ,{
