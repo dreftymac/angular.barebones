@@ -44,7 +44,7 @@
       ,{
         "type": "text",
         "model": "addressline1_002",
-        "attributes": {"width":"100%","height":"auto","style":"width:200px;background-color: #fff000"},        
+        "attributes": {"width":"100%","height":"auto","style":"width:100%;background-color:inherit;"},        
         "label": "Address Line 1"
       }
       ,{
