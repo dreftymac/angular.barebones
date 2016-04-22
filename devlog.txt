@@ -44,6 +44,8 @@ main:
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/jsonform/demo/index.html" 
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/jsonform/demo/barebones01.html"
             * https://github.com/danhunsaker/angular-dynamic-forms
+            * https://github.com/es-shims/es5-shim
+            * https://github.com/bestiejs/json3
 
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
     rectype:  rrmini02

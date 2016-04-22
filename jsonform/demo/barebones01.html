@@ -7,23 +7,7 @@
     <!--[if lte IE 8]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.1/json3.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/2.3.0/es5-shim.min.js"></script>
-      <script>
-        document.createElement('ng-include');
-        document.createElement('ng-pluralize');
-        document.createElement('ng-view');
-        document.createElement('ng-form');
-        document.createElement('dynamic-form');
-        
-        // Optionally these for CSS
-        document.createElement('ng:include');
-        document.createElement('ng:pluralize');
-        document.createElement('ng:view');
-        document.createElement('ng:form');
-        
-        $(document).ready(function() {
-          angular.bootstrap(document.documentElement);
-        });
-      </script>
+      <script src="./msieaddon.js"></script>
     <![endif]-->
   </head>
   <body ng-controller="AppCtrl" ng-cloak="">
