@@ -115,7 +115,7 @@
       ,{
         "type": "select",
         "model": "howwfind_002",
-        "attributes": {"ng-if":"authpick_002"},        
+        "attributes": {"ng-if":"12"},        
         "label": "select",
         "empty": "",
         "options": {          
