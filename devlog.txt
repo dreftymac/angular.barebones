@@ -46,6 +46,7 @@ main:
             * LEARNBIT -- calculated value does NO_WORKY not work by setting "val" with {{expression}} (just populates with hardwired value)
             * LEARNBIT -- ng-hide display (none/block) vs ng-class visibility (hidden/visible). the latter is better to avoid reflow of elements on show-hide
                 * make sure the syntax is correct
+            * LEARNBIT -- expressions in attributes seem to work with ng, but use single curly brace instead of double
             ##
             * TODO IMPORTANT hyperlink supported, figure out the XSS protection if any, else provide it
             * TODO POST SUBMIT
