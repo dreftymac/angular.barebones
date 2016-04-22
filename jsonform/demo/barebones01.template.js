@@ -44,31 +44,31 @@
       ,{
         "type": "text",
         "model": "addressline1_002",
-        "attributes": {"width":"100%","height":"auto","style":"width:100%;background-color:gainsboro;"},
+        "attributes": {"style":"width:100%;background-color:gainsboro;"},
         "label": "Address Line 1"
       }
       ,{
         "type": "text",
         "model": "addressline2_002",
-        "attributes": {"width":"100%","height":"auto","style":"width:100%;background-color:inherit;"},
+        "attributes": {"style":"width:100%;background-color:inherit;"},
         "label": "Address Line 2"
       }
       ,{
         "type": "text",
         "model": "city_002",
-        "attributes": {"width":"33%","height":"auto","style":"width:100%;background-color:inherit;"},
+        "attributes": {"style":"width:33%;background-color:inherit;"},
         "label": "Address Line 2"
       }
       ,{
         "type": "text",
         "model": "state_002",
-        "attributes": {"width":"33%","height":"auto","style":"width:100%;background-color:inherit;"},
+        "attributes": {"style":"width:33%;background-color:inherit;"},
         "label": "Address Line 2"
       }
       ,{
         "type": "text",
         "model": "zip_002",
-        "attributes": {"width":"33%","height":"auto","style":"width:100%;background-color:inherit;"},
+        "attributes": {"style":"width:33%;background-color:inherit;"},
         "label": "Address Line 2"
       }
     ]
