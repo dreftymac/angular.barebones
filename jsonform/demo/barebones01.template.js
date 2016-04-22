@@ -44,7 +44,7 @@
       ,{
         "type": "text",
         "model": "addressline1_002",
-        "attributes": {"style":"width:100%;background-color:gainsboro;"},
+        "attributes": {"style":"width:100%;background-color:#f5f5f5;"},
         "label": "Address Line 1"
       }
       ,{
@@ -56,19 +56,19 @@
       ,{
         "type": "text",
         "model": "city_002",
-        "attributes": {"style":"width:33%;background-color:gainsboro;"},
+        "attributes": {"style":"width:33%;background-color:#f5f5f5;"},
         "label": "City"
       }
       ,{
         "type": "text",
         "model": "state_002",
-        "attributes": {"style":"width:33%;background-color:gainsboro;"},
+        "attributes": {"style":"width:33%;background-color:#f5f5f5;"},
         "label": "State"
       }
       ,{
         "type": "text",
         "model": "zip_002",
-        "attributes": {"style":"width:33%;background-color:gainsboro;"},
+        "attributes": {"style":"width:33%;background-color:#f5f5f5;"},
         "label": "Zip"
       }
     ]
