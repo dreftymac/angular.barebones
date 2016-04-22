@@ -19,7 +19,7 @@ moduleAlpha.controller("MyControllerAlpha", function($scope){
 // ------------------------------------------------------------------------
 // begin_ declare parent_containing DemoApp
 
-angular.module('DemoApp', [
+angular.module('app', [
   "MyModuleAlpha"
   //, "MyModuleBravo"
   //, "MyModuleCharlie"
