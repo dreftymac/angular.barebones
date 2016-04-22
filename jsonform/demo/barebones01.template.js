@@ -95,8 +95,20 @@
       }
       ,{
         "type": "select",
+        "model": "howwfind_002",
+        "attributes": {"ng-if":"12"},        
+        "label": "select",
+        "empty": "",
+        "options": {          
+          "first--99": {"label":  "first option"},
+          "second--88": {"label": "second option"},
+          "third--77": {"label":  "third option"}
+        }          
+      }      
+      ,{
+        "type": "select",
         "model": "howheard_002",
-        "attributes": {"ng-if":"false"},        
+        "attributes": {"ng-if":"howwfind_002"},        
         "label": "select",
         "empty": "empty",
         "options": {          
@@ -112,18 +124,7 @@
           ,"hotel": {"label": "hotel option","group": "group two"}
         }
       }
-      ,{
-        "type": "select",
-        "model": "howwfind_002",
-        "attributes": {"ng-if":"12"},        
-        "label": "select",
-        "empty": "",
-        "options": {          
-          "first--99": {"label":  "first option"},
-          "second--88": {"label": "second option"},
-          "third--77": {"label":  "third option"}
-        }          
-      }
+
     ]
   }
 ]
