@@ -71,6 +71,16 @@
         "attributes": {"style":"width:33%;background-color:#f5f5f5;"},
         "label": "Zip"
       }
+      ,{
+        "type": "text",
+        "model": "emeremail_002",
+        "label": "Emergency Email"
+      }
+      ,{
+        "type": "text",
+        "model": "emertele_002",
+        "label": "Emergency Phone"
+      }      
     ]
   }
 ]
