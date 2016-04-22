@@ -50,7 +50,7 @@
       ,{
         "type": "text",
         "model": "addressline2_002",
-        "val": "__blank__",
+        "attributes": {"width":"100%","height":"auto","style":"width:100%;background-color:inherit;"},        
         "label": "Address Line 2"
       }
       ,{

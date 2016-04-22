@@ -40,6 +40,16 @@ main:
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/bare.helloworld02.js"
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/html/bare.hellworld02.html"            
         * removed demo stripdown and replaced with demo.helloworld02
+        
+  - caption:  added JSON forms
+    rectype:  rrmini02
+    datebeg:  Thu Apr 21 19:57:50 2016 
+    dateend:  Thu Apr 21 19:57:50 2016 
+    tags:     tags
+    desc:     desc
+    seealso:  seealso
+    dreftymacid: away_beamer_pluck
+    wwbody: |
         * added JSONFORM demo for angularjs
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/jsonform/demo/index.html" 
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/jsonform/demo/barebones01.html"
@@ -51,6 +61,8 @@ main:
             * TODO IMPORTANT hyperlink supported, figure out the XSS protection if any, else provide it
             * tweaks to css, paper shuffling
             * test script tag in label -- script tag injected but does not seem to do anything, XSS needed anyway
+            * LEARNBIT ;; "val": "__blank__", ;; specify a pre-defined value for the element
+
 
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
     rectype:  rrmini02
