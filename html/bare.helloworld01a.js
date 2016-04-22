@@ -39,6 +39,7 @@ angular.module('helloworld01', [])
 .filter('list_reduce',  function() {
   var vout = function (input) {
     return input.reduce(function(axx, bxx) {
+      // remove automatic comma separator
       axx = axx.toString().split(',').join('');
       bxx = bxx.toString().split(',').join('');
       return parseFloat(axx) + parseFloat(bxx);});
