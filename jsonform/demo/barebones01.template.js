@@ -107,7 +107,18 @@
             "label": "third option",
             "group": "second group"
           }
-        }      
+        }
+      }
+      ,{
+        "type": "select",
+        "model": "howwfind_002",
+        "label": "select",
+        "empty": "",
+        "options": {          
+          "first--99": {"label":  "first option",},
+          "second--88": {"label": "second option",},
+          "third--77": {"label":  "third option",}
+        }          
       }
     ]
   }
