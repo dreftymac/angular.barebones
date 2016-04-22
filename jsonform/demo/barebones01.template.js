@@ -78,13 +78,13 @@
       ,{
         "type": "text",
         "model": "emeremail_002",
-        "attributes": {"style":"width:33%;background-color:inherit;"},
+        "attributes": {"style":"background-color:inherit;"},
         "label": "Emergency Email"
       }
       ,{
         "type": "text",
         "model": "emertele_002",
-        "attributes": {"style":"width:33%;background-color:inherit;"},
+        "attributes": {"style":"background-color:inherit;"},
         "label": "Emergency Phone"
       }
       ,{
