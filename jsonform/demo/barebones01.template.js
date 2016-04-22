@@ -108,7 +108,7 @@
       ,{
         "type": "select",
         "model": "howheard_002",
-        "attributes": {"ng-show":"howwfind_002"},        
+        "attributes": {"ng-show":"stdFormData.howwfind_002"},        
         "label": "select",
         "empty": "empty",
         "options": {          
