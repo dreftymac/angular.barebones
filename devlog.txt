@@ -27,11 +27,12 @@ main:
             ##
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/jsonform/demo/index.html" 
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/jsonform/demo/barebones01.html"
-            * https://gitter.im/danhunsaker/angular-dynamic-forms
-            ##
             * https://github.com/danhunsaker/angular-dynamic-forms
+            ##
+            * https://gitter.im/danhunsaker/angular-dynamic-forms
             * https://github.com/es-shims/es5-shim
             * https://github.com/bestiejs/json3
+            ##
             * YES_WORKY -- address true/false error on checkbox
             * css color gainsboro -- tweaks
             * tweaks to css, paper shuffling
@@ -40,12 +41,16 @@ main:
             * LEARNBIT -- rowstriping zebra striping supported by using style attribute
             * LEARNBIT -- rowstriping zebra striping light color = #f5f5f5
             * LEARNBIT -- grouping syntax for select dropdown
-            * LEARNBIT -- "spacer element" text visibility hidden
+            * LEARNBIT -- "spacer element" use text visibility hidden
+            * LEARNBIT -- conditional visibility YES_WORKY works by setting ng-show in attributes
+            * LEARNBIT -- calculated value does NO_WORKY not work by setting "val" with {{expression}} (just populates with hardwired value)
             ##
             * TODO IMPORTANT hyperlink supported, figure out the XSS protection if any, else provide it
             * TODO POST SUBMIT
             * DONE CONDITIONAL VISIBILITY -- YES_WORKY (demo) "attributes": {"ng-show":"stdFormData.howwfind_002"},
-            * TODO COMPUTATIONAL FIELDS
+            * TODO COMPUTED FIELDS
+                * https://github.com/danhunsaker/angular-dynamic-forms/issues/28
+                * http://stackoverflow.com/questions/20570491/angularjs-mathematical-calculations-with-ng-model-ng-click-buttons-outputting                
             
   - caption:  changes to href="./html/bare.helloworld02.html"
     rectype:  rrmini02
