@@ -8,7 +8,7 @@
         "type": "hidden",
         "model": "hidden",
         "label": "hidden",
-        "val": "hidden"
+        "val": "this is a secret"
       },
       {
         "type": "image",

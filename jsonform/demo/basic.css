@@ -47,7 +47,7 @@ fieldset > legend:first-of-type {
   margin-bottom: auto;
   width: inherit;
   padding: inherit;
-  color: blue;
+  color: gainsboro;
 }
 
 label,
