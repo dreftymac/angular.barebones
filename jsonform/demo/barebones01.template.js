@@ -2,7 +2,7 @@
   {
     "type": "fieldset",
     "model": "fieldset",
-    "label": "fieldset",
+    "label": "Basic Information",
     "fields": [
       {
         "type": "hidden",
@@ -11,16 +11,16 @@
         "val": "this is a secret"
       },
       {
-        "type": "image",
-        "model": "image",
-        "label": "image",
-        "source": "http://angularjs.org/img/AngularJS-large.png"
-      },
-      {
         "type": "legend",
         "model": "legend",
         "label": "legend"
       },
+      {
+        "type": "image",
+        "model": "image",
+        "label": "image",
+        "source": "http://angularjs.org/img/AngularJS-large.png"
+      },      
       {
         "type": "month",
         "model": "month",
