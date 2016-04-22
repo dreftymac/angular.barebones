@@ -47,6 +47,7 @@ main:
             * LEARNBIT -- ng-hide display (none/block) vs ng-class visibility (hidden/visible). the latter is better to avoid reflow of elements on show-hide
                 * make sure the syntax is correct
             * LEARNBIT -- expressions in attributes seem to work with ng, but use single curly brace instead of double
+            * LEARNBIT -- angular injects commas into large numbers which ruins arithmetic
             ##
             * TODO IMPORTANT hyperlink supported, figure out the XSS protection if any, else provide it
             * TODO POST SUBMIT
