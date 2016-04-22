@@ -38,7 +38,9 @@ angular.module('helloworld01', [])
 // Demo filter -- modify list
 .filter('list_reduce',  function() {
   var vout = function (input) {
-    return input.reduce(function(axx, bxx) {return parseFloat(axx) + parseFloat(bxx);});
+    return input.reduce(function(axx, bxx) {
+      axx = axx.toString().split(',').join('');
+      return parseFloat(axx) + parseFloat(bxx);});
   }
   return vout;
 })
