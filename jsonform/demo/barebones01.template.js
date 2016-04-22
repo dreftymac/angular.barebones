@@ -11,7 +11,7 @@
     "model":    "fieldset",
     "label":    "Basic Information",
     "fields": [{"type": "legend","model": "legend01","label":
-               "Lorem ipsum yahoo <a href='http://www.yahoo.com'>yahoo</a> <script>alert(1212);</script> hyperlink supported."}
+               "For more information about registration, please see <a href='http://jsma.uoregon.edu/ArtCamp'>http://jsma.uoregon.edu/ArtCamp</a>."}
 
       ,{
         "type": "text",

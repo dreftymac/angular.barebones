@@ -50,7 +50,7 @@ main:
             * css color gainsboro -- tweaks
             * TODO IMPORTANT hyperlink supported, figure out the XSS protection if any, else provide it
             * tweaks to css, paper shuffling
-            * test script tag in label
+            * test script tag in label -- script tag injected but does not seem to do anything, XSS needed anyway
 
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
     rectype:  rrmini02
