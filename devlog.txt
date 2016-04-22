@@ -27,6 +27,7 @@ main:
             ##
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/jsonform/demo/index.html" 
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/jsonform/demo/barebones01.html"
+            * href="http://dreftymac.bounceme.net/html/angular1x.barebones/jsonform/demo/barebones02.html"
             * https://github.com/danhunsaker/angular-dynamic-forms
             ##
             * https://gitter.im/danhunsaker/angular-dynamic-forms
@@ -59,6 +60,8 @@ main:
                 * QUICK WAY -- add to output REPL just like the json representation is generated
                 * ANNOYANCE -- addition arithmetic in angularjs defaults to string concat
                 * WORKAROUND -- use subtraction instead of addition
+            ## barebones02 -- work with addon module on top of JSONFORM
+                * 
                 
             
   - caption:  changes to href="./html/bare.helloworld02.html"
