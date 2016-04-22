@@ -5,8 +5,6 @@
     "label": "image",
     "source": "http://angularjs.org/img/AngularJS-large.png"
   }
-// ------------------------------------------------------------------------
-// begin_ 
   ,
   {
     "type":     "fieldset",
@@ -14,8 +12,6 @@
     "label":    "Basic Information",
     "fields": [{"type": "legend","model": "legend001","label":
                "For more information about registration, please see the <a href='http://jsma.uoregon.edu/ArtCamp'>JSMA website</a>."}
-// ------------------------------------------------------------------------
-// begin_ 
       ,{
         "type": "text",
         "model": "pargfname01",
@@ -35,9 +31,9 @@
         "type": "text",
         "model": "studlname01",
         "label": "Student Last Name"
-      }        
-// ------------------------------------------------------------------------
-// begin_ 
+      }
+    ]
+  }
   ,
   {
     "type":     "fieldset",
@@ -45,8 +41,6 @@
     "label":    "Student Details",
     "fields": [{"type":"legend" ,"model":"legend002", "label":
                ""}
-// ------------------------------------------------------------------------
-// begin_ 
       ,{
         "type": "text",
         "model": "addressline1_002",
@@ -68,9 +62,6 @@
         "model": "studlname01",
         "label": "Student Last Name"
       }        
-// ------------------------------------------------------------------------
-// begin_ 
-
     ]
   }
 ]
