@@ -53,6 +53,8 @@ main:
                 * http://stackoverflow.com/questions/20570491/angularjs-mathematical-calculations-with-ng-model-ng-click-buttons-outputting
                 * QUICK WAY -- add to the form submission postproc code as calculated fields -- DRAWBACK, we want immediate user feedback
                 * QUICK WAY -- add to output REPL just like the json representation is generated
+                * ANNOYANCE -- addition arithmetic in angularjs defaults to string concat
+                * WORKAROUND -- use subtraction instead of addition
                 
             
   - caption:  changes to href="./html/bare.helloworld02.html"

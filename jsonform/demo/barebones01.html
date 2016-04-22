@@ -20,7 +20,7 @@
         <pre>urlFormData: {{urlFormData | pretty}}</pre>
         <pre>number001: {{stdFormData.testing001_002 | number:2 }}</pre>
         <pre>number002: {{stdFormData.testing002_002 | number:2 }}</pre>
-        <pre>number math: {{ (stdFormData.testing001_002 |number:2) - ( (-1) * (stdFormData.testing002_002 |number:2))  }}</pre>
+        <pre>number math: {{ ((stdFormData.testing001_002|number:2)-((-1)*(stdFormData.testing002_002|number:2))|number:2)}}</pre>
       </div>
     </div>
     
