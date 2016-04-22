@@ -90,7 +90,7 @@
       ,{
         "type": "text",
         "model": "authpick_002",
-        "attributes": {"style":"width:33%;background-color:#f5f5f5;"},
+        "attributes": {"style":"background-color:#f5f5f5;"},
         "label": "Authorized Pickup"
       }
     ]
