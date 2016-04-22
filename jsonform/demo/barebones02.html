@@ -16,25 +16,44 @@
 -->  
 <html>
   <head>
+    <meta charset="utf-8">            
     <title>JSON Forms Demo</title>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    
+    <!-- region001 -->
     <link rel="stylesheet" href="./basic.css">
+    <link   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css"  />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"     ></script>
+    <!-- /region001 -->
+    
     <!--[if lte IE 8]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.1/json3.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/2.3.0/es5-shim.min.js"></script>
       <script src="./msieaddon.js"></script>
     <![endif]-->
-    <script src=""></script>
+
+    <!-- region002 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"    ></script>
+    <script src="http://s69682.gridserver.com/_weblib/js/angularjs/angular.ng-modules.js" ></script>
+    <script src="http://s69682.gridserver.com/_weblib/js/angularjs/angular-filter.min.js" ></script>
+    <!-- /region002 -->
+    
+    <script>
+      var moduleA = angular.module("MyModuleA", []);
+      moduleA.controller("MyControllerA", function($scope) {
+          $scope.name = "Alice A";
+      });
+      var moduleB = angular.module("MyModuleB", []);
+      moduleB.controller("MyControllerB", function($scope) {
+          $scope.name = "Bobby B";
+      });
+    </script>
+
   </head>
   <body ng-app="app" id="ng-app">
-    
 
-      
-    <div ng-controller="MyControllerAlpha">    
+    <div ng-controller="MyControllerA">    
       {{ name }}
     </div>
-            
-
     
     <div ng-controller="AppCtrl" ng-cloak="">
 
