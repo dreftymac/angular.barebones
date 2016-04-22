@@ -56,20 +56,20 @@
       ,{
         "type": "text",
         "model": "city_002",
-        "attributes": {"style":"width:33%;background-color:inherit;"},
-        "label": "Address Line 2"
+        "attributes": {"style":"width:33%;background-color:gainsboro;"},
+        "label": "City"
       }
       ,{
         "type": "text",
         "model": "state_002",
-        "attributes": {"style":"width:33%;background-color:inherit;"},
-        "label": "Address Line 2"
+        "attributes": {"style":"width:33%;background-color:gainsboro;"},
+        "label": "State"
       }
       ,{
         "type": "text",
         "model": "zip_002",
-        "attributes": {"style":"width:33%;background-color:inherit;"},
-        "label": "Address Line 2"
+        "attributes": {"style":"width:33%;background-color:gainsboro;"},
+        "label": "Zip"
       }
     ]
   }
