@@ -96,8 +96,8 @@
       ,{
         "type": "hidden",
         "model": "hidden_002",
-        "label": "",
-        "val": ""
+        "label": "hidden_002",
+        "val": "hidden_002"
       }
       ,{
         "type": "select",
