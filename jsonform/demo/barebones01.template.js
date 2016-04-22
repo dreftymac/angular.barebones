@@ -3,7 +3,8 @@
     "type":     "fieldset",
     "model":    "fieldset",
     "label":    "Basic Information",
-    "fields": [{"type": "legend","model": "legend","label": "Lorem ipsum yahoo <a href='http://www.yahoo.com'>yahoo</a> hyperlink supported."}
+    "fields": [{"type": "legend","model": "legend01","label":
+               "Lorem ipsum yahoo <a href='http://www.yahoo.com'>yahoo</a> hyperlink supported."}
       ,{
         "type": "image",
         "model": "image",
