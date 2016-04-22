@@ -115,9 +115,9 @@
         "label": "select",
         "empty": "",
         "options": {          
-          "first--99": {"label":  "first option",},
-          "second--88": {"label": "second option",},
-          "third--77": {"label":  "third option",}
+          "first--99": {"label":  "first option"},
+          "second--88": {"label": "second option"},
+          "third--77": {"label":  "third option"}
         }          
       }
     ]
