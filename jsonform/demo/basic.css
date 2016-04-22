@@ -31,7 +31,7 @@ ng-form {
 }
 
 fieldset {
-  border: 1px solid gainsboro;
+  border: 3px solid gainsboro;
   border-radius: 4px;
   display: block;
   padding: .35em .625em .75em;
