@@ -36,7 +36,8 @@
       <div>
         <p> add two decimals        => {{ (12.12 + 12.21)   |number:2 }} </p>
         <p> list_mult               => {{ ['12.12','12.21'] |list_mult }} </p>
-        <p> list_reduce             => {{ ['12','12.12','12.21','.1222222'] |list_reduce |number:2 }} </p>
+        <p> list_reduce             => {{ ['12','12.12','12.12','.12'] |list_reduce |number:2 }} </p>
+        <p> list_reduce             => {{ ['2,000.00','1,000.00'] |list_reduce |number:2 }} </p>
       </div>       
 
       <h2>simple string</h2>
