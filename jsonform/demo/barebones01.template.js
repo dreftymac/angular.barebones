@@ -93,6 +93,22 @@
         "attributes": {"style":"background-color:#f5f5f5;"},
         "label": "Authorized Pickup"
       }
+      ,{
+        "type": "select",
+        "model": "howheard_002",
+        "label": "select",
+        "empty": "empty",
+        "options": {          
+          "second": {
+            "label": "second option",
+            "group": "first group"
+          },
+          "third": {
+            "label": "third option",
+            "group": "second group"
+          }
+        }      
+      }
     ]
   }
 ]
