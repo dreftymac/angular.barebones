@@ -55,7 +55,7 @@
       ,{
         "type": "text",
         "model": "addressline2_002",
-        "val": "__blank__"
+        "val": "__blank__",
         "label": "Address Line 2"
       }
       ,{
