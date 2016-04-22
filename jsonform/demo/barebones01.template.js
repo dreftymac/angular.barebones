@@ -91,7 +91,7 @@
         "type": "text",
         "model": "authpick_002",
         "attributes": {"style":"background-color:#f5f5f5;"},
-        "val":"stdFormData.howwfind_002",
+        "val":"{{stdFormData.howwfind_002}}",
         "label": "Authorized Pickup"
       }
       ,{
