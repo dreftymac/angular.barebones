@@ -96,6 +96,7 @@
       ,{
         "type": "select",
         "model": "howheard_002",
+        "attributes": {"ng-if":"false"},        
         "label": "select",
         "empty": "empty",
         "options": {          
@@ -114,6 +115,7 @@
       ,{
         "type": "select",
         "model": "howwfind_002",
+        "attributes": {"ng-if":"false"},        
         "label": "select",
         "empty": "",
         "options": {          

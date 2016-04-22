@@ -27,6 +27,7 @@ main:
             ##
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/jsonform/demo/index.html" 
             * href="smartpath://mymedia/2014/git/github/angular1x.barebones/jsonform/demo/barebones01.html"
+            * https://gitter.im/danhunsaker/angular-dynamic-forms
             ##
             * https://github.com/danhunsaker/angular-dynamic-forms
             * https://github.com/es-shims/es5-shim
@@ -42,6 +43,8 @@ main:
             ##
             * TODO IMPORTANT hyperlink supported, figure out the XSS protection if any, else provide it
             * TODO POST SUBMIT
+            * TODO CONDITIONAL VISIBILITY
+            * TODO COMPUTATIONAL FIELDS
             
   - caption:  changes to href="./html/bare.helloworld02.html"
     rectype:  rrmini02
