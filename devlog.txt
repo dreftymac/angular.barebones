@@ -61,8 +61,9 @@ main:
             * TODO IMPORTANT hyperlink supported, figure out the XSS protection if any, else provide it
             * tweaks to css, paper shuffling
             * test script tag in label -- script tag injected but does not seem to do anything, XSS needed anyway
-            * LEARNBIT ;; "val": "__blank__", ;; specify a pre-defined value for the element
-
+            * LEARNBIT -- "val": "__blank__", ;; specify a pre-defined value for the element
+            * LEARNBIT -- rowstriping zebra striping supported by using style attribute
+            * LEARNBIT -- rowstriping zebra striping light color = #f5f5f5
 
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
     rectype:  rrmini02

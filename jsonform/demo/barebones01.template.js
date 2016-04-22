@@ -15,25 +15,25 @@
       ,{
         "type": "text",
         "model": "pargfname01",
-        "attributes": {"style":"background-color:#f5f5f5;"},        
+        "attributes": {"style":"background-color:#f5f5f5;"},
         "label": "Parent First Name"
       }
       ,{
         "type": "text",
         "model": "parglname01",
-        "attributes": {"style":"background-color:#f5f5f5;"},        
+        "attributes": {"style":"background-color:#f5f5f5;"},
         "label": "Parent Last Name"
       }
       ,{
         "type": "text",
         "model": "studfname01",
-        "attributes": {"style":"background-color:inherit;"},        
+        "attributes": {"style":"background-color:inherit;"},
         "label": "Student First Name"
       }
       ,{
         "type": "text",
         "model": "studlname01",
-        "attributes": {"style":"background-color:inherit;"},        
+        "attributes": {"style":"background-color:inherit;"},
         "label": "Student Last Name"
       }
     ]
@@ -78,13 +78,21 @@
       ,{
         "type": "text",
         "model": "emeremail_002",
+        "attributes": {"style":"width:33%;background-color:inherit;"},
         "label": "Emergency Email"
       }
       ,{
         "type": "text",
         "model": "emertele_002",
+        "attributes": {"style":"width:33%;background-color:inherit;"},
         "label": "Emergency Phone"
-      }      
+      }
+      ,{
+        "type": "text",
+        "model": "authpick_002",
+        "attributes": {"style":"width:33%;background-color:#f5f5f5;"},
+        "label": "Authorized Pickup"
+      }
     ]
   }
 ]
