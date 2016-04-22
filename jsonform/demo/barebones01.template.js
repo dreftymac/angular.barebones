@@ -11,7 +11,7 @@
     "model":    "fieldset",
     "label":    "Basic Information",
     "fields": [{"type": "legend","model": "legend01","label":
-               "Lorem ipsum yahoo <a href='http://www.yahoo.com'>yahoo</a> hyperlink supported."}
+               "Lorem ipsum yahoo <a href='http://www.yahoo.com'>yahoo</a> <script>alert(1212);</script> hyperlink supported."}
 
       ,{
         "type": "text",
