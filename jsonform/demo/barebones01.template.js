@@ -96,7 +96,7 @@
       ,{
         "type": "select",
         "model": "howwfind_002",
-        "attributes": {"ng-if":"12"},        
+        "attributes": {"ng-show":"true"},        
         "label": "select",
         "empty": "",
         "options": {          
