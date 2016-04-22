@@ -33,13 +33,15 @@ main:
             * https://github.com/bestiejs/json3
             * YES_WORKY -- address true/false error on checkbox
             * css color gainsboro -- tweaks
-            * TODO IMPORTANT hyperlink supported, figure out the XSS protection if any, else provide it
             * tweaks to css, paper shuffling
             * test script tag in label -- script tag injected but does not seem to do anything, XSS needed anyway
             * LEARNBIT -- "val": "__blank__", ;; specify a pre-defined value for the element
             * LEARNBIT -- rowstriping zebra striping supported by using style attribute
             * LEARNBIT -- rowstriping zebra striping light color = #f5f5f5
             * LEARNBIT -- grouping syntax for select dropdown
+            ##
+            * TODO IMPORTANT hyperlink supported, figure out the XSS protection if any, else provide it
+            * TODO POST SUBMIT
             
   - caption:  changes to href="./html/bare.helloworld02.html"
     rectype:  rrmini02

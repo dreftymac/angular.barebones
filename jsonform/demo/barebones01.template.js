@@ -99,10 +99,7 @@
         "label": "select",
         "empty": "empty",
         "options": {          
-          "main": {
-            "label": "first option",
-            "group": "group zero"
-          }
+          "main": {"label": "first option","group": "group zero"}
           ,"alpha": {"label": "alpha option","group": "group one"}
           ,"bravo": {"label": "bravo option","group": "group one"}
           ,"charl": {"label": "charl option","group": "group one"}
