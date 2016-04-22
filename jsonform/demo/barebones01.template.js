@@ -13,7 +13,7 @@
       {
         "type": "legend",
         "model": "legend",
-        "label": "legend"
+        "label": "Lorem ipsum yahoo <a href='http://www.yahoo.com'>yahoo</a>"
       },
       {
         "type": "image",
