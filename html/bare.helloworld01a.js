@@ -27,4 +27,12 @@ angular.module('helloworld01', [])
   return vout;
 })
 
+// Demo filter -- modify list
+.filter('list_mult',  function() {
+  var vout = function (input) {
+    return input.map(function(ixx) {return parseFloat(ixx) * 2;})
+  }
+  return vout;
+})
+
 ;;;
