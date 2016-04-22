@@ -103,15 +103,15 @@
             "label": "first option",
             "group": "group zero"
           }
-          ,"alpha": {"label": "third option","group": "group one"}
-          ,"bravo": {"label": "third option","group": "group one"}
-          ,"charl": {"label": "third option","group": "group one"}
-          ,"delta": {"label": "third option","group": "group one"}
+          ,"alpha": {"label": "alpha option","group": "group one"}
+          ,"bravo": {"label": "bravo option","group": "group one"}
+          ,"charl": {"label": "charl option","group": "group one"}
+          ,"delta": {"label": "delta option","group": "group one"}
           
-          ,"echoo": {"label": "third option","group": "group two"}
-          ,"foxtr": {"label": "third option","group": "group two"}
-          ,"golff": {"label": "third option","group": "group two"}
-          ,"hotel": {"label": "third option","group": "group two"}
+          ,"echoo": {"label": "echoo option","group": "group two"}
+          ,"foxtr": {"label": "foxtr option","group": "group two"}
+          ,"golff": {"label": "golff option","group": "group two"}
+          ,"hotel": {"label": "hotel option","group": "group two"}
         }
       }
       ,{
