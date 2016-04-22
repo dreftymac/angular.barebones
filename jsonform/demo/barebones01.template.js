@@ -131,7 +131,13 @@
           ,"hotel": {"label": "hotel option","group": "group two"}
         }
       }
-
+      ,{
+        "type": "number",
+        "model": "testing001_002",
+        "attributes": {"style":"background-color:#f5f5f5;"},
+        "label": "testing001_002"
+      }
+      
     ]
   }
 ]
