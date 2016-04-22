@@ -115,7 +115,7 @@
       ,{
         "type": "select",
         "model": "howheard_002",
-        "attributes": {"ng-class":"'eltInvisible': !stdFormData.howwfind_002"},
+        "attributes": {"ng-class":"{'eltInvisible': stdFormData.howwfind_002}"},
         "label": "select",
         "empty": "empty",
         "options": {
