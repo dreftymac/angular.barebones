@@ -13,7 +13,6 @@
 ### <end-file_info>
 
 main:
-
   - caption:  added JSON forms
     rectype:  rrmini02
     datebeg:  Thu Apr 21 19:57:50 2016 
@@ -42,7 +41,7 @@ main:
             * LEARNBIT -- rowstriping zebra striping supported by using style attribute
             * LEARNBIT -- rowstriping zebra striping light color = #f5f5f5
             * LEARNBIT -- grouping syntax for select dropdown
-            * LEARNBIT -- "spacer element" use text visibility hidden
+            * LEARNBIT -- form fieldset "spacer element" use text visibility hidden
             * LEARNBIT -- conditional visibility YES_WORKY works by setting ng-show in attributes
             * LEARNBIT -- calculated value does NO_WORKY not work by setting "val" with {{expression}} (just populates with hardwired value)
             * LEARNBIT -- ng-hide display (none/block) vs ng-class visibility (hidden/visible). the latter is better to avoid reflow of elements on show-hide
@@ -65,6 +64,17 @@ main:
                 * ANNOYANCE -- addition arithmetic in angularjs defaults to string concat
                 * WORKAROUND -- use subtraction instead of addition
             ## barebones02 -- work with addon module on top of JSONFORM
+
+  - caption:  bare.helloworld01a.html
+    rectype:  rrmini02
+    datebeg:  Fri Apr 22 16:20:57 2016 
+    dateend:  Fri Apr 22 16:20:57 2016 
+    tags:     tags
+    desc:     desc
+    seealso:  seealso
+    dreftymacid: drags_beneath_welcher
+    wwbody: |
+      bare.helloworld01a.html   ;; directive and controller with demoform
             
   - caption:  changes to href="./html/demo.helloworld02.html"
     rectype:  rrmini02
@@ -185,5 +195,23 @@ main:
     seealso:  seealso
     dreftymacid: wilhelm_nail_kate
     wwbody: |
+
+  - caption:  concept -- ngbind -- Matching Directives Normalization
+    rectype:  rrmini02
+    datebeg:  Fri Apr 22 16:05:59 2016 
+    dateend:  Fri Apr 22 16:05:59 2016 
+    tags:     tags
+    desc:     desc
+    seealso:  seealso
+    dreftymacid: stink_negating_twofold
+    wwbody: |
+      <div ng-controller="Controller">
+        Hello <input ng-model='name'> <hr/>
+        <span ng-bind="name"></span> <br/>
+        <span ng:bind="name"></span> <br/>
+        <span ng_bind="name"></span> <br/>
+        <span data-ng-bind="name"></span> <br/>
+        <span x-ng-bind="name"></span> <br/>
+      </div>
         
 

@@ -13,6 +13,31 @@
 
 angular.module('helloworld01', [])
 
+// ------------------------------------------------------------------------ 
+
+// Form directive
+.directive('demoForm', function() {
+  return {
+    restrict:     'A',
+    scope:        {},
+    controller:   'demoFormCtrl',
+    templateUrl:  "./bare.helloworld01a-demoForm.html"
+  };
+})
+
+.controller('demoFormCtrl', ['$scope', function($scope) {
+  $scope.list = [];
+  $scope.text = 'hello';
+  $scope.submit = function() {
+    if ($scope.text) {
+      $scope.list.push(this.text);
+      $scope.text = '';
+    }
+  };
+}])
+
+// ------------------------------------------------------------------------ 
+
 // Demo filter -- simple string transformation
 .filter('exclaim',  function() {
   var vout = function(input) {
