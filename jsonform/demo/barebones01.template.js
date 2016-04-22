@@ -19,7 +19,7 @@
       {
         "type": "legend",
         "model": "legend",
-        "label": "Lorem ipsum yahoo <a href='http://www.yahoo.com'>yahoo</a>"
+        "label": "Lorem ipsum yahoo <a href='http://www.yahoo.com'>yahoo</a> hyperlink supported."
       },
       {
         "type": "image",

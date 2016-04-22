@@ -48,6 +48,7 @@ main:
             * https://github.com/bestiejs/json3
             * YES_WORKY -- address true/false error on checkbox
             * css color gainsboro -- tweaks
+            * TODO IMPORTANT hyperlink supported, figure out the XSS protection if any, else provide it
 
   - caption:  YES_WORKY -- using 'A' instead of 'E' on directive  
     rectype:  rrmini02
