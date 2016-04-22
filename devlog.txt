@@ -50,7 +50,8 @@ main:
             * DONE CONDITIONAL VISIBILITY -- YES_WORKY (demo) "attributes": {"ng-show":"stdFormData.howwfind_002"},
             * TODO COMPUTED FIELDS
                 * https://github.com/danhunsaker/angular-dynamic-forms/issues/28
-                * http://stackoverflow.com/questions/20570491/angularjs-mathematical-calculations-with-ng-model-ng-click-buttons-outputting                
+                * http://stackoverflow.com/questions/20570491/angularjs-mathematical-calculations-with-ng-model-ng-click-buttons-outputting
+                * QUICK WAY -- add to the form submission code as calculated fields -- DRAWBACK, we want immediate user feedback
             
   - caption:  changes to href="./html/bare.helloworld02.html"
     rectype:  rrmini02
