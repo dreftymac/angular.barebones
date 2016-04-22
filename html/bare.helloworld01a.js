@@ -41,7 +41,7 @@ angular.module('helloworld01', [])
   var vout = function (input) {
     return
       input.reduce(function(axx, bxx) {
-        return parseFloat(axx)+parseFloat(bxx)
+        return parseFloat(axx) + parseFloat(bxx)
       ;});
   }
   return vout;
