@@ -94,6 +94,12 @@
         "label": "Authorized Pickup"
       }
       ,{
+        "type": "hidden",
+        "model": "hidden_002",
+        "label": "",
+        "val": ""
+      }
+      ,{
         "type": "select",
         "model": "howwfind_002",
         "attributes": {"ng-show":"true"},        

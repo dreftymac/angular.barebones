@@ -43,7 +43,7 @@ main:
             ##
             * TODO IMPORTANT hyperlink supported, figure out the XSS protection if any, else provide it
             * TODO POST SUBMIT
-            * TODO CONDITIONAL VISIBILITY
+            * DONE CONDITIONAL VISIBILITY -- YES_WORKY (demo) "attributes": {"ng-show":"stdFormData.howwfind_002"},
             * TODO COMPUTATIONAL FIELDS
             
   - caption:  changes to href="./html/bare.helloworld02.html"
