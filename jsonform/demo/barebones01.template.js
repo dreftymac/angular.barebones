@@ -11,6 +11,12 @@
         "val": "this is a secret"
       },
       {
+        "type":   "hidden",
+        "model":  "hidden2",
+        "label":  "hidden2",
+        "val":    "another secret"
+      },            
+      {
         "type": "legend",
         "model": "legend",
         "label": "Lorem ipsum yahoo <a href='http://www.yahoo.com'>yahoo</a>"
